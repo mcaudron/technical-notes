@@ -1,0 +1,54 @@
+= Comment bien préparer Devoxx France ?
+Maxime CAUDRON <icon:github[] https://github.com/Maxsasse/[GitHub]>
+// Handling GitHub admonition blocks icons
+ifndef::env-github[:icons: font]
+ifdef::env-github[]
+:status:
+:outfilesuffix: .adoc
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+:icons: font
+:imagesdir: ./images
+:resourcesdir: ./resources
+:source-highlighter: highlightjs
+:highlightjs-languages: asciidoc
+// We must enable experimental attribute to display Keyboard, button, and menu macros
+:experimental:
+// Next 2 ones are to handle line breaks in some particular elements (list, footnotes, etc.)
+:lb: pass:[<br> +]
+:sb: pass:[<br>]
+// check https://github.com/Ardemius/personal-wiki/wiki/AsciiDoctor-tips for tips on table of content in GitHub
+:toc: macro
+:toclevels: 4
+// To number the sections of the table of contents
+//:sectnums:
+// Add an anchor with hyperlink before the section title
+:sectanchors:
+// To turn off figure caption labels and numbers
+:figure-caption!:
+// Same for examples
+//:example-caption!:
+// To turn off ALL captions
+// :caption:
+
+toc::[]
+
+== Abstract
+
+Abstract du talk et infos sur le speaker
+
+== Notes
+
+Mes notes sur le talk
+
+=== Thème 1
+
+foo
+
+=== Thème 2
+
+bar
