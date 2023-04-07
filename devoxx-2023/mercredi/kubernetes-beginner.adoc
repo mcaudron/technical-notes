@@ -1,0 +1,24 @@
+===== Kubernetes, dépassionné et pour les ultra débutants
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/YND-3078/Kubernetes,_depassionne_et_pour_les_ultra_debutants
+
+|Type/format de présentation
+|University, 3h, mercredi uniquement 
+
+|Track
+|Cloud, Containers et Infrastructure, DevOps
+
+|Niveau de la présentation
+|débutant
+
+|===
+
+====== Speaker
+
+====== Notes

@@ -1,0 +1,27 @@
+===== Hacker son application Java pour mieux la sécuriser ensuite
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/QUV-7158/Hacker_son_application_Java_pour_mieux_la_securiser_ensuite
+
+|Type/format de présentation
+|Hands-on Lab, 3h, mercredi, jeud et vendredi
+
+|Track
+|Architecture, Performance et Securité
+
+|Niveau de la présentation
+|débutant
+
+|Mots-clés 	
+|security Java Quarkus
+
+|===
+
+====== Speaker
+
+====== Notes

@@ -1,0 +1,29 @@
+===== Besoin d'env de développement ultra robuste? On se crée un env immutable et reproductible avec Nix en quelques minutes!
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/RHF-6000/Besoin_d'env_de_developpement_ultra_robuste%3F_On_se_cree_un_env_immutable_et_reproductible_avec_Nix_en_quelques_minutes!
+
+|Type/format de présentation
+|Tools in Action, 30mn, mercredi/jeudi
+
+|Track
+|Architecture, Performance et Securité
+
+|Niveau de la présentation
+|débutant
+
+|Mots-clés 	
+|NixOS Nix Java Node Python
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	
+ 	

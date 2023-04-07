@@ -1,0 +1,29 @@
+===== Finis les 'git commit -m "fix pipeline #42"' grâce à Dagger
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/PMF-4014/Finis_les_'git_commit_-m_%22fix_pipeline_%2342%22'_grace_a_Dagger
+
+|Type/format de présentation
+|Tools in Action, 30mn, mercredi/jeudi
+
+|Track
+|Cloud, Containers et Infrastructure, DevOps
+
+|Niveau de la présentation
+|débutant
+
+|Mots-clés 	
+|Dagger Continuous Integration GraphQL Containers
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	
+ 	

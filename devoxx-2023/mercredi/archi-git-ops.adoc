@@ -1,0 +1,29 @@
+===== Une Architecture GitOps from scratch : Gitlab, Ansible, Terraform, Kubernetes et AWS
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/EJI-3118/Une_Architecture_GitOps_from_scratch_:_Gitlab,_Ansible,_Terraform,_Kubernetes_et_AWS
+
+|Type/format de présentation
+|University, 3h, mercredi uniquement 
+
+|Track
+|Cloud, Containers et Infrastructure, DevOps
+
+|Niveau de la présentation
+|débutant
+
+|Mots-clés 	
+|Kubernetes DevOps GitOps
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	
+ 	

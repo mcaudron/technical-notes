@@ -1,0 +1,27 @@
+===== Value types et Pattern matching : 1 partout, données au centre
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/GNA-8922/Value_types_et_Pattern_matching_:_1_partout,_donnees_au_centre
+
+|Type/format de présentation
+|University, 3h, mercredi uniquement 
+
+|Track
+|Java, JVM
+
+|Niveau de la présentation
+|débutant
+
+|Mots-clés 	
+|Java 17
+
+|===
+
+====== Speaker
+
+====== Notes

@@ -1,0 +1,27 @@
+==== Keynotes
+
+Les plénières d'ouverture (keynote) vous donnent rendez-vous cette année le jeudi et le vendredi à 9h précise. Le thème de cette année 2023 est consacré à l'Intelligence Artificielle. Toutes les sessions sont filmées et mise à disposition sur la chaîne Devoxx France de Youtube.
+
+==== Universités
+
+Les Universités sont des sessions longues de 3h, le mercredi, de 2 x 75 minutes. Ce format est consacré à la présentation de sujets en profondeur/avancés.
+
+==== Quickies
+
+Les Quickies sont des sessions courtes de 15 minutes, pendant l'heure du déjeuner. Le comité de sélection de Devoxx France met en avant des personnes n'ayant pas encore eu l'occasion de présenter. Ces sessions sont un excellent moyen pour découvrir un sujet.
+
+==== BOF (Bird of a Feather)
+
+Les BOF (Bird of a feather) sont des sessions mythiques de Devoxx France, à partir de 20h le jeudi soir. C'est le point de rendez-vous des user-groups, des communautés, des meetups, bref de tous les groupes communautaires de passionnés. Les BOFs se déroulent le soir de la soirée Meet-and-Greet.
+
+==== Conférences
+
+Les conférences sont des présentations de 45mn, le jeudi et le vendredi. C'est le format le plus représenté, avec près de 96 conférences pendant 2 jours.
+
+==== TIA (Tools-in-Action)
+
+Les TIA (Tools-in-Action) sont des sessions courtes de 30mn, destinées à présenter un outil, une pratique logiciel ou une solution.
+
+==== Hands-on Labs
+
+Travaux pratiques

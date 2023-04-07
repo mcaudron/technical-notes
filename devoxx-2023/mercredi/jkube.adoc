@@ -1,0 +1,29 @@
+===== JKube remote-dev : coder avec tous vos micro-services du cloud ... en local !
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/WOA-9081/JKube_remote-dev_:_coder_avec_tous_vos_micro-services_du_cloud_..._en_local_!
+
+|Type/format de présentation
+|Tools in Action, 30mn, mercredi/jeudi
+
+|Track
+|Cloud, Containers et Infrastructure, DevOps
+
+|Niveau de la présentation
+|Intermédiaire
+
+|Mots-clés 	
+|Kubernetes Containerized Microservices Cloud Native Java
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	
+ 	

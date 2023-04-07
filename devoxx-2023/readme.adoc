@@ -1,4 +1,4 @@
-= Comment bien préparer Devoxx France ?
+= DEVOXX France 2023
 Maxime CAUDRON <icon:github[] https://github.com/Maxsasse/[GitHub]>
 // Handling GitHub admonition blocks icons
 ifndef::env-github[:icons: font]
@@ -21,7 +21,6 @@ endif::[]
 // Next 2 ones are to handle line breaks in some particular elements (list, footnotes, etc.)
 :lb: pass:[<br> +]
 :sb: pass:[<br>]
-// check https://github.com/Ardemius/personal-wiki/wiki/AsciiDoctor-tips for tips on table of content in GitHub
 :toc: macro
 :toclevels: 4
 // To number the sections of the table of contents
@@ -37,18 +36,57 @@ endif::[]
 
 toc::[]
 
-== Abstract
+== Présentation du salon
 
-Abstract du talk et infos sur le speaker
+include::devoxx-presentation.adoc[]
 
-== Notes
+=== Types de talks
 
-Mes notes sur le talk
+include::talks.adoc[]
 
-=== Thème 1
+=== Types de tracks
 
-foo
+Voici les types de track pour les 3 jours
 
-=== Thème 2
+ * Cloud, Containers et Infrastructure, DevOps 
+ * Java, JVM
+ * Big Data, Machine Learning, Analytics
+ * Langages
+ * Architecture, Performance et Securité
+ * People & Culture, Soft Skills, Future of work, Innovation, Side projects
+ * Web, JS, HTML5 et UX
 
-bar
+== Mon agenda
+
+=== Mercredi
+
+==== 9:30 - 12:30
+
+include::mercredi/archi-git-ops.adoc[]
+include::mercredi/value-type.adoc[]
+
+==== ----- REPAS -----
+
+==== 13:30 - 16:30
+
+include::mercredi/hacker-application.adoc[]
+include::mercredi/kubernetes-beginner.adoc[]
+include::mercredi/sigstore.adoc[]
+
+==== ----- BREAK -----
+
+==== 17:00 - 17:30
+
+include::mercredi/loki.adoc[]
+include::mercredi/nix.adoc[]
+
+==== 17:45 - 18:15
+
+include::mercredi/dagger.adoc[]
+include::mercredi/spring-intern.adoc[]
+
+==== 18:30 - 19:00
+
+include::mercredi/jkube.adoc[]
+
+== Jeudi
