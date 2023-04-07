@@ -1,0 +1,27 @@
+===== Comment "enseigner" Scratch à vos enfants?
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/RNC-9928/Comment_%22enseigner%22_Scratch_a_vos_enfants%3F
+
+|Type/format de présentation
+|Tools in Action, 30mn, mercredi/jeudi
+
+|Track
+|People & Culture, Soft Skills, Future of work, Innovation, Side projects
+
+|Niveau de la présentation
+|débutant
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	
+ 	
+

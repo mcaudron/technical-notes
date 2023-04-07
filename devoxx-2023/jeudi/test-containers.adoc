@@ -1,0 +1,28 @@
+===== Rethinking integration testing with Testcontainers
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/FJM-9013/Rethinking_integration_testing_with_Testcontainers
+
+|Type/format de présentation
+|Hands-on Lab, 3h, mercredi, jeud et vendredi
+
+|Track
+|Cloud, Containers et Infrastructure, DevOps
+
+|Niveau de la présentation
+|débutant
+
+|Mots-clés 	
+|Simple Rules for Writing Great Testcases Docker TestEngines
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	

@@ -1,0 +1,28 @@
+===== Revisiting Design Patterns after 20
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/YFE-8347/Revisiting_Design_Patterns_after_20
+
+|Type/format de présentation
+|Conference, 45mn, jeudi et vendredi
+
+|Track
+|Java, JVM
+
+|Niveau de la présentation
+|Intermédiaire
+
+|Mots-clés 	
+|Java design patterns best practices
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	

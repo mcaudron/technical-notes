@@ -1,0 +1,30 @@
+===== Fun(ctional) Domain Driven Design (featuring Ukulele)
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/QAD-8702/Fun(ctional)_Domain_Driven_Design_(featuring_Ukulele)
+
+|Type/format de présentation
+|Conference, 45mn, jeudi et vendredi
+
+|Track
+|Langages
+
+|Niveau de la présentation
+|débutant
+
+|Mots-clés 	
+|Domain Driven Design functional programming music Live Coding & Demos
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	
+ 	
+

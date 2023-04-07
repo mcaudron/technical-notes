@@ -1,0 +1,28 @@
+===== Loi de Conway : lorsque les bonnes pratiques ne suffisent pas
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/ZQW-2568/Loi_de_Conway_:_lorsque_les_bonnes_pratiques_ne_suffisent_pas
+
+|Type/format de présentation
+|Conference, 45mn, jeudi et vendredi
+
+|Track
+|Architecture, Performance et Securité
+
+|Niveau de la présentation
+|Intermédiaire
+
+|Mots-clés 	
+|organization Design architecture user experience product
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	

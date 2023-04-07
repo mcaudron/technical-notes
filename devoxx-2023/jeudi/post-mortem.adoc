@@ -1,0 +1,30 @@
+===== Les post-mortems ou comment sortir heureux d’un carnage
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/JKD-9971/Les_post-mortems_ou_comment_sortir_heureux_d%E2%80%99un_carnage
+
+|Type/format de présentation
+|Tools in Action, 30mn, mercredi/jeudi
+
+|Track
+|People & Culture, Soft Skills, Future of work, Innovation, Side projects
+
+|Niveau de la présentation
+|débutant
+
+|Mots-clés 	
+|team Agile Improvements mistake
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	
+ 	
+

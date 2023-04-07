@@ -1,0 +1,30 @@
+===== Accélérer vos livraisons d'API avec Microcks
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/BYI-0526/Accelerer_vos_livraisons_d'API_avec_Microcks
+
+|Type/format de présentation
+|Tools in Action, 30mn, mercredi/jeudi
+
+|Track
+|Architecture, Performance et Securité
+
+|Niveau de la présentation
+|Intermédiaire
+
+|Mots-clés 	
+|APIs Event-Driven Microservices contracts testing Tools
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	
+ 	
+

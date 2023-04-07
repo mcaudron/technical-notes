@@ -1,0 +1,30 @@
+===== Développer l'observabilité de son SI
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/PXR-9079/Developper_l'observabilite_de_son_SI
+
+|Type/format de présentation
+|Hands-on Lab, 3h, mercredi, jeud et vendredi
+
+|Track
+|Cloud, Containers et Infrastructure, DevOps
+
+|Niveau de la présentation
+|débutant
+
+|Mots-clés 	
+|Java Cloud Native Java Graal
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	
+ 	
+

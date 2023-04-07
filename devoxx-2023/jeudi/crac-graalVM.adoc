@@ -1,0 +1,30 @@
+===== CRAC vs GraalVM
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/XII-3585/CRAC_vs_GraalVM
+
+|Type/format de présentation
+|Conference, 45mn, jeudi et vendredi
+
+|Track
+|Java, JVM
+
+|Niveau de la présentation
+|Intermédiaire
+
+|Mots-clés 	
+|Java Cloud Native Java Graal
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	
+ 	
+

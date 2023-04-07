@@ -1,0 +1,29 @@
+===== Et si le digital permettait de mieux vivre et plus longtemps ?
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/HAH-6318/Et_si_le_digital_permettait_de_mieux_vivre_et_plus_longtemps_%3F
+
+|Type/format de présentation
+|Keynote, 20mn, jeudi et vendredi matin - ⛔️ Uniquement sur invitation.
+
+|Track
+|Big Data, Machine Learning, Analytics
+
+|Niveau de la présentation
+|débutant
+
+|Mots-clés 	
+|health Artificial Intelligence innovation
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	
+ 	

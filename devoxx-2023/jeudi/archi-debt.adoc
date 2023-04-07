@@ -1,0 +1,28 @@
+===== Gestion de la dette d'architecture dans un contexte d'hypercroissance
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/XQI-3023/Gestion_de_la_dette_d'architecture_dans_un_contexte_d'hypercroissance
+
+|Type/format de présentation
+|Conference, 45mn, jeudi et vendredi
+
+|Track
+|Architecture, Performance et Securité
+
+|Niveau de la présentation
+|Intermédiaire
+
+|Mots-clés 	
+|architecture debt feedback Management
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	

@@ -24,15 +24,15 @@ endif::[]
 :toc: macro
 :toclevels: 4
 // To number the sections of the table of contents
-//:sectnums:
+:sectnums:
 // Add an anchor with hyperlink before the section title
 :sectanchors:
 // To turn off figure caption labels and numbers
-:figure-caption!:
+//:figure-caption!:
 // Same for examples
 //:example-caption!:
 // To turn off ALL captions
-// :caption:
+:caption:
 
 toc::[]
 
@@ -46,14 +46,14 @@ include::talks.adoc[]
 
 === Types de tracks
 
-Voici les types de track pour les 3 jours
+Voici les types de track pour les 3 jours. En gras, ceux que j'ai privilégié. En italique, sujets intéressants aussi.
 
- * Cloud, Containers et Infrastructure, DevOps 
- * Java, JVM
+ * *Cloud, Containers et Infrastructure, DevOps*
+ * *Java, JVM*
  * Big Data, Machine Learning, Analytics
  * Langages
- * Architecture, Performance et Securité
- * People & Culture, Soft Skills, Future of work, Innovation, Side projects
+ * *Architecture, Performance et Securité*
+ * _People & Culture, Soft Skills, Future of work, Innovation, Side projects_
  * Web, JS, HTML5 et UX
 
 == Mon agenda
@@ -65,7 +65,9 @@ Voici les types de track pour les 3 jours
 include::mercredi/archi-git-ops.adoc[]
 include::mercredi/value-type.adoc[]
 
-==== ----- REPAS -----
+==== 12:30 - 13:30
+
+----- REPAS -----
 
 ==== 13:30 - 16:30
 
@@ -73,7 +75,9 @@ include::mercredi/hacker-application.adoc[]
 include::mercredi/kubernetes-beginner.adoc[]
 include::mercredi/sigstore.adoc[]
 
-==== ----- BREAK -----
+==== 16:30 - 17:00
+
+----- BREAK -----
 
 ==== 17:00 - 17:30
 
@@ -90,3 +94,86 @@ include::mercredi/spring-intern.adoc[]
 include::mercredi/jkube.adoc[]
 
 == Jeudi
+
+=== 9:00 - 9:20
+
+include::jeudi/digital-better-life.adoc[]
+
+=== 9:25 - 9:45
+
+include::jeudi/tech-help-planet.adoc[]
+
+=== 9:50 - 10:10
+
+include::jeudi/dod.adoc[]
+
+=== 10:15 - 10:45
+
+----- BREAK -----
+
+=== 10:45 - 11:30
+
+include::jeudi/crac-graalVM.adoc[]
+
+=== 10:45 - 14:15
+
+include::jeudi/observability-si.adoc[]
+include::jeudi/test-containers.adoc[]
+
+=== 12:30 - 13:30
+
+----- REPAS -----
+
+=== 13:00 - 13:15
+
+include::jeudi/all-architects.adoc[]
+
+=== 13:30 - 14:15
+
+include::jeudi/conway.adoc[]
+include::jeudi/dev-acceleration.adoc[]
+
+=== 14:30 - 15:15
+
+include::jeudi/java-19-20.adoc[]
+include::jeudi/dallas-happy-days.adoc[]
+
+=== 15:30 - 16:15
+
+include::jeudi/archi-debt.adoc[]
+include::jeudi/design-patterns-20.adoc[]
+
+=== 15:30 - 18:30
+
+include::jeudi/grafana-loki.adoc[]
+include::jeudi/prometheus.adoc[]
+
+=== 16:45 - 17:30
+
+include::jeudi/ukulele.adoc[]
+
+=== 17:45 - 18:15
+
+include::jeudi/post-mortem.adoc[]
+include::jeudi/spark.adoc[]
+
+=== 18:15 - 18:30
+
+----- SHORT BREAK -----
+
+=== 18:30 - 19:00
+
+include::jeudi/microcks.adoc[]
+include::jeudi/scratch.adoc[]
+
+=== 19:00 - 20:00
+
+----- MEET AND GREET -----
+
+=== 20:00 - 20:50
+
+include::jeudi/bof-jug.adoc[]
+
+=== 21:00 - 21:50
+
+include::jeudi/crafters.adoc[]

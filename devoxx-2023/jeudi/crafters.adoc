@@ -1,0 +1,30 @@
+===== BOF Paris Software Crafters Community
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/QLE-7839/BOF_Paris_Software_Crafters_Community
+
+|Type/format de présentation
+|Bird of a Feather, 1h, jeudi soir uniquement
+
+|Track
+|Architecture, Performance et Securité
+
+|Niveau de la présentation
+|débutant
+
+|Mots-clés 	
+|Craftsmanship TDD code quality Testing Legacy Code
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	
+ 	
+

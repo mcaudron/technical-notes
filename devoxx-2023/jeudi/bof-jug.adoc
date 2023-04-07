@@ -1,0 +1,30 @@
+===== BOF des JUG leaders
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/WER-5188/BOF_des_JUG_leaders
+
+|Type/format de présentation
+|Bird of a Feather, 1h, jeudi soir uniquement
+
+|Track
+|Java, JVM
+
+|Niveau de la présentation
+|débutant
+
+|Mots-clés 	
+|Java JUGs community
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	
+ 	
+

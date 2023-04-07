@@ -1,0 +1,28 @@
+===== Tous architectes !
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/AEY-9252/Tous_architectes_!
+
+|Type/format de présentation
+|Quickie, 15mn, jeudi et vendredi midi
+
+|Track
+|Architecture, Performance et Securité
+
+|Niveau de la présentation
+|débutant
+
+|Mots-clés 	
+|architecture organization best practices
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	
