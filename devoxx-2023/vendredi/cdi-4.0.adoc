@@ -1,0 +1,28 @@
+===== Quoi de neuf dans CDI 4.0 ?
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/XDB-8652/Quoi_de_neuf_dans_CDI_4.0_%3F
+
+|Type/format de présentation
+|Conference
+
+|Track
+|Java, JVM
+
+|Niveau de la présentation
+|Intermédiaire
+
+|Mots-clés 	
+|CDI MicroProfile Jakarta EE Quarkus Micronaut
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	
