@@ -1,0 +1,28 @@
+===== Programmation Concurrente et Asynchrone : Loom en Java 20 et 21
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/PBK-4469/Programmation_Concurrente_et_Asynchrone_:_Loom_en_Java_20_et_21
+
+|Type/format de présentation
+|Conference, 45mn, jeudi et vendredi
+
+|Track
+|Java, JVM
+
+|Niveau de la présentation
+|Intermédiaire
+
+|Mots-clés 	
+|Java 17 concurrency
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	

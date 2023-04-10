@@ -1,0 +1,28 @@
+===== Les tests de charge sans être à côté de la plaque
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/XRT-0183/Les_tests_de_charge_sans_etre_a_cote_de_la_plaque
+
+|Type/format de présentation
+|Conference
+
+|Track
+|Architecture, Performance et Securité
+
+|Niveau de la présentation
+|débutant
+
+|Mots-clés 	
+|load tests performance network
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	

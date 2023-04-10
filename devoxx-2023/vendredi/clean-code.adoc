@@ -1,0 +1,28 @@
+===== Clean as You Code your projects
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/OBI-1145/Clean_as_You_Code_your_projects
+
+|Type/format de présentation
+|Conference, 45mn, jeudi et vendredi
+
+|Track
+|Cloud, Containers et Infrastructure, DevOps
+
+|Niveau de la présentation
+|débutant
+
+|Mots-clés 	
+|developer productivity code quality Java CI/CD practices DevOps
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	

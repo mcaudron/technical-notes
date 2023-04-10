@@ -1,0 +1,30 @@
+===== Gérer des environnements de tests stateful et éphémère pour ses tests end-to-end
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/AMZ-0729/Gerer_des_environnements_de_tests_stateful_et_ephemere_pour_ses_tests_end-to-end
+
+|Type/format de présentation
+|Hands-on Lab, 3h, mercredi, jeud et vendredi
+
+|Track
+|Cloud, Containers et Infrastructure, DevOps
+
+|Niveau de la présentation
+|débutant
+
+|Mots-clés 	
+|Continuous Integration Cloud. End-to-end testing report
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	
+ 	
+

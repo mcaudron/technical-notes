@@ -1,0 +1,28 @@
+===== Éviter les biais dans la conception de logiciels
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/GIB-5595/Eviter_les_biais_dans_la_conception_de_logiciels
+
+|Type/format de présentation
+|Conference
+
+|Track
+|People & Culture, Soft Skills, Future of work, Innovation, Side projects
+
+|Niveau de la présentation
+|débutant
+
+|Mots-clés 	
+|Software diversity Artificial Intelligence
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	

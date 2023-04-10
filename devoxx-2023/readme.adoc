@@ -24,7 +24,7 @@ endif::[]
 :toc: macro
 :toclevels: 4
 // To number the sections of the table of contents
-:sectnums:
+// :sectnums:
 // Add an anchor with hyperlink before the section title
 :sectanchors:
 // To turn off figure caption labels and numbers
@@ -93,87 +93,142 @@ include::mercredi/spring-intern.adoc[]
 
 include::mercredi/jkube.adoc[]
 
-== Jeudi
+=== Jeudi
 
-=== 9:00 - 9:20
+==== 9:00 - 9:20
 
 include::jeudi/digital-better-life.adoc[]
 
-=== 9:25 - 9:45
+==== 9:25 - 9:45
 
 include::jeudi/tech-help-planet.adoc[]
 
-=== 9:50 - 10:10
+==== 9:50 - 10:10
 
 include::jeudi/dod.adoc[]
 
-=== 10:15 - 10:45
+==== 10:15 - 10:45
 
 ----- BREAK -----
 
-=== 10:45 - 11:30
+==== 10:45 - 11:30
 
 include::jeudi/crac-graalVM.adoc[]
 
-=== 10:45 - 14:15
+==== 10:45 - 14:15
 
 include::jeudi/observability-si.adoc[]
 include::jeudi/test-containers.adoc[]
 
-=== 12:30 - 13:30
+==== 12:30 - 13:30
 
 ----- REPAS -----
 
-=== 13:00 - 13:15
+==== 13:00 - 13:15
 
 include::jeudi/all-architects.adoc[]
 
-=== 13:30 - 14:15
+==== 13:30 - 14:15
 
 include::jeudi/conway.adoc[]
 include::jeudi/dev-acceleration.adoc[]
 
-=== 14:30 - 15:15
+==== 14:30 - 15:15
 
 include::jeudi/java-19-20.adoc[]
 include::jeudi/dallas-happy-days.adoc[]
 
-=== 15:30 - 16:15
+==== 15:30 - 16:15
 
 include::jeudi/archi-debt.adoc[]
 include::jeudi/design-patterns-20.adoc[]
 
-=== 15:30 - 18:30
+==== 15:30 - 18:30
 
 include::jeudi/grafana-loki.adoc[]
 include::jeudi/prometheus.adoc[]
 
-=== 16:45 - 17:30
+==== 16:45 - 17:30
 
 include::jeudi/ukulele.adoc[]
 
-=== 17:45 - 18:15
+==== 17:45 - 18:15
 
 include::jeudi/post-mortem.adoc[]
 include::jeudi/spark.adoc[]
 
-=== 18:15 - 18:30
+==== 18:15 - 18:30
 
 ----- SHORT BREAK -----
 
-=== 18:30 - 19:00
+==== 18:30 - 19:00
 
 include::jeudi/microcks.adoc[]
 include::jeudi/scratch.adoc[]
 
-=== 19:00 - 20:00
+==== 19:00 - 20:00
 
 ----- MEET AND GREET -----
 
-=== 20:00 - 20:50
+==== 20:00 - 20:50
 
 include::jeudi/bof-jug.adoc[]
 
-=== 21:00 - 21:50
+==== 21:00 - 21:50
 
 include::jeudi/crafters.adoc[]
+
+=== Vendredi
+
+==== 9:00 - 9:20
+
+include::vendredi/be-optimistic.adoc[]
+
+==== 9:50 - 10:10
+
+include::vendredi/break-ice-ceiling.adoc[]
+
+==== 10:45 - 11:30
+
+include::vendredi/clean-code.adoc[]
+include::vendredi/loom-jdk-19-20.adoc[]
+
+==== 10:45 - 14:15
+
+include::vendredi/tests-end-to-end.adoc[]
+include::vendredi/tddd.adoc[]
+
+==== 11:45 - 12:30
+
+include::vendredi/archi-biaisee.adoc[]
+include::vendredi/foundationDB.adoc[]
+
+==== 12:30 - 13:30
+
+----- REPAS -----
+
+==== 13:30 - 14:15
+
+include::vendredi/docker-devSecOps.adoc[]
+include::vendredi/charge-tests.adoc[]
+
+==== 14:30 - 15:15
+
+include::vendredi/quarkus.adoc[]
+
+==== 15:30 - 16:15
+
+include::vendredi/batch-ddd.adoc[]
+
+==== 16:15 - 16:45
+
+----- BREAK -----
+
+==== 16:45 - 17:30
+
+include::vendredi/cdi-4.0.adoc[]
+include::vendredi/retex-terraform.adoc[]
+
+==== 17:45 - 18:30
+
+include::vendredi/castcodeurs.adoc[]

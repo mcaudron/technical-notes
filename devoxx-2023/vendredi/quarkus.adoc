@@ -1,0 +1,28 @@
+===== 1, 2, 3 Quarkus!
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|https://cfp.devoxx.fr/2023/talk/TNW-6010/1,_2,_3_Quarkus!
+
+|Type/format de présentation
+|Conference
+
+|Track
+|Java, JVM
+
+|Niveau de la présentation
+|débutant
+
+|Mots-clés 	
+|Quarkus Cloud Native Java Kubernetes DevOps
+
+|===
+
+====== Speaker
+
+====== Notes
+ 	
