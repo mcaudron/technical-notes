@@ -24,6 +24,65 @@
 
 ====== Speaker
 
+Cyril Tovena, Grafana projet Pyroscope
+
 ====== Notes
- 	
+
+======= Pourquoi ?
+
+3 pbms récurrents
+* Technos d'aggrégation difficiles
+* Coûteux : équipe dédiée, gourmande en ressource
+* Sans corrélation : navigation impossible entre les métriques, les traces et les logs
+
+Volontée d'une solution intégrée (gestion de timezone) + intégrée au cloud (grafana, prometheus, k8s)
+
+Déboguer applis (DevOPS)
+
+SREs : visualiser et alerter sur le statut des applis
+
+======= Projet Loki
+
+Aggrégation de journaux
+
+Corrélation rapide avec les métriques
+
+Stockage durable via object store
+
+Histoire : lancé y'a 5 ans. 740 contributeurs en tout mais 30 journaliers.
+
+======= Comment ?
+
+Vue générale : cf. photo
+
+Il utilise obligatoirement de l'object storage. Il peut utiliser du disque mais moins performant.
+
+Loki n'indexe pas le contenu des logs. Les entrées sont regroupées en flux et indexées avec des labels.
+
+Difficile d'aller "au bout" de Loki.
+
+Filtrage des logs : démarche différente, on réduit la timeframe puis un cluster k8s (ou une app, namespace) et enfin un scan classique (1GB/core/sec). Scalable linéaire.
+
+Installation
+* un seul binaire
+** tests en local
+** si pas de H Scale
+* SSD (Simple Scalable Dep) ou µS (via helm)
+** H scale
+** 2 types de pods (R/O ou R/W)
+** large installations
+* Grafana cloud => la machine de guerre si on veut pas s'embêter.
+
+======= Démo
+
+LogQL inspiré par PromQL
+Les logs sont parsés au moment de la requête. Perfs un peu moindre mais toujours à jour.
+
+Exemple de requête : label + '|' comme logfmt pour le niveau de log
+
+Bascule facile entre calcul de métrique + calcul de logs ! Utilisation de loki possible dans les dashboard grafana
+
+======= Conclusion
+
+Quels sont les avantages de Loki ? "chatgpt" :)
  	

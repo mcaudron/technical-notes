@@ -79,12 +79,10 @@ include::mercredi/kubernetes-beginner.adoc[]
 ==== 17:00 - 17:30
 
 include::mercredi/loki.adoc[]
-include::mercredi/nix.adoc[]
 
 ==== 17:45 - 18:15
 
 include::mercredi/dagger.adoc[]
-include::mercredi/spring-intern.adoc[]
 
 ==== 18:30 - 19:00
 
