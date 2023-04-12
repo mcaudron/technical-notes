@@ -24,6 +24,238 @@
 
 ====== Speaker
 
+Aurélien Moreau (Head of Infrastructure) => l'OPS, Loïc Ortola (CTO Takima), le DEV
+
 ====== Notes
  	
- 	
+Programme : infra complète en GitOps
+
+Front, API, BDD (PGSQL) scalée + backup BDD
+
+Cluster staging, prod et tech (observabilité), prometheus + ELK
+
+Kubernetes, application 3-tiers
+
+======= Crash-course
+
+======== IaC
+
+* Provisionning, il faut des serveurs => non :). On utilise des cloud providers (niveau hardware)
+* Configuration management : installer un OS, socle technique
+* Orchestration d'application : on est dans le run, faire tourner les applis => déployer l'appli, cycle de vie etc...
+
+Provisionning : terraform
+Confg management : Ansible
+Orchestration : kubernetes (Helm)
+
+======== GitOps
+
+L'infra va évoluer, on doit versionner le code de l'infra
+
+======== De Docker à K8S
+
+Avant : java => war, copier/coller sur le serveur + runtime, conf etc... Runtime maîtrisé par les DEVs mais en place par les OPS.
+Après : docker permet d'embarquer le runtime => le DEV maîtrise son runtime, l'OPS se concentre sur le run. Artifact = JAR + Runtime
+
+Docker compose : ensemble de containers (api, db, www). Bien mais ça suffit pas. Load-Balancing, replica sur des serveurs différents (cluster), gestion des pannes => Besoin d'un chef d'orchestre => K8S
+
+Standard artefact : image docker (jar + runtime). Les DEVs sont responsables du code + runtime.
+
+Flotte de containers, besoin d'un orchestrateur
+
+======== K8S
+
+CNCF Cloud ... Fondation
+
+Archi : master nodes + control plane, worker node
+
+Kube API : en REST/JSON, single door. On utilise kubectl : client cli pour interagir avec kube-api.
+
+Dans K8S, tout est ressource. On les déclare avec YAML => décrit l'état attendu de l'infra. Programmation déclarative (on décrit l'état souhaité)
+
+ressource de base : pod => container atomique d'une appli dans une version particulière.
+
+ReplicaSet : dit combien on veut de réplicas, consigne. On dit par exemple, 3 replica de l'API.
+
+Deployment : super ressource pour gérer les images successives de l'appli. Il embarque les replica et les pods.
+
+Pour le paramétrage : configMaps et secrets (fichiers de conf ou variables d'env). Clair et chiffrés mais gérés différemment donc possibilté de chiffrer.
+
+Le service : load balancer interne pour accéder aux pods, quels ports j'expose (port-forwarding). Uniquement en interne
+
+Publication sur internet : ingress, implémentation d'un reverse proxy. Il a besoin d'outils pour fonctionner : s'il a besoin de TLS.
+
+Namespace : regroupement sémantique, isolation des ressources dans un namespace (comme le nom de projet). ~dossier
+
+======= Episode 1 : déployer une infra
+
+On doit avoir un cluster K8S.
+
+Sécurisée EKS : K8S as a service managé. Proposé par AWS. K8S sera le standard pour orchestrer les containers.
+Mutualisation du control pane
+Cycle de vie géré
+...
+
+Standardisation Terraform : automation d'infra, facilitant la gestion.
+Langage déclaratif : HCL
+Fonctionne par modules
+Fonctionne par état
+
+Automatisation : gitlab CI/CD
+Pipelin etc...
+
+Architecture Repo gitlab vers cloud AWS
+
+--- 
+Terraform, on décrit les ressouces, module = ensemble de fichiers TF. instance = serveur. On peut variabiliser via variable.
+On peut utiliser via tfvars, var d'env, arguments via ligne de commande.
+
+On ne connaît pas l'IP publique fournie par AWS. On peut faire du variable output pour infos utiles en sortie dans le tfstate.
+
+Pour pas que ce soit le bazar => modules. Un module EKS = 49 ressources K8S. Variables en input et output. Mot-clé module. Ces variables peuvent être passées entre modules.
+
+Sur cloud privé, terraform est compatible.
+
+Lifecycle
+
+init, plan, apply (deploy + nouveau tfstate), destroy
+
+---
+
+LifeCoding
+
+ressource ami (voir sur le fournisseur de cloudb), instance-type. provider.tf, main.tf (ressources à déployer), variables.tf, output.tf. Dans le tfstate, toutes les infos sont présentes sur notre infra.
+
+Modules : 1-Compute : K8S, 2-network : VPC.
+
+Outputs du projet : publication vers une autre infra.
+
+ça y est on a un cluster tout neuf avec K8S
+
+
+Terratest pour tester de l'infra end2end
+---
+
+======= Episode 2 : config management
+
+Pour configurer la PTF. Control Node avec Ansible + ses modules.
+
+Où je dois déployer ma config : inventaire. web_servers, api_servers. On va juste communiquer en local avec l'API KUBE (kube-api).
+
+Quoi ? Playbook configure cluster. Procédure d'installation technique (~tuto)
+
+Comment j'organise un PB ? rôle ~chapitres/étape puis tasks. Une tâche : du yaml. On décrit le module ansible attendu et le state. J'exécute Ansible sur mon control node.
+
+---- Teasing : si on câble un outil de CD (ArgoCD ici), modification du code source, synchronisé, mise à jour auto du cluster !
+
+Il faut configurer le cluster. Pour faire fonctionner les ingress (Ingress controller, Cert Manager). Il faut le sécuriser aussi, identifiants pour registry d'images.
+
+Installation de trucs externes. Sous linux, apk etc... Pour K8S, c'est helm. Ex : helm repo add, update. Ansible a déjà plein de trucs dispos avec K8S. Point d'entrée : kube-api + secret. Fichier tfstate dans bucket s3 + kubeconfig (qui contient les secrets). C'est lui qui joue le playbook pour déployer etc...
+
+Côté terraform : template yaml utilisé par Ansible.
+
+ArtifactHub.io : packages HELM (~dockerHub). Cert-manager.io aussi.
+
+Point sur les repos
+* takione-infra
+* Pipeline : plan (tf), provision-infra (tf), configure-cluster (ansible), destroy. Le tfstate sert de passerelle entre tout ça.
+
+On a un cluster prêt à l'emploi et sécurisé : ingress-controller, cert-manager, ext-secrets, kube-dashboard + un DNS qui pointe vers notre cluster. 
+
+Ansible n'a pas cette notion de tfstate, terraform n'a pas de tâche.
+
+======= Episode 3
+
+Objectif : déployer appli Hello
+
+* hello.deployment.yaml
+* service
+* ingress
+
+Idem pour API
+
+On crée un nouveau dépôt takione-apps (takima-school pour info)
+
+La différence avec une DB, on ne peut pas détruire les pods comme ça.
+
+Pour la DB, on va avoir besoin de persistance. On va avoir besoin de nouvelles ressources dans K8S. On veut une BDD production ready
+* repliquée scalable
+* fallback auto
+* WAL logs centralisés
+* Backup auto
+* Possibilité de restore et de clone
+
+Amazon-RDS pourrait remplir ça. Mais vendor-locké, ça coûte cher...
+
+Il y a une ressource pour créer une nouvelle ressource dans K8S => operator. Il s'appuie sur le CRDs (étendre les ressources) et un controller (pour interpréter ça). On va ajouter un comportement à K8S : PGSQL. Cela permet de créer des cluster PGSQL. Il gère les replicas, montées de version, backup, point-in-time-recovery. On ajoute un DB-as-a-service gratuit !.
+=> on crée un nouveau rôle Ansible pour créer ça !
+Pour le bucket S3 : on fait évoluer le code terraform.
+
+En environnement de prod, ajout de sonde (probe), mémoire max, etc...
+
+Point repo
+* takione-apps
+* takione-infra
+
+On est agnostique du cloud provider !
+
+Dans le cluster, on a rajouté :
+* PG operator
+* Takione-app (www, api, db)
+
+---
+======== Episode 4 multiples environments
+
+Impacts sur infra, config, orchestration
+
+Ajout d'un backend sur l'infra : staging et prod
+
+COnfig : cluster_staging et cluster_prod
+
+Sur appli : on change les www en fonction du staging et prod
+
+Pour faire ça, on va utiliser un moteur de templating : helm (package manager + templating engine)
+Chart helm
+* descripteur de package (gradle)
+* values
+* template
+
+=> les ressources sont templatées ! Un fichier values par environnement !
+
+Côté pipeline pour staging et prod, on refait plan, provisionning, config etc... On a tfstate pour chaque env.
+
+======== Episode 5 cluster technique 
+
+Où placer l'observabilité ? Centralisation des logs ?
+
+Cluster de prod transverse (au-dessus, uniquement des clusters business). On rajoute un tech.tfvars.
+
+Ansible : nouveau playbook avec nouveaux roles. Dédiés apps, tech et commun. Par ex : DB spécifique apps, rancher commun.
+
+Live demo : Rancher (dashboard centralisé), ELK, Prometheus
+
+Rancher administre les environnements. Centralise. Pas comme la page K8S où il faut une page par environnement. Le dashboarding centralisé permet de donner des droits, d'adminsitrer.
+
+Pour le monitoring, on utilise Grafana, cela permet de voir comment va mon infra. Le cluster technique, c'est le cluster local.
+
+Pour stocker les logs, on a utilisé un elastic operator pour stocker les logs dans une stack elastic. On aurait pu utiliser un Kibana.
+
+"Il y a d'autres moyens de maîtriser que de tout faire à la main".
+
+Elastic centralise tous les logs de nos environnements.
+
+======== Episode 6 plus loin dans gitops
+
+Git devenu source de vérité.
+Argo CD : compare l'état du chantier avec les plans. S'assure la corr entre les spéc de l'infra et l'état. Cela va vivre dans le cluster technique.
+
+Il y a un gitlab-ci.yml pour configurer la pipeline.
+
+===== Conclusion
+
+K8S : accessible mais ne pas négliger l'apprentissage.
+
+Vraie question d'administration.
+
+https://taki.li/gitops-e2e
+
