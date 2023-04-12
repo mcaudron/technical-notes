@@ -70,9 +70,7 @@ include::mercredi/archi-git-ops.adoc[]
 
 ==== 13:30 - 16:30
 
-include::mercredi/hacker-application.adoc[]
 include::mercredi/kubernetes-beginner.adoc[]
-include::mercredi/sigstore.adoc[]
 
 ==== 16:30 - 17:00
 

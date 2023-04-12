@@ -65,7 +65,7 @@ Flotte de containers, besoin d'un orchestrateur
 
 ======== K8S
 
-CNCF Cloud ... Fondation
+CNCF Cloud .Native Computing Fondation
 
 Archi : master nodes + control plane, worker node
 

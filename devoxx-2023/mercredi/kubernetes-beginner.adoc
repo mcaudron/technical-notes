@@ -21,4 +21,140 @@
 
 ====== Speaker
 
+Sébastien Blanc (Aiven), Horacio Gonzales (OVH Cloud), Sun Tan (RedHat)
+
 ====== Notes
+
+======= Intro
+
+--- Pourquoi K8S ?
+
+Reverse proxy, TomCat, MySQL
+Environnement prod, preProd, DEV dupliqués physiquement
+Déploiement manuel sous FTP etc...
+Problème de scaling
+Developper environment (debug en prod...)
+On peut utiliser des containers sans K8S
+
+--- Containers
+
+Merge traditional dep (applis JAVA) vs applis sur VM (hyperviseur) => Container runtime
+Outils : docker et podman
+Run existing container : container registry (dockerhub ou quay.io).
+docker run -p 8080:80
+Inside container : exécuter commande dans un container. docker ps. docker exec [container-id] pwd ou /bin/sh pour lancer un bash dans le container.
+Les containers sont isolés entre eux.
+Créer sa propre image : créer un docker file. Exemple : from (JRE) + copy (le war). On build + docker build
+$ docker build -f dockerFile -t myName .
+=> image
+On va pousser cette image dans une registry pour stocker cette image (quay.io par exemple ou en local).
+Docker application
+* Source code : dockerFile
+* Build using docker
+* push/pull container registry
+* run anywhere on container runtime
+
+java application
+* source code
+* build using maven or gradle
+* push/pull to artifactory
+* Run anywhere on host that support JVM
+
+--- Limitations des containers
+Si bcp de containers, on va avoir des limitations en ressource => machine supplémentaire :blurp:S
+Exemple : container wordpress qui va attaquer une base MariaDB qui se base sur un volume.
+Comment bien administrer : K8S (à la base un projet interne Google, Bold), stagiaire virtuel pour monitorer vos containers
+* Deployment
+* Scaling
+* Monitoring
+* Repairing
+* Securing
+
+--- K8S
+Cluster : more details (voir photo)
+
+A gauche, les control plane
+A droite, les nodes. Les applications business sont dans des pods. Pourquoi ? Pour bien isoler les containers entre eux notamment pour les aspects sécu. Un pod peut contenir plusieurs containers. Par exemple : un container applicatif vs un container sécurisation. Cela permet de ne pas modifier le container business (c'est un side car).
+
+IaC : declarative infra, high-level description.
+
+Desired state management (cf. photo)
+
+
+Les pods, métier. Le deployment est l'usine à pods. Les services sont les points d'entrée dans le cluster (via les ports). Les ingress sont les reverses proxy pour être accessibles depuis l'extérieur (point d'entrée unique). La load balancer est derrière une IP publique.
+
+--- What is K8S ?
+Sur un K8S cluster, on dit l'image et le nombre de replica. Paf : il déploie sur les node dispo.
+Si un pod plante, il redéploie le pod ailleurs (via le scheduler). Si un Node tombe, idem...
+
+======= 1-Dive into
+
+Jouons avec kubectl
+
+Tout passe par l'API Kubernetes.
+
+kubectl show-info
+kubectl get node
+kubectl create namespace
+
+Monitor events dans un namespace
+On crée un déploiement avec une image. On peut monitorer les events du POD. Et bien sûr, on peut lancer une commande dans le pod.
+Ensuite on expose le déploiement avec un LoadBalancer.
+Dans les replicas, K8S va créer des endpoints avec une adresse IP différente. Le load balancer va répartir la charge sur les 3 @IP.
+On peut changer l'image (changement de version par exemple).
+
+--- YAML
+
+K8S : BDD de fichiers yaml :)
+* CRUD, structured and typed objects => ressoruces
+* les ressources vivent dans des namespaces
+
+Comment créer une ressource ?
+Kind, type
+Metadata, attributs
+spec : contenu de la ressource
+
+Controllers : écoute les changements sur les ressources. S'assure que la ressource est conforme à la spec.
+
+Par défaut, plein de ressources et de controllers disponibles.
+Kind : Pod très utilisé.
+Kind : service : il crée les endpoints sur lequel on peut se connecter (les ports).
+Kind : Ingress pour adresse ip publique.
+
+Minikube : outil local à la machine.
+
+======= Being a good cloud
+
+--- Requests and limits
+
+Il faut définir les ressources pour être un bon citoyen du cloud.
+* Requests : how many resources it needs
+* Limits : how many resources it can use (pour limiter les fuites mémoire)
+
+Si l'application arrive à la limite de la CPU : on bride le POD. Pour la mémoire, on tue le POD.
+On peut définir ces limites/requests au niveau du namespace ou cluster. Les limites ranges sont intéressantes aussi pour définir un cadre pour tous les POD.
+
+--- Health probes
+
+Il faut que le container puisse dire au cluster : "je suis prêt". On ajoute alors une balise readinessProbe dans le deployment.
+Le container peut dire : je tourne, pas de problème. Mais le POD peut être en PLS sur le container a une fuite mémoire => on ajoute un livenessProbe.
+
+--- Config Map
+
+C'est une ressource k8s (comme tout est ressource :)). On peut paramétrer les choses via variables d'environnement aussi si jamais on ne veut pas que ça apparaisse dans le dockerFile. On peut créer une config map à partir des variables d'environnement. Dans le yaml, on peut dire à l'image quelle config map on utilise.
+
+--- Secrets
+
+Stockés dans etcd. Injectés dans le déploiement comme des volumes ou comme variable d'environnement. Encodé en base 64... Il faut le câbler avec un Vault. Façon de stocker des informations.
+
+======= Advanced K8S
+
+--- Storage
+
+Local storage in pods and nodes, bad idea. Pas permanents. Eviter de stocker des données dans k8s. Utiliser un PVC (Persistent volume claim) qui pointe vers un PV (persistent volume).
+
+{warning-caption} chaque cloud provider va gérer le PVC différemment.
+Le PVC attache le PV avec un autre POD.
+
+--- JKube
+Voir la conf prévue à cet effet...
