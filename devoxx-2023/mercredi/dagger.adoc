@@ -24,6 +24,52 @@
 
 ====== Speaker
 
+Laurent Grondin, Ingéniance (ESN Paris), chaîne youtube inpulse TV
+
 ====== Notes
+
+Disparité d'env
+* IC
+* Local
+
+Nième commit de fix...
+
+Possibilité de Act mais dépendance avec cette PTF
+
+Complexité
+* Ecriture en yml
+* scripts bash
+* Plugins (Actions de GitHub action)
+
+======= Containers à la rescousse
+
+Dagger fondé par le créateur de Docker
+
+Portable et langage différent de bash
+
+Utilisation de Buildkit pour l'IC. Interface peu user friendly.
+
+=> Dagger engine. On lui donne tout un tas de choses (instructions, répertoires...)
+
+Graphe orienté acyclique
+
+======= Comment utiliser Dagger
+
+API GraphQL. Avantage : très grande profondeur. Client HTTP graphQL disponibles dans plein de langages.
+
+Dagger SDK (Go, Python et NodeJS)
+
+======= Démo
+
+Dagger API Playground
+
+Avec Dagger tout s'exécute dans des containers.
+Les champs et les types GraphQL deviennent des attributs et des méthodes dans le SDK.
+Exécution dans des containers.
+On peut lui demander de // des builds.
+
+Possibilité de rajouter un service tiers comme une DB.
+
+On peut mettre des variables d'env dans un container comme les secrets (via Vault ou variables d'env)
  	
  	
