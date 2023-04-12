@@ -63,7 +63,6 @@ Voici les types de track pour les 3 jours. En gras, ceux que j'ai privilégié. 
 ==== 9:30 - 12:30
 
 include::mercredi/archi-git-ops.adoc[]
-include::mercredi/value-type.adoc[]
 
 ==== 12:30 - 13:30
 
