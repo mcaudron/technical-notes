@@ -24,6 +24,50 @@
 
 ====== Speaker
 
+Sun Tan, RedHat, Senior Sw Developper
+Projets : eclipse JKube, Fabric8 k8s client
+Paris JUG
+
 ====== Notes
+
+A partir des environnements de prod, docker-compose.yml.
+
+Pbms avec docker-compose :
+* local machine pas adpatée pour héberger tous les µS.
+* Hébergement de données sensibles
+* Encore un autre fichier à maintenir décorellé de ce qu'il y a en prod
+
+De + en + de µS
+
+--- Java to k8s cf. photo (solution avant)
+
+Solution simplifiée : JKube
+
+--- C'est quoi ?
+
+plugins maven, gradle.
+Il analyse le projet et va générer ce qu'il faut pour k8s. Image par défaut et ressources par défaut.
+
+Aparte : openshift = surcouche k8s (ressource de k8s)
+
+jkube-website-quickstarts.com ?
+
+On peut faire de l'ingress et gérer les replicas facilement (via propriétés gradle ou maven)
+
+
+
+github.com/redhat-developer-demos/northwind-traders
+
+--- Démo cf. photo
+
+Modification du java. Pour déployer :
+* mvn package resources (1min20 pour un projet simple)
+* On va plutôt faire : oc:remote-dev ou k8s:remote-dev (cf. photo). C'est comme si je mettais mon laptop dans le cluster (téléportation) !
+
+Cela veut dire que le µS est celui qui tourne sur ma machine.
+
+Attention quand même : un peu de config à faire.
+
+
  	
  	
