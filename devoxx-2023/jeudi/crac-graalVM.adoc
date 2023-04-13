@@ -24,7 +24,64 @@
 
 ====== Speaker
 
+Lilian Benoit, github lbenoit
+
 ====== Notes
  	
- 	
+--- Changement de paradigme
+* Usage de µS : démarrage/arrêt rapide.
+* Diminution de serveurs
+* Approche serverless. Essayer de ne pas être dépendant d'un serveur pour éviter de trop payer.
+
+--- Fonctionnement de la JVM
+* Bytecode interprété
+* Code "préchauffe". Elle améliore le code interprété.
+* Compilateur C1 et C2 du JIT. Si elle passe souvent, elle compile en natif.
+* Optimisation avec profilage
+
+--- Usage de JAVA
+* Langage dynamique : chargement et chargeur de classes, ça prend du temps.
+* Prise en compte des annotations comme @Entity. Mais au démarrage de la JVM, il faut rechercher ces types d'ojets...
+* Initialisation des blocs statiques. Comme c'est fait au lancement, ça prend du temps aussi...
+* Init du contexte applicatif (CDI ou Spring).
+
+--- GraalVM
+
+Vient d'Oracle. Compilateur Graal d'openJdk. Donne native image
+* Compilateur AOT (en avance de phase)
+* Compilation complète en phase de construction.
+
+--- Photo input/output de la JVM.
+
+--- Demos
+Ajout d'un profile native. 5min48 pour construire un Hello :'(
+
+L'application doit implémenter une classe Resource du framework CRaC.
+Au moment du checkpoint, la JVM s'est arrêtée. Pourquoi ?? C'est comme ça :(
+Etre en root pour faire la restauration.
+
+Dans le monde réel, applicatin web. Comment on interragit avec la BDD au moment du checkpoint ? Idem pour les serveurs => à arrêter au moment du checkpoint, à redémarrer au moment du restore.
+
+Exemple springboot : utiliser le tomcat de la JVM crac pour springboot.
+
+--- Contraintes de GraalVM
+* Réflexion et dynamiques. Tout doit être connu au moment de la compilation. Pas de sérialisation possible avec GraalVM.
+* Utilisation Substrate VM.
+* Serial GC. Le moins performant...
+* Optimisations à chaud (Version entreprise). En native, optimisation statique car le JIT ne peut rien faire. Avec cette version, on peut faire ce que le JIT.
+* G1 faible latence (entreprise). Un GC puissant !
+
+
+--- CRaC Coordinated Restore At Checkpoint
+But : on va avoir des checkpoints et des restore.
+Projet OpenJDK ! Comme le projet Loom qui est dans le JDK, on pourrait penser qu'il pourrait y être.
+
+--- Checkpoint
+La JVM c'est pas mal :). Attention : en débug sur du natif, c'est du C ! On voudrait rester en JAVA pour débugger, avoir les métriques etc... La JVM, elle doit chauffer. Mais dès que c'est chaud, c'est top :). On fait une image, un checkpoint, pendant le run avec l'état etc.
+Utilisation d'un jdk 17 CRaC. Au lancement, options à rajouter pour stocker le checkpoint.
+Pour demander un checkpoint : jcmd avec JDK.checkpoint
+
+--- Restore
+Au lancement, paramétrer la JVM pour que le checkpoint soit restauré.
+
 

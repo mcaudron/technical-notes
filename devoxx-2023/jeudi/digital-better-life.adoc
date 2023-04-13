@@ -9,7 +9,7 @@
 |https://cfp.devoxx.fr/2023/talk/HAH-6318/Et_si_le_digital_permettait_de_mieux_vivre_et_plus_longtemps_%3F
 
 |Type/format de présentation
-|Keynote, 20mn, jeudi et vendredi matin - ⛔️ Uniquement sur invitation.
+|Keynote
 
 |Track
 |Big Data, Machine Learning, Analytics
@@ -24,6 +24,38 @@
 
 ====== Speaker
 
+Céline Lazorthes, entrepreneure, imaginatrice de services qui n'existent pas. Fondatrice de Lychee et Résilience
+
 ====== Notes
- 	
+
+Objectif : comment les développeurs peuvent améliorer notre vie
+
+40% des gens seront touchés par le cancer
+
+Causes
+* Vieillissement
+* Détection automatique
+* Evolution de notre mode de vie (addictions, ...)
+
+En 2040 : 40M de nouveaux cas dans le monde
+
+Il y a 65k oncologues dans le monde, 2500 en Fr => les pros de santé ont très peu de temps pour choisir le traitement. Environ 2 min pendant les réunions RCP pour choisir le traitement. 70% des pros de santé associés sont considérés en burnout !
+
+Bonne nouvelle : les développeurs peuvent apporter leur pierre en participant à des projets de santé. #ProtegeTonSoignant. AirTable pour les sondages et WhatsApp pour la com'. Outils utilisés pendant le covid :
+* Cagnotte Lychee
+* Sondage AirTable
+* WhatsApp
+
+Resilience : télésurveillance médicale. Tous les jours : remontée d'infos médicales. Traitement des données puis alerte si besoin.
+
+3000 patients suivis. Entreprise de 100 personnes. Plein de choses encore à inventer. Univers de la HealthTech pour changer le système de santé.
+
+Médecine personnalisée
+* Prise en charge. 1,5G de RDV par an en France. 1/3 qui pourrait être évités, 1/3 optimisé, 
+* Détection précoce. Ex : MIT a publié un papier avec une IA qui pourrait détecter 7 ans avant un cancer du poumon.
+* Amélioration des traitements. Ex : on a du mal à voir quel médicament est vraiment efficace. Topasium : analyse des données de BradControl.
+
+Aujourd'hui on soigne les h/f, il faut donner un médicament à une caractéristique de patient => un médicament pour un patient et non pas un médicament pour une flotte de patients.
+
+
  	

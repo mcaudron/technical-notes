@@ -1,0 +1,182 @@
+===== Bien choisir sa base de données
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|todo
+
+|Type/format de présentation
+|Conference, 45mn
+
+|Track
+|Architecture, Performance et Securité
+
+|Niveau de la présentation
+|Intermédiaire
+
+|Mots-clés 	
+|todo
+
+|===
+
+====== Speaker
+
+Sébastien Keller et ??
+
+====== Notes
+
+Pbm de base : on choisit les BDD sans trop se poser de question en général relationnelle.
+
+--- Les DBs relationnelles
+Relations entre les tables. Filtre, tri. Principes ACID, formes normales, ORM. PGSQL en ref.
+
+--- Les DBs documents
+Documents (objets JSON) et collections. Dénormalisation : les champs département dans employee par exemple. MongoDB
+
+Cas d'usage : acheter un patalon. => DB search. Index et documents. Préparer la donnée, fuzzy search (tolérance aux fautes). ElasticSearch.
+
+BD graph, timeseries. Colonnes (cassandra), search etc... Y'en a trop !
+
+--- Axes de décision
+
+Structure
+* Type de requêtes
+** recherche par identifiant. Clé primaire/étrangère (relationnel), clé de partition (colonne), namespace
+** Recherche par champ secondaire. Si écriture par index, perte de temps mais lecture rapide. Cf. photo
+** Recherche partielle : token, full text. Cf. photo
+** Recherche par score. Search bien !
+
+
+Comprendre son besoin
+* Tableau recap : cf.photo
+* Transaction ACID ou longue,  Niveau d'isolation. Mongo est le bon compromis mais relationnel au top.
+
+Insertion et modification
+
+Expiration et suppression
+* Time to leave
+* Rotations de partition
+
+Coûts de suppression
+* Perfs
+* Espace disque
+
+{warning-caption} RGPD : on ne peut plus garder les données indéfiniment.
+
+Recréer la table plutôt que la supprimer.
+
+--- Schéma
+Schéma fixe : relationnel
+Flexible : key/value, document, search
+Selon implémentation : colonne
+
+Structure
+* sparse data : données optimisées pour avoir des valeurs nulles. Relationnel pas prévu.
+* Données imbriquées
+* Entités avec liens : graphe ou relationnel.
+
+Unicité : preque tout le monde.
+Types fréquents supportés
+
+
+--- Evol
+Faire évoluer mon schéma. Relationnel, doc, graphe ok.
+Modifications en masse. Idem
+
+--- Performance
+Mécaniques de base
+* Caches
+* Query fréquentes
+* Nouvelles requêtes
+
+Latence
+* Très faible : colonne, key/value
+* Faible : les autres (requêtes simples)
+* Fortes : (requêtes complexes)
+* Très fortes : big data
+
+Volume de données
+Faible < 1Go => memory
+Forte < 100Go => toutes
+Colossal => big data
+
+--- Dispo et scalabilité
+Dispo : si crash, autre instance
+Scalabilité : si trop d'users, on augmente le nombre d'instance
+
+Repliquer les données
+distribution mondiale ?
+Tout copier
+=> DB partitionnée en horizontal ou en vertical. Relationnel pas trop mal
+
+Dispo
+* Modèles de clustering : standby replica warm (replique si master tombe), hot (réplique à la volée). Avec les partitions, on duplique qu'une partie des données (les partitions). Peut-on faire sans principal ? Exemple Cassandra. ALL + ONE, Quorum.
+* BDD managées : Amazon RDS, Cloud SQL, Azure SQL. Services managés : Aurora, etc
+
+--- Opérations
+
+Maintenance - recovery
+* Jobs de clean-up
+* Mises à jour
+* Backups
+
+Hébergement
+* Où ? Le salon, cloud...
+* Gestion ?
+* Emplacement de données : latence, compliance
+
+--- En bref
+
+Relationnel
+* Adoption support
+* Transactions
+* Jointures
+* Intégration;
+Nogo : pas de relations, si pas de contraintes de schéma, écritures ++. Sinon BDD distribuée
+
+Documents
+* vélocité
+* flecibilité
+* si pas de données relationn
+Nogo : pas de transactions, écritures ++, structure fixe
+
+Colonnes
+* Perfs
+* Distribuer la données
+* Cohérence
+Nogo : pas de transactions, ...
+
+DB Search
+* Recherche textuelle
+* Distri données
+* Scaler H
+* Schéma flex
+Nogo : pas de relationnel, pas de transactions, si pas de search...
+
+Graph
+* Données fortements liées, transactions, flex, filtres, tri, graphes
+Nogo : si structure pas adaptée, pas de SQL
+
+Timeseries
+* Données timestampée
+Nogo : pas de transactions
+
+Big data
+* Volumétrie, jointures, requetes transactions, cloud, structure object
+Nogo : volume faible, latences, contraintes schéma
+
+--- Quelques conseils
+
+Utiliser les BD existantes dans le SI.
+Généraliste vs spécifique
+Projetez dans la base optimale (en fonction du besoin).
+Tester les perfs !
+
+Dimensionnement
+
+
+{tip-caption} choisir c'est renoncer.
+ 	

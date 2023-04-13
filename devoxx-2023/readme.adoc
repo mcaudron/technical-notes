@@ -112,8 +112,7 @@ include::jeudi/crac-graalVM.adoc[]
 
 ==== 10:45 - 14:15
 
-include::jeudi/observability-si.adoc[]
-include::jeudi/test-containers.adoc[]
+include::jeudi/good-choice-of-db.adoc[]
 
 ==== 12:30 - 13:30
 

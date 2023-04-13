@@ -24,5 +24,40 @@
 
 ====== Speaker
 
+Le Bon coin, y'a 10 ans 0-30 personnes
+
 ====== Notes
- 	
+
+On doit tous se considérer comme architecte.
+
+Ajouter photo
+
+0-30 personnes : 2-3 semaines pour être autonome, archi affaire de tous, complexité faible (serveur d'appli), problématique : choix du café
+30-150 : complexité accrue (app mobile, bcp sur le monolithe), synchro formelle, archi affaire des managers, problématique : abstraction & politique. Choix d'archi politisés...
+150-300 : passage en µS, archi affaire d'experts (infras, front, back) => communauté d'architectures (discussions de choix, suivi de la transfo), problématique : bande passante (jamais dispo, pas en charge des décisions qui les concernaient) et croissance (discussions complexes car de + en + d'experts dans la communauté et donc ça prenait encore plus de temps).
+300-500 : complexité++ (plusieurs sites, 100aines de µS, ...), architecture affaire des architectes (100% dédiée) mais équipe très sollicitée (manager, équipes de DEV), problématique : validation gate & bottle neck (les gens venaient)
+500+ : archi affaire de tous, problématique : alignement (cohérence de l'ensemble)
+
+Equipe d'archi : comment faire passer ses approches dans les équipes ? MartinFowler : tout le monde peut prendre la décision d'archi.
+Inclure les équipes impactées
+Tracer les discussions (compromis, solutions envisagées)
+
+=> ADR
+
+Avantages :
+* intelligence collective. Si décision impacte plus d'une équipe, on les met dedans
+* Confiance et sécurité émtionnelle : on déstresse un peu ces moments de décisions car tout le monde est dedans
+* Efficience !
+* Diffusion & DOC : journal de l'ensemble des ADR
+
+Apprentissages
+* Discussions en synchrone : on confronte les idées au même moment
+* Repartir du pbm
+* Max de scénarios
+* On cherche le *consentement* et pas le consensus
+* Décisions searchable + notifs
+
+Comment assurer la cohérence ?
+* Core architecture principes (manifest)
+* Tech radar sur les technos
+* Casquettes spécifiques : senior eng, staff eng, guild eng et ?

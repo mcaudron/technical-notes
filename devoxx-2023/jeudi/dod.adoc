@@ -9,7 +9,7 @@
 |https://cfp.devoxx.fr/2023/talk/EPQ-6420/Definition_of_Done_:_une_notion_evolutive_en_start-up_sante
 
 |Type/format de présentation
-|Keynote, 20mn, jeudi et vendredi matin - ⛔️ Uniquement sur invitation.
+|Keynote
 
 |Track
 |People & Culture, Soft Skills, Future of work, Innovation, Side projects
@@ -24,7 +24,36 @@
 
 ====== Speaker
 
-====== Notes
- 	
- 	
+Sophie Cahen, start-up Ganymed robotics, développement logiciels robotique pour la pose de prothèse (chirurgie). Chevalier de l'ordre du mérite. 70% de codeurs. Ingénieure process
 
+====== Notes
+
+--- Ganymed
+
+Projet deep tech vers de la recherche. Techno de produit vers dispositif médical. Volonté morale et éthique de ne pas blesser le patient
+=> sortir du code de qualité
+ 	
+1ère révolution : pacemaker par exemple. On solutionne des pbms.
+
+2ème révolution des traitements médicaux : démocratiser l'accès.
+
+1ère brique : Vision par ordi pour cartographier la jambe.
+2ème brique : dev d'un robot from scratch.
+
+Challengers vs américains.
+
+En 4 ans, papier blanc vers le robot. Proto présenté à un salon ~CES.
+
+--- Mais
+
+Phase de faisa technologique. Quick & dirty car on sait pas si ça va marcher. Au début, développement dans son "garage", labo...
+
+Comment apporter des nouvelles méthodes de travail qui conviennent à tout le monde ? quick & dirty vs dev produit, normé
+
+=> Notion de polarité : ce ne sont pas 2 mondes qui s'affrontent, curseur à trouver entre les 2 en fonction du contexte. Il faut l'expliquer aux gens. Y'a des virages à prendre. Ex : 2 ans de pure faisa, puis nouvelles méthodes de travail.
+* D'ordre individuelle : formation, communication. Projeter sur le fait que ce code va être emmené jusqu'au patient et/ou client. Lead Sw : embarquer l'équipe pour prendre le virage.
+* D'ordre collectif : process, besoin de satisfaction de normes (62304 ici). Nouveaux outils, voabulaire.
+
+Bcp de changements en // de déménagement, formation, méthode de fonctionnement (DevOps).
+
+*Focus on the goal, not the obstacles*.

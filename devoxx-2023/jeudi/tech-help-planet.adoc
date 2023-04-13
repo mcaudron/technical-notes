@@ -9,7 +9,7 @@
 |https://cfp.devoxx.fr/2023/talk/BCN-1243/La_tech_au_secours_de_la_planete_%3F
 
 |Type/format de présentation
-|Keynote, 20mn, jeudi et vendredi matin - ⛔️ Uniquement sur invitation.
+|Keynote
 
 |Track
 |People & Culture, Soft Skills, Future of work, Innovation, Side projects
@@ -24,6 +24,41 @@
 
 ====== Speaker
 
+Philippe ? ouvrages sur les énergies non renouvelables
+Nicolas ?
+
 ====== Notes
+
+Est-ce que la tech peut aider la planète ?
+
+Il faut extraire de plus en plus de ressources de la croute terrestre : voitures électriques, énergies renouvelables, ...
+
+Avantage : on peut recycler les métaux à l'infini. Mais notre monde ne fonctionne pas comme ça.
+
+On est une gigantesque machine entropique.
+
+2% de croissance par an en consommation
+
+Dans 1500 ans, énergie du soleil/système solaire
+Dans 3000 ans, énergie de la galxie
  	
- 	
+Quel impact par les développeurs ? 10% consommation mondiale est pour le digital !
+
+GreenIT : avant 1kWh pour refroidir pour 1kWh de conso d'un serveur. Maintenant bcp moins. Chaque geste unitaire consomme moins mais on en consomme plus : effet rebond.
+
+Qu'est-ce qu'on fait alors : lowTech. Est-ce qu'on peut avoir une démarche d'innovation sociale, culturelle, ... pour réduire l'impact environnemental.
+* Sobriété : on réduit à la source. Ex : voiture qui font 2 tonnes avec une autonomie de 1000km. Est-ce qu'on pourrait avoir une voiture moins lourde, moins puissante etc... Les réseaux d'accès, le retour des consignes
+* Age de la maintenance : on n'est pas plus heureux par ce qu'on change un aspirateur tous les 5 ans. Faire en sorte que ça dure le plus longtemps possible. Valable aussi pour les lieux.
+* Faire preuve de techno-discernement. Plein d'endroits où la technologie sert à rien. Exemple de l'école numérique...
+
+Compliqué de changer les habitudes de tous. Le consommateur s'adapte à ce qu'il y a dans les rayons. Comment on transforme les multi-nationales ? Changer le modèle économique profond ? Légendes :
+* Croissance économique à l'infini
+* Le client est roi, "consommacteur".
+* L'économie est poussée par les entreprises pour qu'on achète.
+
+Un pan d'action : agir sur l'offre et pas la demande. Entreprise = organisation pour optimiser sous contrainte. 
+* Levier réglementaire via législation (un peu liberticide mais la liberté des uns s'arrête là où commence celle des autres). Faire évoluer les normes avec subtilité.
+* Fiscalité : dès qu'on peut remplacer du travail humain par des ressources ou de l'énergie, on le fait. Bascule de la fiscalité du travail humain vers les ressources
+* Subventions, primes...
+
+On va y arriver ? On a les moyens techniques, humains pour changer. Usages numériques (vidéo par ex), mobilité, eco-conception. Si on empilait tous les leviers, on ferait x100 sur l'efficacité mais cela toucherait à des modèles économiques, sociaux culturels.
