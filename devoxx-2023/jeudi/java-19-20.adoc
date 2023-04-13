@@ -9,7 +9,7 @@
 |https://cfp.devoxx.fr/2023/talk/NHF-2060/Les_nouveautes_de_Java_19_et_20
 
 |Type/format de présentation
-|Conference, 45mn, jeudi et vendredi
+|Conference, 45mn
 
 |Track
 |Java, JVM
@@ -24,5 +24,33 @@
 
 ====== Speaker
 
+JM Doudoux, Sciam, Senior Tech Lead
+
 ====== Notes
- 	
+
+7 JEP par version
+
+Les projets dans les JEps
+Amber
+* Record pattern (utilisable dans pattern matching). Les variables sont valorisées plus facilement. Exception de type match exception. Noms de composants différents, inférence de type. Ils peuvent être imbriqués. La valeur null ne correspond à aucun record pattern. Support de l'inférence dans les types génériques
+* Pattern matching for switch (introduit en JDK17). Support d'un case null. && remplacé par when dans les conditions switch.
+
+Panama
+* Foreign Function & memory API (preview) : API de bas niveau pouraccéder à des données mémoires, invoquer des fonctions natives. Fusion de JEPs. Présent dans module java.base. API qui bouge bcp. Future alternative à JNI.
+* Vector API (incubator): exprimer des calculs vectoriels, single instruction & multiple data. Cf. photo. Code plus compliqué mais plus performant.
+
+Loom
+* Virtual Threads (preview). Chaque thread est dans l'OS. Délégation faite par l'OS. Pas optimal, nombre de threads limités, les threads passent beaucoup de temps à attendre (échanges réseaux) => Thread virtuels plus légers gérés par la JVM. Conserver le style un thread par requête. assurer la rétrocompat'. Permettre le déboggage.
+Liens M:N entre threads virtuels et threads de l'OS. Transparent pour les DEV.
+Pas de constructeur public. Thread.startVirtualThread ou Thread.Builder.
+{tip-caption} Ne pas les mettre dans un pool. Pas de ThreadGroup, sont des Thread démons. Attention au code synchronised et exécution code natif.
+* Concurence structurée (incubator). simplifier programmation multi-thread. Complémentaire de Fork/join. Utilise des threads virtuels. Ecriture code style synchrone et derrière asynchrone. Code facile à lire et à tester. Termine les sous-tâches dès qu'une tâche lève une exception (invokeAll) ou invoke any, première tâche qui répond. Possibilité de créer son propre scope.
+* Scope value (incubator) : partage d'objets dans le code exécuté par un thread => stocker et partager des données immuables avec une durée de vie limitée. Réassociation d'une valeur pour un traitement sous-jacent.
+
+Autres évolutions
+* Portage dans Linux/RISC-V dans JAVA 19.
+* Dans les API : disparition progressive des ThreadGroup. Double.toString et Float.toString. Formatage date/heure supp (prise en compte de la locale par défaut). Nouvelles fabriques pour HashMaps et HashSets (taille préallouée)
+* Outils. On pouvait encore compiler java7, Java 20, c'est fini ! a+= et a = a +. Javadoc, recherche améliorée. Renforcement de la sécurité (TLS ++, ajout KeyStore, support CBT, DTLS 1.0).
+* Perfs. AppCDS, MD5
+
+Conclusion : passer à la version d'après : perfs + sécu !

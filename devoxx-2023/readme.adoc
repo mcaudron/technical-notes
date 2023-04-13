@@ -125,22 +125,14 @@ include::jeudi/all-architects.adoc[]
 ==== 13:30 - 14:15
 
 include::jeudi/conway.adoc[]
-include::jeudi/dev-acceleration.adoc[]
 
 ==== 14:30 - 15:15
 
 include::jeudi/java-19-20.adoc[]
-include::jeudi/dallas-happy-days.adoc[]
 
 ==== 15:30 - 16:15
 
 include::jeudi/archi-debt.adoc[]
-include::jeudi/design-patterns-20.adoc[]
-
-==== 15:30 - 18:30
-
-include::jeudi/grafana-loki.adoc[]
-include::jeudi/prometheus.adoc[]
 
 ==== 16:45 - 17:30
 

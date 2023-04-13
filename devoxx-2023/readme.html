@@ -1,0 +1,3734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.17">
+<meta name="author" content="Maxime CAUDRON">
+<title>DEVOXX France 2023</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment the following line when using as a custom stylesheet */
+/* @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700"; */
+html{font-family:sans-serif;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+b,strong{font-weight:bold}
+abbr{font-size:.9em}
+abbr[title]{cursor:help;border-bottom:1px dotted #dddddf;text-decoration:none}
+dfn{font-style:italic}
+hr{height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type=checkbox],input[type=radio]{padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,::before,::after{box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;line-height:1;position:relative;cursor:auto;-moz-tab-size:4;-o-tab-size:4;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:1px solid #dedede;word-wrap:normal}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre).nobreak{word-wrap:normal}
+:not(pre).nowrap{white-space:nowrap}
+:not(pre).pre-wrap{white-space:pre-wrap}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,.2),inset 0 0 0 .1em #fff;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin:0 auto;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border:1px solid #e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:none;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:hsla(0,0%,100%,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details{margin-left:1.25rem}
+details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;outline:none;-webkit-tap-highlight-color:transparent}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:"";border:solid transparent;border-left:solid;border-width:.3em 0 .3em .5em;position:absolute;top:.5em;left:-1.25rem;transform:translateX(15%)}
+details[open]>summary::before{border:solid transparent;border-top:solid;border-width:.5em .3em 0;transform:translateY(15%)}
+details>summary::after{content:"";width:1.25rem;height:1em;position:absolute;top:.3em;left:-1.25rem}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos,pre.pygments .linenos{border-right:1px solid;opacity:.35;padding-right:.5em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+pre.pygments span.linenos{display:inline-block;margin-right:.75em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans-serif;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;font-size:.85rem;text-align:left;margin-right:0}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:1.25em;word-wrap:anywhere}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>*>tr>*{border-width:1px}
+table.grid-cols>*>tr>*{border-width:0 1px}
+table.grid-rows>*>tr>*{border-width:1px 0}
+table.frame-all{border-width:1px}
+table.frame-ends{border-width:1px 0}
+table.frame-sides{border-width:0 1px}
+table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-child>*{border-top-width:0}
+table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
+table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
+table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
+table.stripes-all>*>tr,table.stripes-odd>*>tr:nth-of-type(odd),table.stripes-even>*>tr:nth-of-type(even),table.stripes-hover>*>tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+li>p:empty:only-child::before{content:"";display:inline-block}
+ul.checklist>li>p:first-child{margin-left:-1em}
+ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
+ul.inline{display:flex;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+td.hdlist2{word-wrap:anywhere}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:4px solid #fff;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt,summary{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]{border-bottom:1px dotted}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#header,#content,#footnotes,#footer{max-width:none}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media amzn-kf8,print{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/github.min.css">
+</head>
+<body class="article data-line-1">
+<div id="header">
+<h1>DEVOXX France 2023</h1>
+<div class="details">
+<span id="author" class="author">Maxime CAUDRON</span><br>
+<span id="email" class="email"><span class="icon"><i class="fa fa-github"></i></span> <a href="https://github.com/Maxsasse/" data-href="https://github.com/Maxsasse/">GitHub</a></span><br>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div id="toc" class="data-line-37">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_présentation_du_salon">Présentation du salon</a>
+<ul class="sectlevel2">
+<li><a href="#_infos_globales">Infos globales</a></li>
+<li><a href="#_photos">Photos</a></li>
+<li><a href="#_types_de_talks">Types de talks</a>
+<ul class="sectlevel3">
+<li><a href="#_keynotes">Keynotes</a></li>
+<li><a href="#_universités">Universités</a></li>
+<li><a href="#_quickies">Quickies</a></li>
+<li><a href="#_bof_bird_of_a_feather">BOF (Bird of a Feather)</a></li>
+<li><a href="#_conférences">Conférences</a></li>
+<li><a href="#_tia_tools_in_action">TIA (Tools-in-Action)</a></li>
+<li><a href="#_hands_on_labs">Hands-on Labs</a></li>
+</ul>
+</li>
+<li><a href="#_types_de_tracks">Types de tracks</a></li>
+</ul>
+</li>
+<li><a href="#_mon_agenda">Mon agenda</a>
+<ul class="sectlevel2">
+<li><a href="#_mercredi">Mercredi</a>
+<ul class="sectlevel3">
+<li><a href="#_930_1230">9:30 - 12:30</a>
+<ul class="sectlevel4">
+<li><a href="#_une_architecture_gitops_from_scratch_gitlab_ansible_terraform_kubernetes_et_aws">Une Architecture GitOps from scratch : Gitlab, Ansible, Terraform, Kubernetes et AWS</a></li>
+<li><a href="#_conclusion">Conclusion</a></li>
+</ul>
+</li>
+<li><a href="#_1230_1330">12:30 - 13:30</a></li>
+<li><a href="#_1330_1630">13:30 - 16:30</a>
+<ul class="sectlevel4">
+<li><a href="#_kubernetes_dépassionné_et_pour_les_ultra_débutants">Kubernetes, dépassionné et pour les ultra débutants</a></li>
+</ul>
+</li>
+<li><a href="#_1630_1700">16:30 - 17:00</a></li>
+<li><a href="#_1700_1730">17:00 - 17:30</a>
+<ul class="sectlevel4">
+<li><a href="#_loki_comme_prometheus_mais_pour_les_logs">Loki: Comme Prometheus Mais Pour Les Logs</a></li>
+</ul>
+</li>
+<li><a href="#_1745_1815">17:45 - 18:15</a>
+<ul class="sectlevel4">
+<li><a href="#_finis_les_git_commit_m_fix_pipeline_42_grâce_à_dagger">Finis les 'git commit -m "fix pipeline #42"' grâce à Dagger</a></li>
+</ul>
+</li>
+<li><a href="#_1830_1900">18:30 - 19:00</a>
+<ul class="sectlevel4">
+<li><a href="#_jkube_remote_dev_coder_avec_tous_vos_micro_services_du_cloud_en_local">JKube remote-dev : coder avec tous vos micro-services du cloud &#8230;&#8203; en local !</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_jeudi">Jeudi</a>
+<ul class="sectlevel3">
+<li><a href="#_900_920">9:00 - 9:20</a>
+<ul class="sectlevel4">
+<li><a href="#_et_si_le_digital_permettait_de_mieux_vivre_et_plus_longtemps">Et si le digital permettait de mieux vivre et plus longtemps ?</a></li>
+</ul>
+</li>
+<li><a href="#_925_945">9:25 - 9:45</a>
+<ul class="sectlevel4">
+<li><a href="#_la_tech_au_secours_de_la_planète">La tech au secours de la planète ?</a></li>
+</ul>
+</li>
+<li><a href="#_950_1010">9:50 - 10:10</a>
+<ul class="sectlevel4">
+<li><a href="#_definition_of_done_une_notion_évolutive_en_start_up_santé">Definition of Done : une notion évolutive en start-up santé</a></li>
+</ul>
+</li>
+<li><a href="#_1015_1045">10:15 - 10:45</a></li>
+<li><a href="#_1045_1130">10:45 - 11:30</a>
+<ul class="sectlevel4">
+<li><a href="#_crac_vs_graalvm">CRAC vs GraalVM</a></li>
+</ul>
+</li>
+<li><a href="#_1045_1415">10:45 - 14:15</a>
+<ul class="sectlevel4">
+<li><a href="#_bien_choisir_sa_base_de_données">Bien choisir sa base de données</a></li>
+</ul>
+</li>
+<li><a href="#_1230_1330_2">12:30 - 13:30</a></li>
+<li><a href="#_1300_1315">13:00 - 13:15</a>
+<ul class="sectlevel4">
+<li><a href="#_tous_architectes">Tous architectes !</a></li>
+</ul>
+</li>
+<li><a href="#_1330_1415">13:30 - 14:15</a>
+<ul class="sectlevel4">
+<li><a href="#_loi_de_conway_lorsque_les_bonnes_pratiques_ne_suffisent_pas">Loi de Conway : lorsque les bonnes pratiques ne suffisent pas</a></li>
+</ul>
+</li>
+<li><a href="#_1430_1515">14:30 - 15:15</a>
+<ul class="sectlevel4">
+<li><a href="#_les_nouveautés_de_java_19_et_20">Les nouveautés de Java 19 et 20</a></li>
+<li><a href="#_passer_de_dallas_à_happy_days_conseils_pour_hacker_positivement_sa_vie">Passer de Dallas à Happy Days: conseils pour hacker positivement sa vie</a></li>
+</ul>
+</li>
+<li><a href="#_1530_1615">15:30 - 16:15</a>
+<ul class="sectlevel4">
+<li><a href="#_gestion_de_la_dette_darchitecture_dans_un_contexte_dhypercroissance">Gestion de la dette d&#8217;architecture dans un contexte d&#8217;hypercroissance</a></li>
+<li><a href="#_revisiting_design_patterns_after_20">Revisiting Design Patterns after 20</a></li>
+</ul>
+</li>
+<li><a href="#_1530_1830">15:30 - 18:30</a>
+<ul class="sectlevel4">
+<li><a href="#_introduction_à_la_gestion_de_logs_avec_grafana_loki_comme_prometheus_mais_pour_les_logs">Introduction à la gestion de logs avec Grafana Loki: comme Prometheus mais pour les Logs</a></li>
+<li><a href="#_mise_en_place_de_prometheus_sur_une_application_java_spring_boot">Mise en place de Prometheus sur une application Java Spring boot</a></li>
+</ul>
+</li>
+<li><a href="#_1645_1730">16:45 - 17:30</a>
+<ul class="sectlevel4">
+<li><a href="#_functional_domain_driven_design_featuring_ukulele">Fun(ctional) Domain Driven Design (featuring Ukulele)</a></li>
+</ul>
+</li>
+<li><a href="#_1745_1815_2">17:45 - 18:15</a>
+<ul class="sectlevel4">
+<li><a href="#_les_post_mortems_ou_comment_sortir_heureux_dun_carnage">Les post-mortems ou comment sortir heureux d’un carnage</a></li>
+<li><a href="#_optimisez_les_jobs_spark_grâce_à_son_ui">Optimisez les jobs Spark grâce à son UI</a></li>
+</ul>
+</li>
+<li><a href="#_1815_1830">18:15 - 18:30</a></li>
+<li><a href="#_1830_1900_2">18:30 - 19:00</a>
+<ul class="sectlevel4">
+<li><a href="#_accélérer_vos_livraisons_dapi_avec_microcks">Accélérer vos livraisons d&#8217;API avec Microcks</a></li>
+<li><a href="#_comment_enseigner_scratch_à_vos_enfants">Comment "enseigner" Scratch à vos enfants?</a></li>
+</ul>
+</li>
+<li><a href="#_1900_2000">19:00 - 20:00</a></li>
+<li><a href="#_2000_2050">20:00 - 20:50</a>
+<ul class="sectlevel4">
+<li><a href="#_bof_des_jug_leaders">BOF des JUG leaders</a></li>
+</ul>
+</li>
+<li><a href="#_2100_2150">21:00 - 21:50</a>
+<ul class="sectlevel4">
+<li><a href="#_bof_paris_software_crafters_community">BOF Paris Software Crafters Community</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_vendredi">Vendredi</a>
+<ul class="sectlevel3">
+<li><a href="#_900_920_2">9:00 - 9:20</a>
+<ul class="sectlevel4">
+<li><a href="#_soyons_optimiste">Soyons optimiste</a></li>
+</ul>
+</li>
+<li><a href="#_950_1010_2">9:50 - 10:10</a>
+<ul class="sectlevel4">
+<li><a href="#_briser_le_plafond_de_glace">Briser le plafond de glace</a></li>
+</ul>
+</li>
+<li><a href="#_1045_1130_2">10:45 - 11:30</a>
+<ul class="sectlevel4">
+<li><a href="#_clean_as_you_code_your_projects">Clean as You Code your projects</a></li>
+<li><a href="#_programmation_concurrente_et_asynchrone_loom_en_java_20_et_21">Programmation Concurrente et Asynchrone : Loom en Java 20 et 21</a></li>
+</ul>
+</li>
+<li><a href="#_1045_1415_2">10:45 - 14:15</a>
+<ul class="sectlevel4">
+<li><a href="#_gérer_des_environnements_de_tests_stateful_et_éphémère_pour_ses_tests_end_to_end">Gérer des environnements de tests stateful et éphémère pour ses tests end-to-end</a></li>
+<li><a href="#_testing_in_an_hexagone_mob_ddd_tdd_tddd">Testing in an Hexagone: MOB + DDD + TDD = TDDD</a></li>
+</ul>
+</li>
+<li><a href="#_1145_1230">11:45 - 12:30</a>
+<ul class="sectlevel4">
+<li><a href="#_éviter_les_biais_dans_la_conception_de_logiciels">Éviter les biais dans la conception de logiciels</a></li>
+<li><a href="#_foundationdb_le_secret_le_mieux_gardé_des_nouvelles_architectures_distribuées">FoundationDB : le secret le mieux gardé des nouvelles architectures distribuées !</a></li>
+</ul>
+</li>
+<li><a href="#_1230_1330_3">12:30 - 13:30</a></li>
+<li><a href="#_1330_1415_2">13:30 - 14:15</a>
+<ul class="sectlevel4">
+<li><a href="#_docker_au_service_du_devsecops">Docker au service du DevSecOps</a></li>
+<li><a href="#_les_tests_de_charge_sans_être_à_côté_de_la_plaque">Les tests de charge sans être à côté de la plaque</a></li>
+</ul>
+</li>
+<li><a href="#_1430_1515_2">14:30 - 15:15</a>
+<ul class="sectlevel4">
+<li><a href="#_1_2_3_quarkus">1, 2, 3 Quarkus!</a></li>
+</ul>
+</li>
+<li><a href="#_1530_1615_2">15:30 - 16:15</a>
+<ul class="sectlevel4">
+<li><a href="#_ré_architecturer_vos_traitements_batch_avec_domain_driven_design">Ré-architecturer vos traitements batch avec Domain-Driven Design</a></li>
+</ul>
+</li>
+<li><a href="#_1615_1645">16:15 - 16:45</a></li>
+<li><a href="#_1645_1730_2">16:45 - 17:30</a>
+<ul class="sectlevel4">
+<li><a href="#_quoi_de_neuf_dans_cdi_4_0">Quoi de neuf dans CDI 4.0 ?</a></li>
+<li><a href="#_retex_pièges_et_chausse_trappes_avec_terraform_en_entreprise">RETEX: Pièges et chausse-trappes avec Terraform en entreprise</a></li>
+</ul>
+</li>
+<li><a href="#_1745_1830">17:45 - 18:30</a>
+<ul class="sectlevel4">
+<li><a href="#_les_cast_codeurs_en_chair_en_os_et_en_béret">Les Cast Codeurs en chair, en os et en béret</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1 data-line-39">
+<h2 id="_présentation_du_salon"><a class="anchor" href="#_présentation_du_salon"></a>Présentation du salon</h2>
+<div class="sectionbody">
+<div class="sect2 data-line-1">
+<h3 id="_infos_globales"><a class="anchor" href="#_infos_globales"></a>Infos globales</h3>
+
+</div>
+<div class="sect2 data-line-41">
+<h3 id="_photos"><a class="anchor" href="#_photos"></a>Photos</h3>
+
+</div>
+<div class="sect2 data-line-43">
+<h3 id="_types_de_talks"><a class="anchor" href="#_types_de_talks"></a>Types de talks</h3>
+<div class="sect3 data-line-1">
+<h4 id="_keynotes"><a class="anchor" href="#_keynotes"></a>Keynotes</h4>
+<div class="paragraph data-line-3">
+<p>Les plénières d&#8217;ouverture (keynote) vous donnent rendez-vous cette année le jeudi et le vendredi à 9h précise. Le thème de cette année 2023 est consacré à l&#8217;Intelligence Artificielle. Toutes les sessions sont filmées et mise à disposition sur la chaîne Devoxx France de Youtube.</p>
+</div>
+</div>
+<div class="sect3 data-line-5">
+<h4 id="_universités"><a class="anchor" href="#_universités"></a>Universités</h4>
+<div class="paragraph data-line-7">
+<p>Les Universités sont des sessions longues de 3h, le mercredi, de 2 x 75 minutes. Ce format est consacré à la présentation de sujets en profondeur/avancés.</p>
+</div>
+</div>
+<div class="sect3 data-line-9">
+<h4 id="_quickies"><a class="anchor" href="#_quickies"></a>Quickies</h4>
+<div class="paragraph data-line-11">
+<p>Les Quickies sont des sessions courtes de 15 minutes, pendant l&#8217;heure du déjeuner. Le comité de sélection de Devoxx France met en avant des personnes n&#8217;ayant pas encore eu l&#8217;occasion de présenter. Ces sessions sont un excellent moyen pour découvrir un sujet.</p>
+</div>
+</div>
+<div class="sect3 data-line-13">
+<h4 id="_bof_bird_of_a_feather"><a class="anchor" href="#_bof_bird_of_a_feather"></a>BOF (Bird of a Feather)</h4>
+<div class="paragraph data-line-15">
+<p>Les BOF (Bird of a feather) sont des sessions mythiques de Devoxx France, à partir de 20h le jeudi soir. C&#8217;est le point de rendez-vous des user-groups, des communautés, des meetups, bref de tous les groupes communautaires de passionnés. Les BOFs se déroulent le soir de la soirée Meet-and-Greet.</p>
+</div>
+</div>
+<div class="sect3 data-line-17">
+<h4 id="_conférences"><a class="anchor" href="#_conférences"></a>Conférences</h4>
+<div class="paragraph data-line-19">
+<p>Les conférences sont des présentations de 45mn, le jeudi et le vendredi. C&#8217;est le format le plus représenté, avec près de 96 conférences pendant 2 jours.</p>
+</div>
+</div>
+<div class="sect3 data-line-21">
+<h4 id="_tia_tools_in_action"><a class="anchor" href="#_tia_tools_in_action"></a>TIA (Tools-in-Action)</h4>
+<div class="paragraph data-line-23">
+<p>Les TIA (Tools-in-Action) sont des sessions courtes de 30mn, destinées à présenter un outil, une pratique logiciel ou une solution.</p>
+</div>
+</div>
+<div class="sect3 data-line-25">
+<h4 id="_hands_on_labs"><a class="anchor" href="#_hands_on_labs"></a>Hands-on Labs</h4>
+<div class="paragraph data-line-45">
+<p>Travaux pratiques</p>
+</div>
+</div>
+</div>
+<div class="sect2 data-line-47">
+<h3 id="_types_de_tracks"><a class="anchor" href="#_types_de_tracks"></a>Types de tracks</h3>
+<div class="paragraph data-line-49">
+<p>Voici les types de track pour les 3 jours. En gras, ceux que j&#8217;ai privilégié. En italique, sujets intéressants aussi.</p>
+</div>
+<div class="ulist data-line-51">
+<ul>
+<li class="data-line-51">
+<p><strong>Cloud, Containers et Infrastructure, DevOps</strong></p>
+</li>
+<li class="data-line-52">
+<p><strong>Java, JVM</strong></p>
+</li>
+<li class="data-line-53">
+<p>Big Data, Machine Learning, Analytics</p>
+</li>
+<li class="data-line-54">
+<p>Langages</p>
+</li>
+<li class="data-line-55">
+<p><strong>Architecture, Performance et Securité</strong></p>
+</li>
+<li class="data-line-56">
+<p><em>People &amp; Culture, Soft Skills, Future of work, Innovation, Side projects</em></p>
+</li>
+<li class="data-line-57">
+<p>Web, JS, HTML5 et UX</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1 data-line-59">
+<h2 id="_mon_agenda"><a class="anchor" href="#_mon_agenda"></a>Mon agenda</h2>
+<div class="sectionbody">
+<div class="sect2 data-line-61">
+<h3 id="_mercredi"><a class="anchor" href="#_mercredi"></a>Mercredi</h3>
+<div class="sect3 data-line-63">
+<h4 id="_930_1230"><a class="anchor" href="#_930_1230"></a>9:30 - 12:30</h4>
+<div class="sect4 data-line-1">
+<h5 id="_une_architecture_gitops_from_scratch_gitlab_ansible_terraform_kubernetes_et_aws"><a class="anchor" href="#_une_architecture_gitops_from_scratch_gitlab_ansible_terraform_kubernetes_et_aws"></a>Une Architecture GitOps from scratch : Gitlab, Ansible, Terraform, Kubernetes et AWS</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique"><a class="anchor" href="#_fiche_signalétique"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/EJI-3118/Une_Architecture_GitOps_from_scratch_:_Gitlab,_Ansible,_Terraform,_Kubernetes_et_AWS" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/EJI-3118/Une_Architecture_GitOps_from_scratch_:_Gitlab,_Ansible,_Terraform,_Kubernetes_et_AWS">https://cfp.devoxx.fr/2023/talk/EJI-3118/Une_Architecture_GitOps_from_scratch_:_Gitlab,_Ansible,_Terraform,_Kubernetes_et_AWS</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">University, 3h, mercredi uniquement</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud, Containers et Infrastructure, DevOps</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kubernetes DevOps GitOps</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker"><a class="anchor" href="#_speaker"></a>Speaker</h6>
+<div class="paragraph data-line-27">
+<p>Aurélien Moreau (Head of Infrastructure) &#8658; l&#8217;OPS, Loïc Ortola (CTO Takima), le DEV</p>
+</div>
+</div>
+<div class="sect5 data-line-29">
+<h6 id="_notes"><a class="anchor" href="#_notes"></a>Notes</h6>
+<div class="paragraph data-line-31">
+<p>Programme : infra complète en GitOps</p>
+</div>
+<div class="paragraph data-line-33">
+<p>Front, API, BDD (PGSQL) scalée + backup BDD</p>
+</div>
+<div class="paragraph data-line-35">
+<p>Cluster staging, prod et tech (observabilité), prometheus + ELK</p>
+</div>
+<div class="paragraph data-line-37">
+<p>Kubernetes, application 3-tiers</p>
+</div>
+<div class="paragraph data-line-39">
+<p>======= Crash-course</p>
+</div>
+<div class="paragraph data-line-41">
+<p>======== IaC</p>
+</div>
+<div class="ulist data-line-43">
+<ul>
+<li class="data-line-43">
+<p>Provisionning, il faut des serveurs &#8658; non :). On utilise des cloud providers (niveau hardware)</p>
+</li>
+<li class="data-line-44">
+<p>Configuration management : installer un OS, socle technique</p>
+</li>
+<li class="data-line-45">
+<p>Orchestration d&#8217;application : on est dans le run, faire tourner les applis &#8658; déployer l&#8217;appli, cycle de vie etc&#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+<div class="paragraph data-line-47">
+<p>Provisionning : terraform
+Confg management : Ansible
+Orchestration : kubernetes (Helm)</p>
+</div>
+<div class="paragraph data-line-51">
+<p>======== GitOps</p>
+</div>
+<div class="paragraph data-line-53">
+<p>L&#8217;infra va évoluer, on doit versionner le code de l&#8217;infra</p>
+</div>
+<div class="paragraph data-line-55">
+<p>======== De Docker à K8S</p>
+</div>
+<div class="paragraph data-line-57">
+<p>Avant : java &#8658; war, copier/coller sur le serveur + runtime, conf etc&#8230;&#8203; Runtime maîtrisé par les DEVs mais en place par les OPS.
+Après : docker permet d&#8217;embarquer le runtime &#8658; le DEV maîtrise son runtime, l&#8217;OPS se concentre sur le run. Artifact = JAR + Runtime</p>
+</div>
+<div class="paragraph data-line-60">
+<p>Docker compose : ensemble de containers (api, db, www). Bien mais ça suffit pas. Load-Balancing, replica sur des serveurs différents (cluster), gestion des pannes &#8658; Besoin d&#8217;un chef d&#8217;orchestre &#8658; K8S</p>
+</div>
+<div class="paragraph data-line-62">
+<p>Standard artefact : image docker (jar + runtime). Les DEVs sont responsables du code + runtime.</p>
+</div>
+<div class="paragraph data-line-64">
+<p>Flotte de containers, besoin d&#8217;un orchestrateur</p>
+</div>
+<div class="paragraph data-line-66">
+<p>======== K8S</p>
+</div>
+<div class="paragraph data-line-68">
+<p>CNCF Cloud .Native Computing Fondation</p>
+</div>
+<div class="paragraph data-line-70">
+<p>Archi : master nodes + control plane, worker node</p>
+</div>
+<div class="paragraph data-line-72">
+<p>Kube API : en REST/JSON, single door. On utilise kubectl : client cli pour interagir avec kube-api.</p>
+</div>
+<div class="paragraph data-line-74">
+<p>Dans K8S, tout est ressource. On les déclare avec YAML &#8658; décrit l&#8217;état attendu de l&#8217;infra. Programmation déclarative (on décrit l&#8217;état souhaité)</p>
+</div>
+<div class="paragraph data-line-76">
+<p>ressource de base : pod &#8658; container atomique d&#8217;une appli dans une version particulière.</p>
+</div>
+<div class="paragraph data-line-78">
+<p>ReplicaSet : dit combien on veut de réplicas, consigne. On dit par exemple, 3 replica de l&#8217;API.</p>
+</div>
+<div class="paragraph data-line-80">
+<p>Deployment : super ressource pour gérer les images successives de l&#8217;appli. Il embarque les replica et les pods.</p>
+</div>
+<div class="paragraph data-line-82">
+<p>Pour le paramétrage : configMaps et secrets (fichiers de conf ou variables d&#8217;env). Clair et chiffrés mais gérés différemment donc possibilté de chiffrer.</p>
+</div>
+<div class="paragraph data-line-84">
+<p>Le service : load balancer interne pour accéder aux pods, quels ports j&#8217;expose (port-forwarding). Uniquement en interne</p>
+</div>
+<div class="paragraph data-line-86">
+<p>Publication sur internet : ingress, implémentation d&#8217;un reverse proxy. Il a besoin d&#8217;outils pour fonctionner : s&#8217;il a besoin de TLS.</p>
+</div>
+<div class="paragraph data-line-88">
+<p>Namespace : regroupement sémantique, isolation des ressources dans un namespace (comme le nom de projet). ~dossier</p>
+</div>
+<div class="paragraph data-line-90">
+<p>======= Episode 1 : déployer une infra</p>
+</div>
+<div class="paragraph data-line-92">
+<p>On doit avoir un cluster K8S.</p>
+</div>
+<div class="paragraph data-line-94">
+<p>Sécurisée EKS : K8S as a service managé. Proposé par AWS. K8S sera le standard pour orchestrer les containers.
+Mutualisation du control pane
+Cycle de vie géré
+&#8230;&#8203;</p>
+</div>
+<div class="paragraph data-line-99">
+<p>Standardisation Terraform : automation d&#8217;infra, facilitant la gestion.
+Langage déclaratif : HCL
+Fonctionne par modules
+Fonctionne par état</p>
+</div>
+<div class="paragraph data-line-104">
+<p>Automatisation : gitlab CI/CD
+Pipelin etc&#8230;&#8203;</p>
+</div>
+<div class="paragraph data-line-107">
+<p>Architecture Repo gitlab vers cloud AWS</p>
+</div>
+<hr>
+<div class="paragraph data-line-110">
+<p>Terraform, on décrit les ressouces, module = ensemble de fichiers TF. instance = serveur. On peut variabiliser via variable.
+On peut utiliser via tfvars, var d&#8217;env, arguments via ligne de commande.</p>
+</div>
+<div class="paragraph data-line-113">
+<p>On ne connaît pas l&#8217;IP publique fournie par AWS. On peut faire du variable output pour infos utiles en sortie dans le tfstate.</p>
+</div>
+<div class="paragraph data-line-115">
+<p>Pour pas que ce soit le bazar &#8658; modules. Un module EKS = 49 ressources K8S. Variables en input et output. Mot-clé module. Ces variables peuvent être passées entre modules.</p>
+</div>
+<div class="paragraph data-line-117">
+<p>Sur cloud privé, terraform est compatible.</p>
+</div>
+<div class="paragraph data-line-119">
+<p>Lifecycle</p>
+</div>
+<div class="paragraph data-line-121">
+<p>init, plan, apply (deploy + nouveau tfstate), destroy</p>
+</div>
+<hr>
+<div class="paragraph data-line-125">
+<p>LifeCoding</p>
+</div>
+<div class="paragraph data-line-127">
+<p>ressource ami (voir sur le fournisseur de cloudb), instance-type. provider.tf, main.tf (ressources à déployer), variables.tf, output.tf. Dans le tfstate, toutes les infos sont présentes sur notre infra.</p>
+</div>
+<div class="paragraph data-line-129">
+<p>Modules : 1-Compute : K8S, 2-network : VPC.</p>
+</div>
+<div class="paragraph data-line-131">
+<p>Outputs du projet : publication vers une autre infra.</p>
+</div>
+<div class="paragraph data-line-133">
+<p>ça y est on a un cluster tout neuf avec K8S</p>
+</div>
+<div class="paragraph data-line-136">
+<p>Terratest pour tester de l&#8217;infra end2end
+---</p>
+</div>
+<div class="paragraph data-line-139">
+<p>======= Episode 2 : config management</p>
+</div>
+<div class="paragraph data-line-141">
+<p>Pour configurer la PTF. Control Node avec Ansible + ses modules.</p>
+</div>
+<div class="paragraph data-line-143">
+<p>Où je dois déployer ma config : inventaire. web_servers, api_servers. On va juste communiquer en local avec l&#8217;API KUBE (kube-api).</p>
+</div>
+<div class="paragraph data-line-145">
+<p>Quoi ? Playbook configure cluster. Procédure d&#8217;installation technique (~tuto)</p>
+</div>
+<div class="paragraph data-line-147">
+<p>Comment j&#8217;organise un PB ? rôle ~chapitres/étape puis tasks. Une tâche : du yaml. On décrit le module ansible attendu et le state. J&#8217;exécute Ansible sur mon control node.</p>
+</div>
+<div class="paragraph data-line-149">
+<p>---- Teasing : si on câble un outil de CD (ArgoCD ici), modification du code source, synchronisé, mise à jour auto du cluster !</p>
+</div>
+<div class="paragraph data-line-151">
+<p>Il faut configurer le cluster. Pour faire fonctionner les ingress (Ingress controller, Cert Manager). Il faut le sécuriser aussi, identifiants pour registry d&#8217;images.</p>
+</div>
+<div class="paragraph data-line-153">
+<p>Installation de trucs externes. Sous linux, apk etc&#8230;&#8203; Pour K8S, c&#8217;est helm. Ex : helm repo add, update. Ansible a déjà plein de trucs dispos avec K8S. Point d&#8217;entrée : kube-api + secret. Fichier tfstate dans bucket s3 + kubeconfig (qui contient les secrets). C&#8217;est lui qui joue le playbook pour déployer etc&#8230;&#8203;</p>
+</div>
+<div class="paragraph data-line-155">
+<p>Côté terraform : template yaml utilisé par Ansible.</p>
+</div>
+<div class="paragraph data-line-157">
+<p>ArtifactHub.io : packages HELM (~dockerHub). Cert-manager.io aussi.</p>
+</div>
+<div class="paragraph data-line-159">
+<p>Point sur les repos
+* takione-infra
+* Pipeline : plan (tf), provision-infra (tf), configure-cluster (ansible), destroy. Le tfstate sert de passerelle entre tout ça.</p>
+</div>
+<div class="paragraph data-line-163">
+<p>On a un cluster prêt à l&#8217;emploi et sécurisé : ingress-controller, cert-manager, ext-secrets, kube-dashboard + un DNS qui pointe vers notre cluster.</p>
+</div>
+<div class="paragraph data-line-165">
+<p>Ansible n&#8217;a pas cette notion de tfstate, terraform n&#8217;a pas de tâche.</p>
+</div>
+<div class="paragraph data-line-167">
+<p>======= Episode 3</p>
+</div>
+<div class="paragraph data-line-169">
+<p>Objectif : déployer appli Hello</p>
+</div>
+<div class="ulist data-line-171">
+<ul>
+<li class="data-line-171">
+<p>hello.deployment.yaml</p>
+</li>
+<li class="data-line-172">
+<p>service</p>
+</li>
+<li class="data-line-173">
+<p>ingress</p>
+</li>
+</ul>
+</div>
+<div class="paragraph data-line-175">
+<p>Idem pour API</p>
+</div>
+<div class="paragraph data-line-177">
+<p>On crée un nouveau dépôt takione-apps (takima-school pour info)</p>
+</div>
+<div class="paragraph data-line-179">
+<p>La différence avec une DB, on ne peut pas détruire les pods comme ça.</p>
+</div>
+<div class="paragraph data-line-181">
+<p>Pour la DB, on va avoir besoin de persistance. On va avoir besoin de nouvelles ressources dans K8S. On veut une BDD production ready
+* repliquée scalable
+* fallback auto
+* WAL logs centralisés
+* Backup auto
+* Possibilité de restore et de clone</p>
+</div>
+<div class="paragraph data-line-188">
+<p>Amazon-RDS pourrait remplir ça. Mais vendor-locké, ça coûte cher&#8230;&#8203;</p>
+</div>
+<div class="paragraph data-line-190">
+<p>Il y a une ressource pour créer une nouvelle ressource dans K8S &#8658; operator. Il s&#8217;appuie sur le CRDs (étendre les ressources) et un controller (pour interpréter ça). On va ajouter un comportement à K8S : PGSQL. Cela permet de créer des cluster PGSQL. Il gère les replicas, montées de version, backup, point-in-time-recovery. On ajoute un DB-as-a-service gratuit !.
+&#8658; on crée un nouveau rôle Ansible pour créer ça !
+Pour le bucket S3 : on fait évoluer le code terraform.</p>
+</div>
+<div class="paragraph data-line-194">
+<p>En environnement de prod, ajout de sonde (probe), mémoire max, etc&#8230;&#8203;</p>
+</div>
+<div class="paragraph data-line-196">
+<p>Point repo
+* takione-apps
+* takione-infra</p>
+</div>
+<div class="paragraph data-line-200">
+<p>On est agnostique du cloud provider !</p>
+</div>
+<div class="paragraph data-line-202">
+<p>Dans le cluster, on a rajouté :
+* PG operator
+* Takione-app (www, api, db)</p>
+</div>
+<hr>
+<div class="paragraph data-line-207">
+<p>======== Episode 4 multiples environments</p>
+</div>
+<div class="paragraph data-line-209">
+<p>Impacts sur infra, config, orchestration</p>
+</div>
+<div class="paragraph data-line-211">
+<p>Ajout d&#8217;un backend sur l&#8217;infra : staging et prod</p>
+</div>
+<div class="paragraph data-line-213">
+<p>COnfig : cluster_staging et cluster_prod</p>
+</div>
+<div class="paragraph data-line-215">
+<p>Sur appli : on change les www en fonction du staging et prod</p>
+</div>
+<div class="paragraph data-line-217">
+<p>Pour faire ça, on va utiliser un moteur de templating : helm (package manager + templating engine)
+Chart helm
+* descripteur de package (gradle)
+* values
+* template</p>
+</div>
+<div class="paragraph data-line-223">
+<p>&#8658; les ressources sont templatées ! Un fichier values par environnement !</p>
+</div>
+<div class="paragraph data-line-225">
+<p>Côté pipeline pour staging et prod, on refait plan, provisionning, config etc&#8230;&#8203; On a tfstate pour chaque env.</p>
+</div>
+<div class="paragraph data-line-227">
+<p>======== Episode 5 cluster technique</p>
+</div>
+<div class="paragraph data-line-229">
+<p>Où placer l&#8217;observabilité ? Centralisation des logs ?</p>
+</div>
+<div class="paragraph data-line-231">
+<p>Cluster de prod transverse (au-dessus, uniquement des clusters business). On rajoute un tech.tfvars.</p>
+</div>
+<div class="paragraph data-line-233">
+<p>Ansible : nouveau playbook avec nouveaux roles. Dédiés apps, tech et commun. Par ex : DB spécifique apps, rancher commun.</p>
+</div>
+<div class="paragraph data-line-235">
+<p>Live demo : Rancher (dashboard centralisé), ELK, Prometheus</p>
+</div>
+<div class="paragraph data-line-237">
+<p>Rancher administre les environnements. Centralise. Pas comme la page K8S où il faut une page par environnement. Le dashboarding centralisé permet de donner des droits, d&#8217;adminsitrer.</p>
+</div>
+<div class="paragraph data-line-239">
+<p>Pour le monitoring, on utilise Grafana, cela permet de voir comment va mon infra. Le cluster technique, c&#8217;est le cluster local.</p>
+</div>
+<div class="paragraph data-line-241">
+<p>Pour stocker les logs, on a utilisé un elastic operator pour stocker les logs dans une stack elastic. On aurait pu utiliser un Kibana.</p>
+</div>
+<div class="paragraph data-line-243">
+<p>"Il y a d&#8217;autres moyens de maîtriser que de tout faire à la main".</p>
+</div>
+<div class="paragraph data-line-245">
+<p>Elastic centralise tous les logs de nos environnements.</p>
+</div>
+<div class="paragraph data-line-247">
+<p>======== Episode 6 plus loin dans gitops</p>
+</div>
+<div class="paragraph data-line-249">
+<p>Git devenu source de vérité.
+Argo CD : compare l&#8217;état du chantier avec les plans. S&#8217;assure la corr entre les spéc de l&#8217;infra et l&#8217;état. Cela va vivre dans le cluster technique.</p>
+</div>
+<div class="paragraph data-line-252">
+<p>Il y a un gitlab-ci.yml pour configurer la pipeline.</p>
+</div>
+</div>
+</div>
+<div class="sect4 data-line-254">
+<h5 id="_conclusion"><a class="anchor" href="#_conclusion"></a>Conclusion</h5>
+<div class="paragraph data-line-256">
+<p>K8S : accessible mais ne pas négliger l&#8217;apprentissage.</p>
+</div>
+<div class="paragraph data-line-258">
+<p>Vraie question d&#8217;administration.</p>
+</div>
+<div class="paragraph data-line-260">
+<p><a href="https://taki.li/gitops-e2e" class="undefined" data-href="https://taki.li/gitops-e2e">https://taki.li/gitops-e2e</a></p>
+</div>
+</div>
+</div>
+<div class="sect3 data-line-67">
+<h4 id="_1230_1330"><a class="anchor" href="#_1230_1330"></a>12:30 - 13:30</h4>
+<div class="paragraph data-line-69">
+<p>----- REPAS -----</p>
+</div>
+</div>
+<div class="sect3 data-line-71">
+<h4 id="_1330_1630"><a class="anchor" href="#_1330_1630"></a>13:30 - 16:30</h4>
+<div class="sect4 data-line-1">
+<h5 id="_kubernetes_dépassionné_et_pour_les_ultra_débutants"><a class="anchor" href="#_kubernetes_dépassionné_et_pour_les_ultra_débutants"></a>Kubernetes, dépassionné et pour les ultra débutants</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_2"><a class="anchor" href="#_fiche_signalétique_2"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/YND-3078/Kubernetes,_depassionne_et_pour_les_ultra_debutants" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/YND-3078/Kubernetes,_depassionne_et_pour_les_ultra_debutants">https://cfp.devoxx.fr/2023/talk/YND-3078/Kubernetes,_depassionne_et_pour_les_ultra_debutants</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">University, 3h, mercredi uniquement</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud, Containers et Infrastructure, DevOps</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-22">
+<h6 id="_speaker_2"><a class="anchor" href="#_speaker_2"></a>Speaker</h6>
+<div class="paragraph data-line-24">
+<p>Sébastien Blanc (Aiven), Horacio Gonzales (OVH Cloud), Sun Tan (RedHat)</p>
+</div>
+</div>
+<div class="sect5 data-line-26">
+<h6 id="_notes_2"><a class="anchor" href="#_notes_2"></a>Notes</h6>
+<div class="paragraph data-line-28">
+<p>======= Intro</p>
+</div>
+<div class="paragraph data-line-30">
+<p>--- Pourquoi K8S ?</p>
+</div>
+<div class="paragraph data-line-32">
+<p>Reverse proxy, TomCat, MySQL
+Environnement prod, preProd, DEV dupliqués physiquement
+Déploiement manuel sous FTP etc&#8230;&#8203;
+Problème de scaling
+Developper environment (debug en prod&#8230;&#8203;)
+On peut utiliser des containers sans K8S</p>
+</div>
+<div class="paragraph data-line-39">
+<p>--- Containers</p>
+</div>
+<div class="paragraph data-line-41">
+<p>Merge traditional dep (applis JAVA) vs applis sur VM (hyperviseur) &#8658; Container runtime
+Outils : docker et podman
+Run existing container : container registry (dockerhub ou quay.io).
+docker run -p 8080:80
+Inside container : exécuter commande dans un container. docker ps. docker exec [container-id] pwd ou /bin/sh pour lancer un bash dans le container.
+Les containers sont isolés entre eux.
+Créer sa propre image : créer un docker file. Exemple : from (JRE) + copy (le war). On build + docker build
+$ docker build -f dockerFile -t myName .
+&#8658; image
+On va pousser cette image dans une registry pour stocker cette image (quay.io par exemple ou en local).
+Docker application
+* Source code : dockerFile
+* Build using docker
+* push/pull container registry
+* run anywhere on container runtime</p>
+</div>
+<div class="paragraph data-line-57">
+<p>java application
+* source code
+* build using maven or gradle
+* push/pull to artifactory
+* Run anywhere on host that support JVM</p>
+</div>
+<div class="paragraph data-line-63">
+<p>--- Limitations des containers
+Si bcp de containers, on va avoir des limitations en ressource &#8658; machine supplémentaire :blurp:S
+Exemple : container wordpress qui va attaquer une base MariaDB qui se base sur un volume.
+Comment bien administrer : K8S (à la base un projet interne Google, Bold), stagiaire virtuel pour monitorer vos containers
+* Deployment
+* Scaling
+* Monitoring
+* Repairing
+* Securing</p>
+</div>
+<div class="paragraph data-line-73">
+<p>--- K8S
+Cluster : more details (voir photo)</p>
+</div>
+<div class="paragraph data-line-76">
+<p>A gauche, les control plane
+A droite, les nodes. Les applications business sont dans des pods. Pourquoi ? Pour bien isoler les containers entre eux notamment pour les aspects sécu. Un pod peut contenir plusieurs containers. Par exemple : un container applicatif vs un container sécurisation. Cela permet de ne pas modifier le container business (c&#8217;est un side car).</p>
+</div>
+<div class="paragraph data-line-79">
+<p>IaC : declarative infra, high-level description.</p>
+</div>
+<div class="paragraph data-line-81">
+<p>Desired state management (cf. photo)</p>
+</div>
+<div class="paragraph data-line-84">
+<p>Les pods, métier. Le deployment est l&#8217;usine à pods. Les services sont les points d&#8217;entrée dans le cluster (via les ports). Les ingress sont les reverses proxy pour être accessibles depuis l&#8217;extérieur (point d&#8217;entrée unique). La load balancer est derrière une IP publique.</p>
+</div>
+<div class="paragraph data-line-86">
+<p>--- What is K8S ?
+Sur un K8S cluster, on dit l&#8217;image et le nombre de replica. Paf : il déploie sur les node dispo.
+Si un pod plante, il redéploie le pod ailleurs (via le scheduler). Si un Node tombe, idem&#8230;&#8203;</p>
+</div>
+<div class="paragraph data-line-90">
+<p>======= 1-Dive into</p>
+</div>
+<div class="paragraph data-line-92">
+<p>Jouons avec kubectl</p>
+</div>
+<div class="paragraph data-line-94">
+<p>Tout passe par l&#8217;API Kubernetes.</p>
+</div>
+<div class="paragraph data-line-96">
+<p>kubectl show-info
+kubectl get node
+kubectl create namespace</p>
+</div>
+<div class="paragraph data-line-100">
+<p>Monitor events dans un namespace
+On crée un déploiement avec une image. On peut monitorer les events du POD. Et bien sûr, on peut lancer une commande dans le pod.
+Ensuite on expose le déploiement avec un LoadBalancer.
+Dans les replicas, K8S va créer des endpoints avec une adresse IP différente. Le load balancer va répartir la charge sur les 3 @IP.
+On peut changer l&#8217;image (changement de version par exemple).</p>
+</div>
+<div class="paragraph data-line-106">
+<p>--- YAML</p>
+</div>
+<div class="paragraph data-line-108">
+<p>K8S : BDD de fichiers yaml :)
+* CRUD, structured and typed objects &#8658; ressoruces
+* les ressources vivent dans des namespaces</p>
+</div>
+<div class="paragraph data-line-112">
+<p>Comment créer une ressource ?
+Kind, type
+Metadata, attributs
+spec : contenu de la ressource</p>
+</div>
+<div class="paragraph data-line-117">
+<p>Controllers : écoute les changements sur les ressources. S&#8217;assure que la ressource est conforme à la spec.</p>
+</div>
+<div class="paragraph data-line-119">
+<p>Par défaut, plein de ressources et de controllers disponibles.
+Kind : Pod très utilisé.
+Kind : service : il crée les endpoints sur lequel on peut se connecter (les ports).
+Kind : Ingress pour adresse ip publique.</p>
+</div>
+<div class="paragraph data-line-124">
+<p>Minikube : outil local à la machine.</p>
+</div>
+<div class="paragraph data-line-126">
+<p>======= Being a good cloud</p>
+</div>
+<div class="paragraph data-line-128">
+<p>--- Requests and limits</p>
+</div>
+<div class="paragraph data-line-130">
+<p>Il faut définir les ressources pour être un bon citoyen du cloud.
+* Requests : how many resources it needs
+* Limits : how many resources it can use (pour limiter les fuites mémoire)</p>
+</div>
+<div class="paragraph data-line-134">
+<p>Si l&#8217;application arrive à la limite de la CPU : on bride le POD. Pour la mémoire, on tue le POD.
+On peut définir ces limites/requests au niveau du namespace ou cluster. Les limites ranges sont intéressantes aussi pour définir un cadre pour tous les POD.</p>
+</div>
+<div class="paragraph data-line-137">
+<p>--- Health probes</p>
+</div>
+<div class="paragraph data-line-139">
+<p>Il faut que le container puisse dire au cluster : "je suis prêt". On ajoute alors une balise readinessProbe dans le deployment.
+Le container peut dire : je tourne, pas de problème. Mais le POD peut être en PLS sur le container a une fuite mémoire &#8658; on ajoute un livenessProbe.</p>
+</div>
+<div class="paragraph data-line-142">
+<p>--- Config Map</p>
+</div>
+<div class="paragraph data-line-144">
+<p>C&#8217;est une ressource k8s (comme tout est ressource :)). On peut paramétrer les choses via variables d&#8217;environnement aussi si jamais on ne veut pas que ça apparaisse dans le dockerFile. On peut créer une config map à partir des variables d&#8217;environnement. Dans le yaml, on peut dire à l&#8217;image quelle config map on utilise.</p>
+</div>
+<div class="paragraph data-line-146">
+<p>--- Secrets</p>
+</div>
+<div class="paragraph data-line-148">
+<p>Stockés dans etcd. Injectés dans le déploiement comme des volumes ou comme variable d&#8217;environnement. Encodé en base 64&#8230;&#8203; Il faut le câbler avec un Vault. Façon de stocker des informations.</p>
+</div>
+<div class="paragraph data-line-150">
+<p>======= Advanced K8S</p>
+</div>
+<div class="paragraph data-line-152">
+<p>--- Storage</p>
+</div>
+<div class="paragraph data-line-154">
+<p>Local storage in pods and nodes, bad idea. Pas permanents. Eviter de stocker des données dans k8s. Utiliser un PVC (Persistent volume claim) qui pointe vers un PV (persistent volume).</p>
+</div>
+<div class="paragraph data-line-156">
+<p>Warning chaque cloud provider va gérer le PVC différemment.
+Le PVC attache le PV avec un autre POD.</p>
+</div>
+<div class="paragraph data-line-159">
+<p>--- JKube
+Voir la conf prévue à cet effet&#8230;&#8203;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3 data-line-75">
+<h4 id="_1630_1700"><a class="anchor" href="#_1630_1700"></a>16:30 - 17:00</h4>
+<div class="paragraph data-line-77">
+<p>----- BREAK -----</p>
+</div>
+</div>
+<div class="sect3 data-line-79">
+<h4 id="_1700_1730"><a class="anchor" href="#_1700_1730"></a>17:00 - 17:30</h4>
+<div class="sect4 data-line-1">
+<h5 id="_loki_comme_prometheus_mais_pour_les_logs"><a class="anchor" href="#_loki_comme_prometheus_mais_pour_les_logs"></a>Loki: Comme Prometheus Mais Pour Les Logs</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_3"><a class="anchor" href="#_fiche_signalétique_3"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/GFY-6374/Loki:_Comme_Prometheus_Mais_Pour_Les_Logs" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/GFY-6374/Loki:_Comme_Prometheus_Mais_Pour_Les_Logs">https://cfp.devoxx.fr/2023/talk/GFY-6374/Loki:_Comme_Prometheus_Mais_Pour_Les_Logs</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tools in Action, 30mn, mercredi/jeudi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud, Containers et Infrastructure, DevOps</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Logs monitoring Kubernetes</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_3"><a class="anchor" href="#_speaker_3"></a>Speaker</h6>
+<div class="paragraph data-line-27">
+<p>Cyril Tovena, Grafana projet Pyroscope</p>
+</div>
+</div>
+<div class="sect5 data-line-29">
+<h6 id="_notes_3"><a class="anchor" href="#_notes_3"></a>Notes</h6>
+<div class="paragraph data-line-31">
+<p>======= Pourquoi ?</p>
+</div>
+<div class="paragraph data-line-33">
+<p>3 pbms récurrents
+* Technos d&#8217;aggrégation difficiles
+* Coûteux : équipe dédiée, gourmande en ressource
+* Sans corrélation : navigation impossible entre les métriques, les traces et les logs</p>
+</div>
+<div class="paragraph data-line-38">
+<p>Volontée d&#8217;une solution intégrée (gestion de timezone) + intégrée au cloud (grafana, prometheus, k8s)</p>
+</div>
+<div class="paragraph data-line-40">
+<p>Déboguer applis (DevOPS)</p>
+</div>
+<div class="paragraph data-line-42">
+<p>SREs : visualiser et alerter sur le statut des applis</p>
+</div>
+<div class="paragraph data-line-44">
+<p>======= Projet Loki</p>
+</div>
+<div class="paragraph data-line-46">
+<p>Aggrégation de journaux</p>
+</div>
+<div class="paragraph data-line-48">
+<p>Corrélation rapide avec les métriques</p>
+</div>
+<div class="paragraph data-line-50">
+<p>Stockage durable via object store</p>
+</div>
+<div class="paragraph data-line-52">
+<p>Histoire : lancé y&#8217;a 5 ans. 740 contributeurs en tout mais 30 journaliers.</p>
+</div>
+<div class="paragraph data-line-54">
+<p>======= Comment ?</p>
+</div>
+<div class="paragraph data-line-56">
+<p>Vue générale : cf. photo</p>
+</div>
+<div class="paragraph data-line-58">
+<p>Il utilise obligatoirement de l&#8217;object storage. Il peut utiliser du disque mais moins performant.</p>
+</div>
+<div class="paragraph data-line-60">
+<p>Loki n&#8217;indexe pas le contenu des logs. Les entrées sont regroupées en flux et indexées avec des labels.</p>
+</div>
+<div class="paragraph data-line-62">
+<p>Difficile d&#8217;aller "au bout" de Loki.</p>
+</div>
+<div class="paragraph data-line-64">
+<p>Filtrage des logs : démarche différente, on réduit la timeframe puis un cluster k8s (ou une app, namespace) et enfin un scan classique (1GB/core/sec). Scalable linéaire.</p>
+</div>
+<div class="paragraph data-line-66">
+<p>Installation
+* un seul binaire
+<strong> tests en local
+</strong> si pas de H Scale
+* SSD (Simple Scalable Dep) ou µS (via helm)
+<strong> H scale
+</strong> 2 types de pods (R/O ou R/W)
+** large installations
+* Grafana cloud &#8658; la machine de guerre si on veut pas s&#8217;embêter.</p>
+</div>
+<div class="paragraph data-line-76">
+<p>======= Démo</p>
+</div>
+<div class="paragraph data-line-78">
+<p>LogQL inspiré par PromQL
+Les logs sont parsés au moment de la requête. Perfs un peu moindre mais toujours à jour.</p>
+</div>
+<div class="paragraph data-line-81">
+<p>Exemple de requête : label + '|' comme logfmt pour le niveau de log</p>
+</div>
+<div class="paragraph data-line-83">
+<p>Bascule facile entre calcul de métrique + calcul de logs ! Utilisation de loki possible dans les dashboard grafana</p>
+</div>
+<div class="paragraph data-line-85">
+<p>======= Conclusion</p>
+</div>
+<div class="paragraph data-line-87">
+<p>Quels sont les avantages de Loki ? "chatgpt" :)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3 data-line-83">
+<h4 id="_1745_1815"><a class="anchor" href="#_1745_1815"></a>17:45 - 18:15</h4>
+<div class="sect4 data-line-1">
+<h5 id="_finis_les_git_commit_m_fix_pipeline_42_grâce_à_dagger"><a class="anchor" href="#_finis_les_git_commit_m_fix_pipeline_42_grâce_à_dagger"></a>Finis les 'git commit -m "fix pipeline #42"' grâce à Dagger</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_4"><a class="anchor" href="#_fiche_signalétique_4"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/PMF-4014/Finis_les_'git_commit_-m_%22fix_pipeline_%2342%22'_grace_a_Dagger" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/PMF-4014/Finis_les_'git_commit_-m_%22fix_pipeline_%2342%22'_grace_a_Dagger">https://cfp.devoxx.fr/2023/talk/PMF-4014/Finis_les_'git_commit_-m_%22fix_pipeline_%2342%22'_grace_a_Dagger</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tools in Action, 30mn, mercredi/jeudi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud, Containers et Infrastructure, DevOps</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dagger Continuous Integration GraphQL Containers</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_4"><a class="anchor" href="#_speaker_4"></a>Speaker</h6>
+<div class="paragraph data-line-27">
+<p>Laurent Grondin, Ingéniance (ESN Paris), chaîne youtube inpulse TV</p>
+</div>
+</div>
+<div class="sect5 data-line-29">
+<h6 id="_notes_4"><a class="anchor" href="#_notes_4"></a>Notes</h6>
+<div class="paragraph data-line-31">
+<p>Disparité d&#8217;env
+* IC
+* Local</p>
+</div>
+<div class="paragraph data-line-35">
+<p>Nième commit de fix&#8230;&#8203;</p>
+</div>
+<div class="paragraph data-line-37">
+<p>Possibilité de Act mais dépendance avec cette PTF</p>
+</div>
+<div class="paragraph data-line-39">
+<p>Complexité
+* Ecriture en yml
+* scripts bash
+* Plugins (Actions de GitHub action)</p>
+</div>
+<div class="paragraph data-line-44">
+<p>======= Containers à la rescousse</p>
+</div>
+<div class="paragraph data-line-46">
+<p>Dagger fondé par le créateur de Docker</p>
+</div>
+<div class="paragraph data-line-48">
+<p>Portable et langage différent de bash</p>
+</div>
+<div class="paragraph data-line-50">
+<p>Utilisation de Buildkit pour l&#8217;IC. Interface peu user friendly.</p>
+</div>
+<div class="paragraph data-line-52">
+<p>&#8658; Dagger engine. On lui donne tout un tas de choses (instructions, répertoires&#8230;&#8203;)</p>
+</div>
+<div class="paragraph data-line-54">
+<p>Graphe orienté acyclique</p>
+</div>
+<div class="paragraph data-line-56">
+<p>======= Comment utiliser Dagger</p>
+</div>
+<div class="paragraph data-line-58">
+<p>API GraphQL. Avantage : très grande profondeur. Client HTTP graphQL disponibles dans plein de langages.</p>
+</div>
+<div class="paragraph data-line-60">
+<p>Dagger SDK (Go, Python et NodeJS)</p>
+</div>
+<div class="paragraph data-line-62">
+<p>======= Démo</p>
+</div>
+<div class="paragraph data-line-64">
+<p>Dagger API Playground</p>
+</div>
+<div class="paragraph data-line-66">
+<p>Avec Dagger tout s&#8217;exécute dans des containers.
+Les champs et les types GraphQL deviennent des attributs et des méthodes dans le SDK.
+Exécution dans des containers.
+On peut lui demander de // des builds.</p>
+</div>
+<div class="paragraph data-line-71">
+<p>Possibilité de rajouter un service tiers comme une DB.</p>
+</div>
+<div class="paragraph data-line-73">
+<p>On peut mettre des variables d&#8217;env dans un container comme les secrets (via Vault ou variables d&#8217;env)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3 data-line-87">
+<h4 id="_1830_1900"><a class="anchor" href="#_1830_1900"></a>18:30 - 19:00</h4>
+<div class="sect4 data-line-1">
+<h5 id="_jkube_remote_dev_coder_avec_tous_vos_micro_services_du_cloud_en_local"><a class="anchor" href="#_jkube_remote_dev_coder_avec_tous_vos_micro_services_du_cloud_en_local"></a>JKube remote-dev : coder avec tous vos micro-services du cloud &#8230;&#8203; en local !</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_5"><a class="anchor" href="#_fiche_signalétique_5"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/WOA-9081/JKube_remote-dev_:_coder_avec_tous_vos_micro-services_du_cloud_&#8230;&#8203" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/WOA-9081/JKube_remote-dev_:_coder_avec_tous_vos_micro-services_du_cloud_&#8230;&#8203">https://cfp.devoxx.fr/2023/talk/WOA-9081/JKube_remote-dev_:_coder_avec_tous_vos_micro-services_du_cloud_&#8230;&#8203</a>;<em>en_local</em>!</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tools in Action, 30mn, mercredi/jeudi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud, Containers et Infrastructure, DevOps</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intermédiaire</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kubernetes Containerized Microservices Cloud Native Java</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_5"><a class="anchor" href="#_speaker_5"></a>Speaker</h6>
+<div class="paragraph data-line-27">
+<p>Sun Tan, RedHat, Senior Sw Developper
+Projets : eclipse JKube, Fabric8 k8s client
+Paris JUG</p>
+</div>
+</div>
+<div class="sect5 data-line-31">
+<h6 id="_notes_5"><a class="anchor" href="#_notes_5"></a>Notes</h6>
+<div class="paragraph data-line-33">
+<p>A partir des environnements de prod, docker-compose.yml.</p>
+</div>
+<div class="paragraph data-line-35">
+<p>Pbms avec docker-compose :
+* local machine pas adpatée pour héberger tous les µS.
+* Hébergement de données sensibles
+* Encore un autre fichier à maintenir décorellé de ce qu&#8217;il y a en prod</p>
+</div>
+<div class="paragraph data-line-40">
+<p>De + en + de µS</p>
+</div>
+<div class="paragraph data-line-42">
+<p>--- Java to k8s cf. photo (solution avant)</p>
+</div>
+<div class="paragraph data-line-44">
+<p>Solution simplifiée : JKube</p>
+</div>
+<div class="paragraph data-line-46">
+<p>--- C&#8217;est quoi ?</p>
+</div>
+<div class="paragraph data-line-48">
+<p>plugins maven, gradle.
+Il analyse le projet et va générer ce qu&#8217;il faut pour k8s. Image par défaut et ressources par défaut.</p>
+</div>
+<div class="paragraph data-line-51">
+<p>Aparte : openshift = surcouche k8s (ressource de k8s)</p>
+</div>
+<div class="paragraph data-line-53">
+<p>jkube-website-quickstarts.com ?</p>
+</div>
+<div class="paragraph data-line-55">
+<p>On peut faire de l&#8217;ingress et gérer les replicas facilement (via propriétés gradle ou maven)</p>
+</div>
+<div class="paragraph data-line-59">
+<p>github.com/redhat-developer-demos/northwind-traders</p>
+</div>
+<div class="paragraph data-line-61">
+<p>--- Démo cf. photo</p>
+</div>
+<div class="paragraph data-line-63">
+<p>Modification du java. Pour déployer :
+* mvn package resources (1min20 pour un projet simple)
+* On va plutôt faire : oc:remote-dev ou k8s:remote-dev (cf. photo). C&#8217;est comme si je mettais mon laptop dans le cluster (téléportation) !</p>
+</div>
+<div class="paragraph data-line-67">
+<p>Cela veut dire que le µS est celui qui tourne sur ma machine.</p>
+</div>
+<div class="paragraph data-line-69">
+<p>Attention quand même : un peu de config à faire.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2 data-line-91">
+<h3 id="_jeudi"><a class="anchor" href="#_jeudi"></a>Jeudi</h3>
+<div class="sect3 data-line-93">
+<h4 id="_900_920"><a class="anchor" href="#_900_920"></a>9:00 - 9:20</h4>
+<div class="sect4 data-line-1">
+<h5 id="_et_si_le_digital_permettait_de_mieux_vivre_et_plus_longtemps"><a class="anchor" href="#_et_si_le_digital_permettait_de_mieux_vivre_et_plus_longtemps"></a>Et si le digital permettait de mieux vivre et plus longtemps ?</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_6"><a class="anchor" href="#_fiche_signalétique_6"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/HAH-6318/Et_si_le_digital_permettait_de_mieux_vivre_et_plus_longtemps_%3F" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/HAH-6318/Et_si_le_digital_permettait_de_mieux_vivre_et_plus_longtemps_%3F">https://cfp.devoxx.fr/2023/talk/HAH-6318/Et_si_le_digital_permettait_de_mieux_vivre_et_plus_longtemps_%3F</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Keynote</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Big Data, Machine Learning, Analytics</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">health Artificial Intelligence innovation</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_6"><a class="anchor" href="#_speaker_6"></a>Speaker</h6>
+<div class="paragraph data-line-27">
+<p>Céline Lazorthes, entrepreneure, imaginatrice de services qui n&#8217;existent pas. Fondatrice de Lychee et Résilience</p>
+</div>
+</div>
+<div class="sect5 data-line-29">
+<h6 id="_notes_6"><a class="anchor" href="#_notes_6"></a>Notes</h6>
+<div class="paragraph data-line-31">
+<p>Objectif : comment les développeurs peuvent améliorer notre vie</p>
+</div>
+<div class="paragraph data-line-33">
+<p>40% des gens seront touchés par le cancer</p>
+</div>
+<div class="paragraph data-line-35">
+<p>Causes
+* Vieillissement
+* Détection automatique
+* Evolution de notre mode de vie (addictions, &#8230;&#8203;)</p>
+</div>
+<div class="paragraph data-line-40">
+<p>En 2040 : 40M de nouveaux cas dans le monde</p>
+</div>
+<div class="paragraph data-line-42">
+<p>Il y a 65k oncologues dans le monde, 2500 en Fr &#8658; les pros de santé ont très peu de temps pour choisir le traitement. Environ 2 min pendant les réunions RCP pour choisir le traitement. 70% des pros de santé associés sont considérés en burnout !</p>
+</div>
+<div class="paragraph data-line-44">
+<p>Bonne nouvelle : les développeurs peuvent apporter leur pierre en participant à des projets de santé. #ProtegeTonSoignant. AirTable pour les sondages et WhatsApp pour la com'. Outils utilisés pendant le covid :
+* Cagnotte Lychee
+* Sondage AirTable
+* WhatsApp</p>
+</div>
+<div class="paragraph data-line-49">
+<p>Resilience : télésurveillance médicale. Tous les jours : remontée d&#8217;infos médicales. Traitement des données puis alerte si besoin.</p>
+</div>
+<div class="paragraph data-line-51">
+<p>3000 patients suivis. Entreprise de 100 personnes. Plein de choses encore à inventer. Univers de la HealthTech pour changer le système de santé.</p>
+</div>
+<div class="paragraph data-line-53">
+<p>Médecine personnalisée
+* Prise en charge. 1,5G de RDV par an en France. 1/3 qui pourrait être évités, 1/3 optimisé,
+* Détection précoce. Ex : MIT a publié un papier avec une IA qui pourrait détecter 7 ans avant un cancer du poumon.
+* Amélioration des traitements. Ex : on a du mal à voir quel médicament est vraiment efficace. Topasium : analyse des données de BradControl.</p>
+</div>
+<div class="paragraph data-line-58">
+<p>Aujourd&#8217;hui on soigne les h/f, il faut donner un médicament à une caractéristique de patient &#8658; un médicament pour un patient et non pas un médicament pour une flotte de patients.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3 data-line-97">
+<h4 id="_925_945"><a class="anchor" href="#_925_945"></a>9:25 - 9:45</h4>
+<div class="sect4 data-line-1">
+<h5 id="_la_tech_au_secours_de_la_planète"><a class="anchor" href="#_la_tech_au_secours_de_la_planète"></a>La tech au secours de la planète ?</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_7"><a class="anchor" href="#_fiche_signalétique_7"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/BCN-1243/La_tech_au_secours_de_la_planete_%3F" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/BCN-1243/La_tech_au_secours_de_la_planete_%3F">https://cfp.devoxx.fr/2023/talk/BCN-1243/La_tech_au_secours_de_la_planete_%3F</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Keynote</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">People &amp; Culture, Soft Skills, Future of work, Innovation, Side projects</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">greenIT futures innovations</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_7"><a class="anchor" href="#_speaker_7"></a>Speaker</h6>
+<div class="paragraph data-line-27">
+<p>Philippe ? ouvrages sur les énergies non renouvelables
+Nicolas ?</p>
+</div>
+</div>
+<div class="sect5 data-line-30">
+<h6 id="_notes_7"><a class="anchor" href="#_notes_7"></a>Notes</h6>
+<div class="paragraph data-line-32">
+<p>Est-ce que la tech peut aider la planète ?</p>
+</div>
+<div class="paragraph data-line-34">
+<p>Il faut extraire de plus en plus de ressources de la croute terrestre : voitures électriques, énergies renouvelables, &#8230;&#8203;</p>
+</div>
+<div class="paragraph data-line-36">
+<p>Avantage : on peut recycler les métaux à l&#8217;infini. Mais notre monde ne fonctionne pas comme ça.</p>
+</div>
+<div class="paragraph data-line-38">
+<p>On est une gigantesque machine entropique.</p>
+</div>
+<div class="paragraph data-line-40">
+<p>2% de croissance par an en consommation</p>
+</div>
+<div class="paragraph data-line-42">
+<p>Dans 1500 ans, énergie du soleil/système solaire
+Dans 3000 ans, énergie de la galxie</p>
+</div>
+<div class="paragraph data-line-45">
+<p>Quel impact par les développeurs ? 10% consommation mondiale est pour le digital !</p>
+</div>
+<div class="paragraph data-line-47">
+<p>GreenIT : avant 1kWh pour refroidir pour 1kWh de conso d&#8217;un serveur. Maintenant bcp moins. Chaque geste unitaire consomme moins mais on en consomme plus : effet rebond.</p>
+</div>
+<div class="paragraph data-line-49">
+<p>Qu&#8217;est-ce qu&#8217;on fait alors : lowTech. Est-ce qu&#8217;on peut avoir une démarche d&#8217;innovation sociale, culturelle, &#8230;&#8203; pour réduire l&#8217;impact environnemental.
+* Sobriété : on réduit à la source. Ex : voiture qui font 2 tonnes avec une autonomie de 1000km. Est-ce qu&#8217;on pourrait avoir une voiture moins lourde, moins puissante etc&#8230;&#8203; Les réseaux d&#8217;accès, le retour des consignes
+* Age de la maintenance : on n&#8217;est pas plus heureux par ce qu&#8217;on change un aspirateur tous les 5 ans. Faire en sorte que ça dure le plus longtemps possible. Valable aussi pour les lieux.
+* Faire preuve de techno-discernement. Plein d&#8217;endroits où la technologie sert à rien. Exemple de l&#8217;école numérique&#8230;&#8203;</p>
+</div>
+<div class="paragraph data-line-54">
+<p>Compliqué de changer les habitudes de tous. Le consommateur s&#8217;adapte à ce qu&#8217;il y a dans les rayons. Comment on transforme les multi-nationales ? Changer le modèle économique profond ? Légendes :
+* Croissance économique à l&#8217;infini
+* Le client est roi, "consommacteur".
+* L&#8217;économie est poussée par les entreprises pour qu&#8217;on achète.</p>
+</div>
+<div class="paragraph data-line-59">
+<p>Un pan d&#8217;action : agir sur l&#8217;offre et pas la demande. Entreprise = organisation pour optimiser sous contrainte.
+* Levier réglementaire via législation (un peu liberticide mais la liberté des uns s&#8217;arrête là où commence celle des autres). Faire évoluer les normes avec subtilité.
+* Fiscalité : dès qu&#8217;on peut remplacer du travail humain par des ressources ou de l&#8217;énergie, on le fait. Bascule de la fiscalité du travail humain vers les ressources
+* Subventions, primes&#8230;&#8203;</p>
+</div>
+<div class="paragraph data-line-99">
+<p>On va y arriver ? On a les moyens techniques, humains pour changer. Usages numériques (vidéo par ex), mobilité, eco-conception. Si on empilait tous les leviers, on ferait x100 sur l&#8217;efficacité mais cela toucherait à des modèles économiques, sociaux culturels.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3 data-line-101">
+<h4 id="_950_1010"><a class="anchor" href="#_950_1010"></a>9:50 - 10:10</h4>
+<div class="sect4 data-line-1">
+<h5 id="_definition_of_done_une_notion_évolutive_en_start_up_santé"><a class="anchor" href="#_definition_of_done_une_notion_évolutive_en_start_up_santé"></a>Definition of Done : une notion évolutive en start-up santé</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_8"><a class="anchor" href="#_fiche_signalétique_8"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/EPQ-6420/Definition_of_Done_:_une_notion_evolutive_en_start-up_sante" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/EPQ-6420/Definition_of_Done_:_une_notion_evolutive_en_start-up_sante">https://cfp.devoxx.fr/2023/talk/EPQ-6420/Definition_of_Done_:_une_notion_evolutive_en_start-up_sante</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Keynote</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">People &amp; Culture, Soft Skills, Future of work, Innovation, Side projects</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Artificial Intelligence Robots health</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_8"><a class="anchor" href="#_speaker_8"></a>Speaker</h6>
+<div class="paragraph data-line-27">
+<p>Sophie Cahen, start-up Ganymed robotics, développement logiciels robotique pour la pose de prothèse (chirurgie). Chevalier de l&#8217;ordre du mérite. 70% de codeurs. Ingénieure process</p>
+</div>
+</div>
+<div class="sect5 data-line-29">
+<h6 id="_notes_8"><a class="anchor" href="#_notes_8"></a>Notes</h6>
+<div class="paragraph data-line-31">
+<p>--- Ganymed</p>
+</div>
+<div class="paragraph data-line-33">
+<p>Projet deep tech vers de la recherche. Techno de produit vers dispositif médical. Volonté morale et éthique de ne pas blesser le patient
+&#8658; sortir du code de qualité</p>
+</div>
+<div class="paragraph data-line-36">
+<p>1ère révolution : pacemaker par exemple. On solutionne des pbms.</p>
+</div>
+<div class="paragraph data-line-38">
+<p>2ème révolution des traitements médicaux : démocratiser l&#8217;accès.</p>
+</div>
+<div class="paragraph data-line-40">
+<p>1ère brique : Vision par ordi pour cartographier la jambe.
+2ème brique : dev d&#8217;un robot from scratch.</p>
+</div>
+<div class="paragraph data-line-43">
+<p>Challengers vs américains.</p>
+</div>
+<div class="paragraph data-line-45">
+<p>En 4 ans, papier blanc vers le robot. Proto présenté à un salon ~CES.</p>
+</div>
+<div class="paragraph data-line-47">
+<p>--- Mais</p>
+</div>
+<div class="paragraph data-line-49">
+<p>Phase de faisa technologique. Quick &amp; dirty car on sait pas si ça va marcher. Au début, développement dans son "garage", labo&#8230;&#8203;</p>
+</div>
+<div class="paragraph data-line-51">
+<p>Comment apporter des nouvelles méthodes de travail qui conviennent à tout le monde ? quick &amp; dirty vs dev produit, normé</p>
+</div>
+<div class="paragraph data-line-53">
+<p>&#8658; Notion de polarité : ce ne sont pas 2 mondes qui s&#8217;affrontent, curseur à trouver entre les 2 en fonction du contexte. Il faut l&#8217;expliquer aux gens. Y&#8217;a des virages à prendre. Ex : 2 ans de pure faisa, puis nouvelles méthodes de travail.
+* D&#8217;ordre individuelle : formation, communication. Projeter sur le fait que ce code va être emmené jusqu&#8217;au patient et/ou client. Lead Sw : embarquer l&#8217;équipe pour prendre le virage.
+* D&#8217;ordre collectif : process, besoin de satisfaction de normes (62304 ici). Nouveaux outils, voabulaire.</p>
+</div>
+<div class="paragraph data-line-57">
+<p>Bcp de changements en // de déménagement, formation, méthode de fonctionnement (DevOps).</p>
+</div>
+<div class="paragraph data-line-103">
+<p><strong>Focus on the goal, not the obstacles</strong>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3 data-line-105">
+<h4 id="_1015_1045"><a class="anchor" href="#_1015_1045"></a>10:15 - 10:45</h4>
+<div class="paragraph data-line-107">
+<p>----- BREAK -----</p>
+</div>
+</div>
+<div class="sect3 data-line-109">
+<h4 id="_1045_1130"><a class="anchor" href="#_1045_1130"></a>10:45 - 11:30</h4>
+<div class="sect4 data-line-1">
+<h5 id="_crac_vs_graalvm"><a class="anchor" href="#_crac_vs_graalvm"></a>CRAC vs GraalVM</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_9"><a class="anchor" href="#_fiche_signalétique_9"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/XII-3585/CRAC_vs_GraalVM" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/XII-3585/CRAC_vs_GraalVM">https://cfp.devoxx.fr/2023/talk/XII-3585/CRAC_vs_GraalVM</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conference, 45mn, jeudi et vendredi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Java, JVM</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intermédiaire</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Java Cloud Native Java Graal</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_9"><a class="anchor" href="#_speaker_9"></a>Speaker</h6>
+<div class="paragraph data-line-27">
+<p>Lilian Benoit, github lbenoit</p>
+</div>
+</div>
+<div class="sect5 data-line-29">
+<h6 id="_notes_9"><a class="anchor" href="#_notes_9"></a>Notes</h6>
+<div class="paragraph data-line-31">
+<p>--- Changement de paradigme
+* Usage de µS : démarrage/arrêt rapide.
+* Diminution de serveurs
+* Approche serverless. Essayer de ne pas être dépendant d&#8217;un serveur pour éviter de trop payer.</p>
+</div>
+<div class="paragraph data-line-36">
+<p>--- Fonctionnement de la JVM
+* Bytecode interprété
+* Code "préchauffe". Elle améliore le code interprété.
+* Compilateur C1 et C2 du JIT. Si elle passe souvent, elle compile en natif.
+* Optimisation avec profilage</p>
+</div>
+<div class="paragraph data-line-42">
+<p>--- Usage de JAVA
+* Langage dynamique : chargement et chargeur de classes, ça prend du temps.
+* Prise en compte des annotations comme @Entity. Mais au démarrage de la JVM, il faut rechercher ces types d&#8217;ojets&#8230;&#8203;
+* Initialisation des blocs statiques. Comme c&#8217;est fait au lancement, ça prend du temps aussi&#8230;&#8203;
+* Init du contexte applicatif (CDI ou Spring).</p>
+</div>
+<div class="paragraph data-line-48">
+<p>--- GraalVM</p>
+</div>
+<div class="paragraph data-line-50">
+<p>Vient d&#8217;Oracle. Compilateur Graal d&#8217;openJdk. Donne native image
+* Compilateur AOT (en avance de phase)
+* Compilation complète en phase de construction.</p>
+</div>
+<div class="paragraph data-line-54">
+<p>--- Photo input/output de la JVM.</p>
+</div>
+<div class="paragraph data-line-56">
+<p>--- Demos
+Ajout d&#8217;un profile native. 5min48 pour construire un Hello :'(</p>
+</div>
+<div class="paragraph data-line-59">
+<p>L&#8217;application doit implémenter une classe Resource du framework CRaC.
+Au moment du checkpoint, la JVM s&#8217;est arrêtée. Pourquoi ?? C&#8217;est comme ça :(
+Etre en root pour faire la restauration.</p>
+</div>
+<div class="paragraph data-line-63">
+<p>Dans le monde réel, applicatin web. Comment on interragit avec la BDD au moment du checkpoint ? Idem pour les serveurs &#8658; à arrêter au moment du checkpoint, à redémarrer au moment du restore.</p>
+</div>
+<div class="paragraph data-line-65">
+<p>Exemple springboot : utiliser le tomcat de la JVM crac pour springboot.</p>
+</div>
+<div class="paragraph data-line-67">
+<p>--- Contraintes de GraalVM
+* Réflexion et dynamiques. Tout doit être connu au moment de la compilation. Pas de sérialisation possible avec GraalVM.
+* Utilisation Substrate VM.
+* Serial GC. Le moins performant&#8230;&#8203;
+* Optimisations à chaud (Version entreprise). En native, optimisation statique car le JIT ne peut rien faire. Avec cette version, on peut faire ce que le JIT.
+* G1 faible latence (entreprise). Un GC puissant !</p>
+</div>
+<div class="paragraph data-line-75">
+<p>--- CRaC Coordinated Restore At Checkpoint
+But : on va avoir des checkpoints et des restore.
+Projet OpenJDK ! Comme le projet Loom qui est dans le JDK, on pourrait penser qu&#8217;il pourrait y être.</p>
+</div>
+<div class="paragraph data-line-79">
+<p>--- Checkpoint
+La JVM c&#8217;est pas mal :). Attention : en débug sur du natif, c&#8217;est du C ! On voudrait rester en JAVA pour débugger, avoir les métriques etc&#8230;&#8203; La JVM, elle doit chauffer. Mais dès que c&#8217;est chaud, c&#8217;est top :). On fait une image, un checkpoint, pendant le run avec l&#8217;état etc.
+Utilisation d&#8217;un jdk 17 CRaC. Au lancement, options à rajouter pour stocker le checkpoint.
+Pour demander un checkpoint : jcmd avec JDK.checkpoint</p>
+</div>
+<div class="paragraph data-line-84">
+<p>--- Restore
+Au lancement, paramétrer la JVM pour que le checkpoint soit restauré.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3 data-line-113">
+<h4 id="_1045_1415"><a class="anchor" href="#_1045_1415"></a>10:45 - 14:15</h4>
+<div class="sect4 data-line-1">
+<h5 id="_bien_choisir_sa_base_de_données"><a class="anchor" href="#_bien_choisir_sa_base_de_données"></a>Bien choisir sa base de données</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_10"><a class="anchor" href="#_fiche_signalétique_10"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">todo</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conference, 45mn</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Architecture, Performance et Securité</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intermédiaire</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">todo</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_10"><a class="anchor" href="#_speaker_10"></a>Speaker</h6>
+<div class="paragraph data-line-27">
+<p>Sébastien Keller et ??</p>
+</div>
+</div>
+<div class="sect5 data-line-29">
+<h6 id="_notes_10"><a class="anchor" href="#_notes_10"></a>Notes</h6>
+<div class="paragraph data-line-31">
+<p>Pbm de base : on choisit les BDD sans trop se poser de question en général relationnelle.</p>
+</div>
+<div class="paragraph data-line-33">
+<p>--- Les DBs relationnelles
+Relations entre les tables. Filtre, tri. Principes ACID, formes normales, ORM. PGSQL en ref.</p>
+</div>
+<div class="paragraph data-line-36">
+<p>--- Les DBs documents
+Documents (objets JSON) et collections. Dénormalisation : les champs département dans employee par exemple. MongoDB</p>
+</div>
+<div class="paragraph data-line-39">
+<p>Cas d&#8217;usage : acheter un patalon. &#8658; DB search. Index et documents. Préparer la donnée, fuzzy search (tolérance aux fautes). ElasticSearch.</p>
+</div>
+<div class="paragraph data-line-41">
+<p>BD graph, timeseries. Colonnes (cassandra), search etc&#8230;&#8203; Y&#8217;en a trop !</p>
+</div>
+<div class="paragraph data-line-43">
+<p>--- Axes de décision</p>
+</div>
+<div class="paragraph data-line-45">
+<p>Structure
+* Type de requêtes
+<strong> recherche par identifiant. Clé primaire/étrangère (relationnel), clé de partition (colonne), namespace
+</strong> Recherche par champ secondaire. Si écriture par index, perte de temps mais lecture rapide. Cf. photo
+<strong> Recherche partielle : token, full text. Cf. photo
+</strong> Recherche par score. Search bien !</p>
+</div>
+<div class="paragraph data-line-53">
+<p>Comprendre son besoin
+* Tableau recap : cf.photo
+* Transaction ACID ou longue,  Niveau d&#8217;isolation. Mongo est le bon compromis mais relationnel au top.</p>
+</div>
+<div class="paragraph data-line-57">
+<p>Insertion et modification</p>
+</div>
+<div class="paragraph data-line-59">
+<p>Expiration et suppression
+* Time to leave
+* Rotations de partition</p>
+</div>
+<div class="paragraph data-line-63">
+<p>Coûts de suppression
+* Perfs
+* Espace disque</p>
+</div>
+<div class="paragraph data-line-67">
+<p>Warning RGPD : on ne peut plus garder les données indéfiniment.</p>
+</div>
+<div class="paragraph data-line-69">
+<p>Recréer la table plutôt que la supprimer.</p>
+</div>
+<div class="paragraph data-line-71">
+<p>--- Schéma
+Schéma fixe : relationnel
+Flexible : key/value, document, search
+Selon implémentation : colonne</p>
+</div>
+<div class="paragraph data-line-76">
+<p>Structure
+* sparse data : données optimisées pour avoir des valeurs nulles. Relationnel pas prévu.
+* Données imbriquées
+* Entités avec liens : graphe ou relationnel.</p>
+</div>
+<div class="paragraph data-line-81">
+<p>Unicité : preque tout le monde.
+Types fréquents supportés</p>
+</div>
+<div class="paragraph data-line-85">
+<p>--- Evol
+Faire évoluer mon schéma. Relationnel, doc, graphe ok.
+Modifications en masse. Idem</p>
+</div>
+<div class="paragraph data-line-89">
+<p>--- Performance
+Mécaniques de base
+* Caches
+* Query fréquentes
+* Nouvelles requêtes</p>
+</div>
+<div class="paragraph data-line-95">
+<p>Latence
+* Très faible : colonne, key/value
+* Faible : les autres (requêtes simples)
+* Fortes : (requêtes complexes)
+* Très fortes : big data</p>
+</div>
+<div class="paragraph data-line-101">
+<p>Volume de données
+Faible &lt; 1Go &#8658; memory
+Forte &lt; 100Go &#8658; toutes
+Colossal &#8658; big data</p>
+</div>
+<div class="paragraph data-line-106">
+<p>--- Dispo et scalabilité
+Dispo : si crash, autre instance
+Scalabilité : si trop d&#8217;users, on augmente le nombre d&#8217;instance</p>
+</div>
+<div class="paragraph data-line-110">
+<p>Repliquer les données
+distribution mondiale ?
+Tout copier
+&#8658; DB partitionnée en horizontal ou en vertical. Relationnel pas trop mal</p>
+</div>
+<div class="paragraph data-line-115">
+<p>Dispo
+* Modèles de clustering : standby replica warm (replique si master tombe), hot (réplique à la volée). Avec les partitions, on duplique qu&#8217;une partie des données (les partitions). Peut-on faire sans principal ? Exemple Cassandra. ALL + ONE, Quorum.
+* BDD managées : Amazon RDS, Cloud SQL, Azure SQL. Services managés : Aurora, etc</p>
+</div>
+<div class="paragraph data-line-119">
+<p>--- Opérations</p>
+</div>
+<div class="paragraph data-line-121">
+<p>Maintenance - recovery
+* Jobs de clean-up
+* Mises à jour
+* Backups</p>
+</div>
+<div class="paragraph data-line-126">
+<p>Hébergement
+* Où ? Le salon, cloud&#8230;&#8203;
+* Gestion ?
+* Emplacement de données : latence, compliance</p>
+</div>
+<div class="paragraph data-line-131">
+<p>--- En bref</p>
+</div>
+<div class="paragraph data-line-133">
+<p>Relationnel
+* Adoption support
+* Transactions
+* Jointures
+* Intégration;
+Nogo : pas de relations, si pas de contraintes de schéma, écritures ++. Sinon BDD distribuée</p>
+</div>
+<div class="paragraph data-line-140">
+<p>Documents
+* vélocité
+* flecibilité
+* si pas de données relationn
+Nogo : pas de transactions, écritures ++, structure fixe</p>
+</div>
+<div class="paragraph data-line-146">
+<p>Colonnes
+* Perfs
+* Distribuer la données
+* Cohérence
+Nogo : pas de transactions, &#8230;&#8203;</p>
+</div>
+<div class="paragraph data-line-152">
+<p>DB Search
+* Recherche textuelle
+* Distri données
+* Scaler H
+* Schéma flex
+Nogo : pas de relationnel, pas de transactions, si pas de search&#8230;&#8203;</p>
+</div>
+<div class="paragraph data-line-159">
+<p>Graph
+* Données fortements liées, transactions, flex, filtres, tri, graphes
+Nogo : si structure pas adaptée, pas de SQL</p>
+</div>
+<div class="paragraph data-line-163">
+<p>Timeseries
+* Données timestampée
+Nogo : pas de transactions</p>
+</div>
+<div class="paragraph data-line-167">
+<p>Big data
+* Volumétrie, jointures, requetes transactions, cloud, structure object
+Nogo : volume faible, latences, contraintes schéma</p>
+</div>
+<div class="paragraph data-line-171">
+<p>--- Quelques conseils</p>
+</div>
+<div class="paragraph data-line-173">
+<p>Utiliser les BD existantes dans le SI.
+Généraliste vs spécifique
+Projetez dans la base optimale (en fonction du besoin).
+Tester les perfs !</p>
+</div>
+<div class="paragraph data-line-178">
+<p>Dimensionnement</p>
+</div>
+<div class="paragraph data-line-181">
+<p>Tip choisir c&#8217;est renoncer.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3 data-line-117">
+<h4 id="_1230_1330_2"><a class="anchor" href="#_1230_1330_2"></a>12:30 - 13:30</h4>
+<div class="paragraph data-line-119">
+<p>----- REPAS -----</p>
+</div>
+</div>
+<div class="sect3 data-line-121">
+<h4 id="_1300_1315"><a class="anchor" href="#_1300_1315"></a>13:00 - 13:15</h4>
+<div class="sect4 data-line-1">
+<h5 id="_tous_architectes"><a class="anchor" href="#_tous_architectes"></a>Tous architectes !</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_11"><a class="anchor" href="#_fiche_signalétique_11"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/AEY-9252/Tous_architectes_" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/AEY-9252/Tous_architectes_">https://cfp.devoxx.fr/2023/talk/AEY-9252/Tous_architectes_</a>!</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quickie, 15mn, jeudi et vendredi midi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Architecture, Performance et Securité</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">architecture organization best practices</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_11"><a class="anchor" href="#_speaker_11"></a>Speaker</h6>
+<div class="paragraph data-line-27">
+<p>Le Bon coin, y&#8217;a 10 ans 0-30 personnes</p>
+</div>
+</div>
+<div class="sect5 data-line-29">
+<h6 id="_notes_11"><a class="anchor" href="#_notes_11"></a>Notes</h6>
+<div class="paragraph data-line-31">
+<p>On doit tous se considérer comme architecte.</p>
+</div>
+<div class="paragraph data-line-33">
+<p>Ajouter photo</p>
+</div>
+<div class="paragraph data-line-35">
+<p>0-30 personnes : 2-3 semaines pour être autonome, archi affaire de tous, complexité faible (serveur d&#8217;appli), problématique : choix du café
+30-150 : complexité accrue (app mobile, bcp sur le monolithe), synchro formelle, archi affaire des managers, problématique : abstraction &amp; politique. Choix d&#8217;archi politisés&#8230;&#8203;
+150-300 : passage en µS, archi affaire d&#8217;experts (infras, front, back) &#8658; communauté d&#8217;architectures (discussions de choix, suivi de la transfo), problématique : bande passante (jamais dispo, pas en charge des décisions qui les concernaient) et croissance (discussions complexes car de + en + d&#8217;experts dans la communauté et donc ça prenait encore plus de temps).
+300-500 : complexité++ (plusieurs sites, 100aines de µS, &#8230;&#8203;), architecture affaire des architectes (100% dédiée) mais équipe très sollicitée (manager, équipes de DEV), problématique : validation gate &amp; bottle neck (les gens venaient)
+500+ : archi affaire de tous, problématique : alignement (cohérence de l&#8217;ensemble)</p>
+</div>
+<div class="paragraph data-line-41">
+<p>Equipe d&#8217;archi : comment faire passer ses approches dans les équipes ? MartinFowler : tout le monde peut prendre la décision d&#8217;archi.
+Inclure les équipes impactées
+Tracer les discussions (compromis, solutions envisagées)</p>
+</div>
+<div class="paragraph data-line-45">
+<p>&#8658; ADR</p>
+</div>
+<div class="paragraph data-line-47">
+<p>Avantages :
+* intelligence collective. Si décision impacte plus d&#8217;une équipe, on les met dedans
+* Confiance et sécurité émtionnelle : on déstresse un peu ces moments de décisions car tout le monde est dedans
+* Efficience !
+* Diffusion &amp; DOC : journal de l&#8217;ensemble des ADR</p>
+</div>
+<div class="paragraph data-line-53">
+<p>Apprentissages
+* Discussions en synchrone : on confronte les idées au même moment
+* Repartir du pbm
+* Max de scénarios
+* On cherche le <strong>consentement</strong> et pas le consensus
+* Décisions searchable + notifs</p>
+</div>
+<div class="paragraph data-line-60">
+<p>Comment assurer la cohérence ?
+* Core architecture principes (manifest)
+* Tech radar sur les technos
+* Casquettes spécifiques : senior eng, staff eng, guild eng et ?</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3 data-line-125">
+<h4 id="_1330_1415"><a class="anchor" href="#_1330_1415"></a>13:30 - 14:15</h4>
+<div class="sect4 data-line-1">
+<h5 id="_loi_de_conway_lorsque_les_bonnes_pratiques_ne_suffisent_pas"><a class="anchor" href="#_loi_de_conway_lorsque_les_bonnes_pratiques_ne_suffisent_pas"></a>Loi de Conway : lorsque les bonnes pratiques ne suffisent pas</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_12"><a class="anchor" href="#_fiche_signalétique_12"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/ZQW-2568/Loi_de_Conway_:_lorsque_les_bonnes_pratiques_ne_suffisent_pas" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/ZQW-2568/Loi_de_Conway_:_lorsque_les_bonnes_pratiques_ne_suffisent_pas">https://cfp.devoxx.fr/2023/talk/ZQW-2568/Loi_de_Conway_:_lorsque_les_bonnes_pratiques_ne_suffisent_pas</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conference, 45mn, jeudi et vendredi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Architecture, Performance et Securité</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intermédiaire</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">organization Design architecture user experience product</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_12"><a class="anchor" href="#_speaker_12"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_12"><a class="anchor" href="#_notes_12"></a>Notes</h6>
+
+</div>
+</div>
+</div>
+<div class="sect3 data-line-129">
+<h4 id="_1430_1515"><a class="anchor" href="#_1430_1515"></a>14:30 - 15:15</h4>
+<div class="sect4 data-line-1">
+<h5 id="_les_nouveautés_de_java_19_et_20"><a class="anchor" href="#_les_nouveautés_de_java_19_et_20"></a>Les nouveautés de Java 19 et 20</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_13"><a class="anchor" href="#_fiche_signalétique_13"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/NHF-2060/Les_nouveautes_de_Java_19_et_20" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/NHF-2060/Les_nouveautes_de_Java_19_et_20">https://cfp.devoxx.fr/2023/talk/NHF-2060/Les_nouveautes_de_Java_19_et_20</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conference, 45mn, jeudi et vendredi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Java, JVM</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intermédiaire</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Java JDK JVM</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_13"><a class="anchor" href="#_speaker_13"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_13"><a class="anchor" href="#_notes_13"></a>Notes</h6>
+
+</div>
+</div>
+<div class="sect4 data-line-1">
+<h5 id="_passer_de_dallas_à_happy_days_conseils_pour_hacker_positivement_sa_vie"><a class="anchor" href="#_passer_de_dallas_à_happy_days_conseils_pour_hacker_positivement_sa_vie"></a>Passer de Dallas à Happy Days: conseils pour hacker positivement sa vie</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_14"><a class="anchor" href="#_fiche_signalétique_14"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/HXT-2632/Passer_de_Dallas_a_Happy_Days:_conseils_pour_hacker_positivement_sa_vie" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/HXT-2632/Passer_de_Dallas_a_Happy_Days:_conseils_pour_hacker_positivement_sa_vie">https://cfp.devoxx.fr/2023/talk/HXT-2632/Passer_de_Dallas_a_Happy_Days:_conseils_pour_hacker_positivement_sa_vie</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conference, 45mn, jeudi et vendredi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">People &amp; Culture, Soft Skills, Future of work, Innovation, Side projects</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">organization health real life situations careers skills</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_14"><a class="anchor" href="#_speaker_14"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_14"><a class="anchor" href="#_notes_14"></a>Notes</h6>
+
+</div>
+</div>
+</div>
+<div class="sect3 data-line-134">
+<h4 id="_1530_1615"><a class="anchor" href="#_1530_1615"></a>15:30 - 16:15</h4>
+<div class="sect4 data-line-1">
+<h5 id="_gestion_de_la_dette_darchitecture_dans_un_contexte_dhypercroissance"><a class="anchor" href="#_gestion_de_la_dette_darchitecture_dans_un_contexte_dhypercroissance"></a>Gestion de la dette d&#8217;architecture dans un contexte d&#8217;hypercroissance</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_15"><a class="anchor" href="#_fiche_signalétique_15"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/XQI-3023/Gestion_de_la_dette_d&#8217;architecture_dans_un_contexte_d&#8217;hypercroissance" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/XQI-3023/Gestion_de_la_dette_d&#8217;architecture_dans_un_contexte_d&#8217;hypercroissance">https://cfp.devoxx.fr/2023/talk/XQI-3023/Gestion_de_la_dette_d&#8217;architecture_dans_un_contexte_d&#8217;hypercroissance</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conference, 45mn, jeudi et vendredi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Architecture, Performance et Securité</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intermédiaire</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">architecture debt feedback Management</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_15"><a class="anchor" href="#_speaker_15"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_15"><a class="anchor" href="#_notes_15"></a>Notes</h6>
+
+</div>
+</div>
+<div class="sect4 data-line-1">
+<h5 id="_revisiting_design_patterns_after_20"><a class="anchor" href="#_revisiting_design_patterns_after_20"></a>Revisiting Design Patterns after 20</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_16"><a class="anchor" href="#_fiche_signalétique_16"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/YFE-8347/Revisiting_Design_Patterns_after_20" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/YFE-8347/Revisiting_Design_Patterns_after_20">https://cfp.devoxx.fr/2023/talk/YFE-8347/Revisiting_Design_Patterns_after_20</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conference, 45mn, jeudi et vendredi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Java, JVM</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intermédiaire</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Java design patterns best practices</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_16"><a class="anchor" href="#_speaker_16"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_16"><a class="anchor" href="#_notes_16"></a>Notes</h6>
+
+</div>
+</div>
+</div>
+<div class="sect3 data-line-139">
+<h4 id="_1530_1830"><a class="anchor" href="#_1530_1830"></a>15:30 - 18:30</h4>
+<div class="sect4 data-line-1">
+<h5 id="_introduction_à_la_gestion_de_logs_avec_grafana_loki_comme_prometheus_mais_pour_les_logs"><a class="anchor" href="#_introduction_à_la_gestion_de_logs_avec_grafana_loki_comme_prometheus_mais_pour_les_logs"></a>Introduction à la gestion de logs avec Grafana Loki: comme Prometheus mais pour les Logs</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_17"><a class="anchor" href="#_fiche_signalétique_17"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/BLQ-7561/Introduction_a_la_gestion_de_logs_avec_Grafana_Loki:_comme_Prometheus_mais_pour_les_Logs" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/BLQ-7561/Introduction_a_la_gestion_de_logs_avec_Grafana_Loki:_comme_Prometheus_mais_pour_les_Logs">https://cfp.devoxx.fr/2023/talk/BLQ-7561/Introduction_a_la_gestion_de_logs_avec_Grafana_Loki:_comme_Prometheus_mais_pour_les_Logs</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hands-on Lab, 3h, mercredi, jeud et vendredi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud, Containers et Infrastructure, DevOps</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intermédiaire</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">monitoring Logs prometheus</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_17"><a class="anchor" href="#_speaker_17"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_17"><a class="anchor" href="#_notes_17"></a>Notes</h6>
+
+</div>
+</div>
+<div class="sect4 data-line-1">
+<h5 id="_mise_en_place_de_prometheus_sur_une_application_java_spring_boot"><a class="anchor" href="#_mise_en_place_de_prometheus_sur_une_application_java_spring_boot"></a>Mise en place de Prometheus sur une application Java Spring boot</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_18"><a class="anchor" href="#_fiche_signalétique_18"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/UWT-1206/Mise_en_place_de_Prometheus_sur_une_application_Java_Spring_boot" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/UWT-1206/Mise_en_place_de_Prometheus_sur_une_application_Java_Spring_boot">https://cfp.devoxx.fr/2023/talk/UWT-1206/Mise_en_place_de_Prometheus_sur_une_application_Java_Spring_boot</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hands-on Lab, 3h, mercredi, jeud et vendredi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud, Containers et Infrastructure, DevOps</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intermédiaire</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Prometheus Monitoring for Java Developers Grafana Spring Boot</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_18"><a class="anchor" href="#_speaker_18"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_18"><a class="anchor" href="#_notes_18"></a>Notes</h6>
+
+</div>
+</div>
+</div>
+<div class="sect3 data-line-144">
+<h4 id="_1645_1730"><a class="anchor" href="#_1645_1730"></a>16:45 - 17:30</h4>
+<div class="sect4 data-line-1">
+<h5 id="_functional_domain_driven_design_featuring_ukulele"><a class="anchor" href="#_functional_domain_driven_design_featuring_ukulele"></a>Fun(ctional) Domain Driven Design (featuring Ukulele)</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_19"><a class="anchor" href="#_fiche_signalétique_19"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/QAD-8702/Fun(ctional" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/QAD-8702/Fun(ctional">https://cfp.devoxx.fr/2023/talk/QAD-8702/Fun(ctional</a>)<em>Domain_Driven_Design</em>(featuring_Ukulele)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conference, 45mn, jeudi et vendredi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Langages</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain Driven Design functional programming music Live Coding &amp; Demos</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_19"><a class="anchor" href="#_speaker_19"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_19"><a class="anchor" href="#_notes_19"></a>Notes</h6>
+
+</div>
+</div>
+</div>
+<div class="sect3 data-line-148">
+<h4 id="_1745_1815_2"><a class="anchor" href="#_1745_1815_2"></a>17:45 - 18:15</h4>
+<div class="sect4 data-line-1">
+<h5 id="_les_post_mortems_ou_comment_sortir_heureux_dun_carnage"><a class="anchor" href="#_les_post_mortems_ou_comment_sortir_heureux_dun_carnage"></a>Les post-mortems ou comment sortir heureux d’un carnage</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_20"><a class="anchor" href="#_fiche_signalétique_20"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/JKD-9971/Les_post-mortems_ou_comment_sortir_heureux_d%E2%80%99un_carnage" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/JKD-9971/Les_post-mortems_ou_comment_sortir_heureux_d%E2%80%99un_carnage">https://cfp.devoxx.fr/2023/talk/JKD-9971/Les_post-mortems_ou_comment_sortir_heureux_d%E2%80%99un_carnage</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tools in Action, 30mn, mercredi/jeudi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">People &amp; Culture, Soft Skills, Future of work, Innovation, Side projects</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">team Agile Improvements mistake</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_20"><a class="anchor" href="#_speaker_20"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_20"><a class="anchor" href="#_notes_20"></a>Notes</h6>
+
+</div>
+</div>
+<div class="sect4 data-line-1">
+<h5 id="_optimisez_les_jobs_spark_grâce_à_son_ui"><a class="anchor" href="#_optimisez_les_jobs_spark_grâce_à_son_ui"></a>Optimisez les jobs Spark grâce à son UI</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_21"><a class="anchor" href="#_fiche_signalétique_21"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/OBO-3890/Optimisez_les_jobs_Spark_grace_a_son_UI" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/OBO-3890/Optimisez_les_jobs_Spark_grace_a_son_UI">https://cfp.devoxx.fr/2023/talk/OBO-3890/Optimisez_les_jobs_Spark_grace_a_son_UI</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tools in Action, 30mn, mercredi/jeudi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Big Data, Machine Learning, Analytics</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apache Spark Performance Issues troubleshooting</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_21"><a class="anchor" href="#_speaker_21"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_21"><a class="anchor" href="#_notes_21"></a>Notes</h6>
+
+</div>
+</div>
+</div>
+<div class="sect3 data-line-153">
+<h4 id="_1815_1830"><a class="anchor" href="#_1815_1830"></a>18:15 - 18:30</h4>
+<div class="paragraph data-line-155">
+<p>----- SHORT BREAK -----</p>
+</div>
+</div>
+<div class="sect3 data-line-157">
+<h4 id="_1830_1900_2"><a class="anchor" href="#_1830_1900_2"></a>18:30 - 19:00</h4>
+<div class="sect4 data-line-1">
+<h5 id="_accélérer_vos_livraisons_dapi_avec_microcks"><a class="anchor" href="#_accélérer_vos_livraisons_dapi_avec_microcks"></a>Accélérer vos livraisons d&#8217;API avec Microcks</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_22"><a class="anchor" href="#_fiche_signalétique_22"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/BYI-0526/Accelerer_vos_livraisons_d&#8217;API_avec_Microcks" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/BYI-0526/Accelerer_vos_livraisons_d&#8217;API_avec_Microcks">https://cfp.devoxx.fr/2023/talk/BYI-0526/Accelerer_vos_livraisons_d&#8217;API_avec_Microcks</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tools in Action, 30mn, mercredi/jeudi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Architecture, Performance et Securité</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intermédiaire</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">APIs Event-Driven Microservices contracts testing Tools</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_22"><a class="anchor" href="#_speaker_22"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_22"><a class="anchor" href="#_notes_22"></a>Notes</h6>
+
+</div>
+</div>
+<div class="sect4 data-line-1">
+<h5 id="_comment_enseigner_scratch_à_vos_enfants"><a class="anchor" href="#_comment_enseigner_scratch_à_vos_enfants"></a>Comment "enseigner" Scratch à vos enfants?</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_23"><a class="anchor" href="#_fiche_signalétique_23"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/RNC-9928/Comment_%22enseigner%22_Scratch_a_vos_enfants%3F" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/RNC-9928/Comment_%22enseigner%22_Scratch_a_vos_enfants%3F">https://cfp.devoxx.fr/2023/talk/RNC-9928/Comment_%22enseigner%22_Scratch_a_vos_enfants%3F</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tools in Action, 30mn, mercredi/jeudi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">People &amp; Culture, Soft Skills, Future of work, Innovation, Side projects</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-22">
+<h6 id="_speaker_23"><a class="anchor" href="#_speaker_23"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-24">
+<h6 id="_notes_23"><a class="anchor" href="#_notes_23"></a>Notes</h6>
+
+</div>
+</div>
+</div>
+<div class="sect3 data-line-162">
+<h4 id="_1900_2000"><a class="anchor" href="#_1900_2000"></a>19:00 - 20:00</h4>
+<div class="paragraph data-line-164">
+<p>----- MEET AND GREET -----</p>
+</div>
+</div>
+<div class="sect3 data-line-166">
+<h4 id="_2000_2050"><a class="anchor" href="#_2000_2050"></a>20:00 - 20:50</h4>
+<div class="sect4 data-line-1">
+<h5 id="_bof_des_jug_leaders"><a class="anchor" href="#_bof_des_jug_leaders"></a>BOF des JUG leaders</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_24"><a class="anchor" href="#_fiche_signalétique_24"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/WER-5188/BOF_des_JUG_leaders" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/WER-5188/BOF_des_JUG_leaders">https://cfp.devoxx.fr/2023/talk/WER-5188/BOF_des_JUG_leaders</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bird of a Feather, 1h, jeudi soir uniquement</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Java, JVM</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Java JUGs community</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_24"><a class="anchor" href="#_speaker_24"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_24"><a class="anchor" href="#_notes_24"></a>Notes</h6>
+
+</div>
+</div>
+</div>
+<div class="sect3 data-line-170">
+<h4 id="_2100_2150"><a class="anchor" href="#_2100_2150"></a>21:00 - 21:50</h4>
+<div class="sect4 data-line-1">
+<h5 id="_bof_paris_software_crafters_community"><a class="anchor" href="#_bof_paris_software_crafters_community"></a>BOF Paris Software Crafters Community</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_25"><a class="anchor" href="#_fiche_signalétique_25"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/QLE-7839/BOF_Paris_Software_Crafters_Community" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/QLE-7839/BOF_Paris_Software_Crafters_Community">https://cfp.devoxx.fr/2023/talk/QLE-7839/BOF_Paris_Software_Crafters_Community</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bird of a Feather, 1h, jeudi soir uniquement</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Architecture, Performance et Securité</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Craftsmanship TDD code quality Testing Legacy Code</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_25"><a class="anchor" href="#_speaker_25"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_25"><a class="anchor" href="#_notes_25"></a>Notes</h6>
+
+</div>
+</div>
+</div>
+</div>
+<div class="sect2 data-line-174">
+<h3 id="_vendredi"><a class="anchor" href="#_vendredi"></a>Vendredi</h3>
+<div class="sect3 data-line-176">
+<h4 id="_900_920_2"><a class="anchor" href="#_900_920_2"></a>9:00 - 9:20</h4>
+<div class="sect4 data-line-1">
+<h5 id="_soyons_optimiste"><a class="anchor" href="#_soyons_optimiste"></a>Soyons optimiste</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_26"><a class="anchor" href="#_fiche_signalétique_26"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/RZB-3250/Soyons_optimiste" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/RZB-3250/Soyons_optimiste">https://cfp.devoxx.fr/2023/talk/RZB-3250/Soyons_optimiste</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Keynote, 20mn, jeudi et vendredi matin - ⛔️ Uniquement sur invitation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">People &amp; Culture, Soft Skills, Future of work, Innovation, Side projects</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-23">
+<h6 id="_speaker_26"><a class="anchor" href="#_speaker_26"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_notes_26"><a class="anchor" href="#_notes_26"></a>Notes</h6>
+
+</div>
+</div>
+</div>
+<div class="sect3 data-line-180">
+<h4 id="_950_1010_2"><a class="anchor" href="#_950_1010_2"></a>9:50 - 10:10</h4>
+<div class="sect4 data-line-1">
+<h5 id="_briser_le_plafond_de_glace"><a class="anchor" href="#_briser_le_plafond_de_glace"></a>Briser le plafond de glace</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_27"><a class="anchor" href="#_fiche_signalétique_27"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/MVJ-2885/Briser_le_plafond_de_glace" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/MVJ-2885/Briser_le_plafond_de_glace">https://cfp.devoxx.fr/2023/talk/MVJ-2885/Briser_le_plafond_de_glace</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Keynote, 20mn, jeudi et vendredi matin - ⛔️ Uniquement sur invitation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">People &amp; Culture, Soft Skills, Future of work, Innovation, Side projects</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">team inspiration optimizations</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_27"><a class="anchor" href="#_speaker_27"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_27"><a class="anchor" href="#_notes_27"></a>Notes</h6>
+
+</div>
+</div>
+</div>
+<div class="sect3 data-line-184">
+<h4 id="_1045_1130_2"><a class="anchor" href="#_1045_1130_2"></a>10:45 - 11:30</h4>
+<div class="sect4 data-line-1">
+<h5 id="_clean_as_you_code_your_projects"><a class="anchor" href="#_clean_as_you_code_your_projects"></a>Clean as You Code your projects</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_28"><a class="anchor" href="#_fiche_signalétique_28"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/OBI-1145/Clean_as_You_Code_your_projects" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/OBI-1145/Clean_as_You_Code_your_projects">https://cfp.devoxx.fr/2023/talk/OBI-1145/Clean_as_You_Code_your_projects</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conference, 45mn, jeudi et vendredi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud, Containers et Infrastructure, DevOps</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">developer productivity code quality Java CI/CD practices DevOps</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_28"><a class="anchor" href="#_speaker_28"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_28"><a class="anchor" href="#_notes_28"></a>Notes</h6>
+
+</div>
+</div>
+<div class="sect4 data-line-1">
+<h5 id="_programmation_concurrente_et_asynchrone_loom_en_java_20_et_21"><a class="anchor" href="#_programmation_concurrente_et_asynchrone_loom_en_java_20_et_21"></a>Programmation Concurrente et Asynchrone : Loom en Java 20 et 21</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_29"><a class="anchor" href="#_fiche_signalétique_29"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/PBK-4469/Programmation_Concurrente_et_Asynchrone_:_Loom_en_Java_20_et_21" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/PBK-4469/Programmation_Concurrente_et_Asynchrone_:_Loom_en_Java_20_et_21">https://cfp.devoxx.fr/2023/talk/PBK-4469/Programmation_Concurrente_et_Asynchrone_:_Loom_en_Java_20_et_21</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conference, 45mn, jeudi et vendredi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Java, JVM</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intermédiaire</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Java 17 concurrency</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_29"><a class="anchor" href="#_speaker_29"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_29"><a class="anchor" href="#_notes_29"></a>Notes</h6>
+
+</div>
+</div>
+</div>
+<div class="sect3 data-line-189">
+<h4 id="_1045_1415_2"><a class="anchor" href="#_1045_1415_2"></a>10:45 - 14:15</h4>
+<div class="sect4 data-line-1">
+<h5 id="_gérer_des_environnements_de_tests_stateful_et_éphémère_pour_ses_tests_end_to_end"><a class="anchor" href="#_gérer_des_environnements_de_tests_stateful_et_éphémère_pour_ses_tests_end_to_end"></a>Gérer des environnements de tests stateful et éphémère pour ses tests end-to-end</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_30"><a class="anchor" href="#_fiche_signalétique_30"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/AMZ-0729/Gerer_des_environnements_de_tests_stateful_et_ephemere_pour_ses_tests_end-to-end" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/AMZ-0729/Gerer_des_environnements_de_tests_stateful_et_ephemere_pour_ses_tests_end-to-end">https://cfp.devoxx.fr/2023/talk/AMZ-0729/Gerer_des_environnements_de_tests_stateful_et_ephemere_pour_ses_tests_end-to-end</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hands-on Lab, 3h, mercredi, jeud et vendredi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud, Containers et Infrastructure, DevOps</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Continuous Integration Cloud. End-to-end testing report</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_30"><a class="anchor" href="#_speaker_30"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_30"><a class="anchor" href="#_notes_30"></a>Notes</h6>
+
+</div>
+</div>
+<div class="sect4 data-line-1">
+<h5 id="_testing_in_an_hexagone_mob_ddd_tdd_tddd"><a class="anchor" href="#_testing_in_an_hexagone_mob_ddd_tdd_tddd"></a>Testing in an Hexagone: MOB + DDD + TDD = TDDD</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_31"><a class="anchor" href="#_fiche_signalétique_31"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/QWM-5330/Testing_in_an_Hexagone:_MOB_+" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/QWM-5330/Testing_in_an_Hexagone:_MOB_+">https://cfp.devoxx.fr/2023/talk/QWM-5330/Testing_in_an_Hexagone:_MOB_+</a><em>DDD</em>+<em>TDD_</em>=<em>TDDD</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hands-on Lab, 3h, mercredi, jeud et vendredi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Architecture, Performance et Securité</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intermédiaire</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">domain model objects TDD mocks Unit Testing Kotlin</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_31"><a class="anchor" href="#_speaker_31"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_31"><a class="anchor" href="#_notes_31"></a>Notes</h6>
+
+</div>
+</div>
+</div>
+<div class="sect3 data-line-194">
+<h4 id="_1145_1230"><a class="anchor" href="#_1145_1230"></a>11:45 - 12:30</h4>
+<div class="sect4 data-line-1">
+<h5 id="_éviter_les_biais_dans_la_conception_de_logiciels"><a class="anchor" href="#_éviter_les_biais_dans_la_conception_de_logiciels"></a>Éviter les biais dans la conception de logiciels</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_32"><a class="anchor" href="#_fiche_signalétique_32"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/GIB-5595/Eviter_les_biais_dans_la_conception_de_logiciels" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/GIB-5595/Eviter_les_biais_dans_la_conception_de_logiciels">https://cfp.devoxx.fr/2023/talk/GIB-5595/Eviter_les_biais_dans_la_conception_de_logiciels</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conference</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">People &amp; Culture, Soft Skills, Future of work, Innovation, Side projects</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software diversity Artificial Intelligence</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_32"><a class="anchor" href="#_speaker_32"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_32"><a class="anchor" href="#_notes_32"></a>Notes</h6>
+
+</div>
+</div>
+<div class="sect4 data-line-1">
+<h5 id="_foundationdb_le_secret_le_mieux_gardé_des_nouvelles_architectures_distribuées"><a class="anchor" href="#_foundationdb_le_secret_le_mieux_gardé_des_nouvelles_architectures_distribuées"></a>FoundationDB : le secret le mieux gardé des nouvelles architectures distribuées !</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_33"><a class="anchor" href="#_fiche_signalétique_33"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/CDQ-6705/FoundationDB_:_le_secret_le_mieux_garde_des_nouvelles_architectures_distribuees_" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/CDQ-6705/FoundationDB_:_le_secret_le_mieux_garde_des_nouvelles_architectures_distribuees_">https://cfp.devoxx.fr/2023/talk/CDQ-6705/FoundationDB_:_le_secret_le_mieux_garde_des_nouvelles_architectures_distribuees_</a>!</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conference</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Architecture, Performance et Securité</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Distributed Systems database architecture</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_33"><a class="anchor" href="#_speaker_33"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_33"><a class="anchor" href="#_notes_33"></a>Notes</h6>
+
+</div>
+</div>
+</div>
+<div class="sect3 data-line-199">
+<h4 id="_1230_1330_3"><a class="anchor" href="#_1230_1330_3"></a>12:30 - 13:30</h4>
+<div class="paragraph data-line-201">
+<p>----- REPAS -----</p>
+</div>
+</div>
+<div class="sect3 data-line-203">
+<h4 id="_1330_1415_2"><a class="anchor" href="#_1330_1415_2"></a>13:30 - 14:15</h4>
+<div class="sect4 data-line-1">
+<h5 id="_docker_au_service_du_devsecops"><a class="anchor" href="#_docker_au_service_du_devsecops"></a>Docker au service du DevSecOps</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_34"><a class="anchor" href="#_fiche_signalétique_34"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/JSX-0191/Docker_au_service_du_DevSecOps" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/JSX-0191/Docker_au_service_du_DevSecOps">https://cfp.devoxx.fr/2023/talk/JSX-0191/Docker_au_service_du_DevSecOps</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conference</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud, Containers et Infrastructure, DevOps</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Docker security CI/CD practices</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_34"><a class="anchor" href="#_speaker_34"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_34"><a class="anchor" href="#_notes_34"></a>Notes</h6>
+
+</div>
+</div>
+<div class="sect4 data-line-1">
+<h5 id="_les_tests_de_charge_sans_être_à_côté_de_la_plaque"><a class="anchor" href="#_les_tests_de_charge_sans_être_à_côté_de_la_plaque"></a>Les tests de charge sans être à côté de la plaque</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_35"><a class="anchor" href="#_fiche_signalétique_35"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/XRT-0183/Les_tests_de_charge_sans_etre_a_cote_de_la_plaque" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/XRT-0183/Les_tests_de_charge_sans_etre_a_cote_de_la_plaque">https://cfp.devoxx.fr/2023/talk/XRT-0183/Les_tests_de_charge_sans_etre_a_cote_de_la_plaque</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conference</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Architecture, Performance et Securité</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">load tests performance network</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_35"><a class="anchor" href="#_speaker_35"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_35"><a class="anchor" href="#_notes_35"></a>Notes</h6>
+
+</div>
+</div>
+</div>
+<div class="sect3 data-line-208">
+<h4 id="_1430_1515_2"><a class="anchor" href="#_1430_1515_2"></a>14:30 - 15:15</h4>
+<div class="sect4 data-line-1">
+<h5 id="_1_2_3_quarkus"><a class="anchor" href="#_1_2_3_quarkus"></a>1, 2, 3 Quarkus!</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_36"><a class="anchor" href="#_fiche_signalétique_36"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/TNW-6010/1,_2,_3_Quarkus" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/TNW-6010/1,_2,_3_Quarkus">https://cfp.devoxx.fr/2023/talk/TNW-6010/1,_2,_3_Quarkus</a>!</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conference</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Java, JVM</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quarkus Cloud Native Java Kubernetes DevOps</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_36"><a class="anchor" href="#_speaker_36"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_36"><a class="anchor" href="#_notes_36"></a>Notes</h6>
+
+</div>
+</div>
+</div>
+<div class="sect3 data-line-212">
+<h4 id="_1530_1615_2"><a class="anchor" href="#_1530_1615_2"></a>15:30 - 16:15</h4>
+<div class="sect4 data-line-1">
+<h5 id="_ré_architecturer_vos_traitements_batch_avec_domain_driven_design"><a class="anchor" href="#_ré_architecturer_vos_traitements_batch_avec_domain_driven_design"></a>Ré-architecturer vos traitements batch avec Domain-Driven Design</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_37"><a class="anchor" href="#_fiche_signalétique_37"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/TNW-6010/1,_2,_3_Quarkus" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/TNW-6010/1,_2,_3_Quarkus">https://cfp.devoxx.fr/2023/talk/TNW-6010/1,_2,_3_Quarkus</a>!</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conference</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Architecture, Performance et Securité</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DDD batches architecture performance business domain invariants</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_37"><a class="anchor" href="#_speaker_37"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_37"><a class="anchor" href="#_notes_37"></a>Notes</h6>
+
+</div>
+</div>
+</div>
+<div class="sect3 data-line-216">
+<h4 id="_1615_1645"><a class="anchor" href="#_1615_1645"></a>16:15 - 16:45</h4>
+<div class="paragraph data-line-218">
+<p>----- BREAK -----</p>
+</div>
+</div>
+<div class="sect3 data-line-220">
+<h4 id="_1645_1730_2"><a class="anchor" href="#_1645_1730_2"></a>16:45 - 17:30</h4>
+<div class="sect4 data-line-1">
+<h5 id="_quoi_de_neuf_dans_cdi_4_0"><a class="anchor" href="#_quoi_de_neuf_dans_cdi_4_0"></a>Quoi de neuf dans CDI 4.0 ?</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_38"><a class="anchor" href="#_fiche_signalétique_38"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/XDB-8652/Quoi_de_neuf_dans_CDI_4.0_%3F" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/XDB-8652/Quoi_de_neuf_dans_CDI_4.0_%3F">https://cfp.devoxx.fr/2023/talk/XDB-8652/Quoi_de_neuf_dans_CDI_4.0_%3F</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conference</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Java, JVM</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intermédiaire</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CDI MicroProfile Jakarta EE Quarkus Micronaut</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_38"><a class="anchor" href="#_speaker_38"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_38"><a class="anchor" href="#_notes_38"></a>Notes</h6>
+
+</div>
+</div>
+<div class="sect4 data-line-1">
+<h5 id="_retex_pièges_et_chausse_trappes_avec_terraform_en_entreprise"><a class="anchor" href="#_retex_pièges_et_chausse_trappes_avec_terraform_en_entreprise"></a>RETEX: Pièges et chausse-trappes avec Terraform en entreprise</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_39"><a class="anchor" href="#_fiche_signalétique_39"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/WPN-0614/RETEX:_Pieges_et_chausse-trappes_avec_Terraform_en_entreprise" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/WPN-0614/RETEX:_Pieges_et_chausse-trappes_avec_Terraform_en_entreprise">https://cfp.devoxx.fr/2023/talk/WPN-0614/RETEX:_Pieges_et_chausse-trappes_avec_Terraform_en_entreprise</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conference</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud, Containers et Infrastructure, DevOps</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intermédiaire</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Ecosystems DevOps Infrastructure as Code automation infrastructure</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_39"><a class="anchor" href="#_speaker_39"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_39"><a class="anchor" href="#_notes_39"></a>Notes</h6>
+
+</div>
+</div>
+</div>
+<div class="sect3 data-line-225">
+<h4 id="_1745_1830"><a class="anchor" href="#_1745_1830"></a>17:45 - 18:30</h4>
+<div class="sect4 data-line-1">
+<h5 id="_les_cast_codeurs_en_chair_en_os_et_en_béret"><a class="anchor" href="#_les_cast_codeurs_en_chair_en_os_et_en_béret"></a>Les Cast Codeurs en chair, en os et en béret</h5>
+<div class="sect5 data-line-3">
+<h6 id="_fiche_signalétique_40"><a class="anchor" href="#_fiche_signalétique_40"></a>Fiche signalétique</h6>
+<table class="tableblock frame-all grid-all stretch data-line-6">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cfp.devoxx.fr/2023/talk/APS-7187/Les_Cast_Codeurs_en_chair,_en_os_et_en_beret" class="undefined" data-href="https://cfp.devoxx.fr/2023/talk/APS-7187/Les_Cast_Codeurs_en_chair,_en_os_et_en_beret">https://cfp.devoxx.fr/2023/talk/APS-7187/Les_Cast_Codeurs_en_chair,_en_os_et_en_beret</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type/format de présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conference</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">People &amp; Culture, Soft Skills, Future of work, Innovation, Side projects</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Niveau de la présentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">débutant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mots-clés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Les Cast Codeurs message delivery human emotions</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5 data-line-25">
+<h6 id="_speaker_40"><a class="anchor" href="#_speaker_40"></a>Speaker</h6>
+
+</div>
+<div class="sect5 data-line-27">
+<h6 id="_notes_40"><a class="anchor" href="#_notes_40"></a>Notes</h6>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2023-04-13 13:25:21 +0200
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/languages/asciidoc.min.js"></script>
+<script>
+if (!hljs.initHighlighting.called) {
+  hljs.initHighlighting.called = true
+  ;[].slice.call(document.querySelectorAll('pre.highlight > code')).forEach(function (el) { hljs.highlightBlock(el) })
+}
+</script>
+</body>
+</html>

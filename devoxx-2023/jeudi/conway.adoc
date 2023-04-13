@@ -24,5 +24,71 @@
 
 ====== Speaker
 
+Julien Topcu
+
 ====== Notes
- 	
+
+Nous sommes en IT Zone :)
+
+On doit trouver un expert en éduction pour transformer l'éducation en Fr.
+Exemple de McKinsey (vu sur leur site). Découverte de leur équipe, domaines de tech. On a plus appris leur orga que comment ils peuvent nous aider. On s'est frottés à l'IT zone.
+
+Back to 1998 : Jakob Nielsen. Les entreprises cherchaient trop à être référencées. Top 10 des erreurs de web management.
+
+Pourquoi les sites sont frustrants à utiliser ? Reflète les frustrations internes plutôt que les besoins de l'utilisateur.
+
+Ce serait quoi des bons indicateurs de qualité ?
+* Code Churn
+* Code complexity
+* Dependencies
+* Code coverage
+* Pre release bugs
+* Orga structure
+
+L'organisation du code est un meilleur indicateur.
+
+[quote, attribution, cite title]
+____
+Production quality is strongly affected by organisational structures.
+____
+
+Exemple entreprise qui vend des tickets de train dans plein de pays. Pas de code spécifique en fonction du pays.
+
+Archi descend dans les équipes : fonctions dupliquées, difficile de maintien. Fausse croyance de la feature team !
+Stratégie de déploiement : MVP Fr, complément en Uk... Une équipe par pays donc if mon pays... Personne ne veut payer l'assainissement car ne se sent responsables
+
+Melvin Conway, 1968
+
+Pour chaque sous système, une équipe dédiée. Entre 2 ss, négociation de contrat formalisée via PO ScrM. Les autres, pas besoin => relation étroite entre les équipes et les systèmes => Homomorphisme.
+
+On ne sait pas encore ce qu'on va produire mais on organise les équipes en fonction de toutes les options possibles. Equipes vachement polarisées (cf. photo). Choisir une orga contraint déjà le design.
+
+Croyance : le travail est linéaire...
+
+Comme l'orga est faite avant de travailler le besoin, on divise le besoin pour occuper tout le monde...
+
+Les sachants initiaux doivent déléguer => problème. Si pbm entre 2 DEVs, escalade par quelqu'un qui n'est pas impliqué et on escalade encore et encore. La structure de com' se désintègre !
+
+3 personnes - 3 canaux
+11 personnes - 55 canaux
+=> non linéaire comme le travail. D'après Conway, 3 personnes bien choisies font un meilleur travail que 11 ! Restreindre la com'.
+
+Exemple d'orga vs McKinsey (cf. photo).
+
+Est-ce qu'on est condamné à subir la loi de Conway ? Malheureusement oui mais on va réduire l'effet. Il faut que l'organisation soit flexible pour s'adpater au besoin.
+
+Inverse Conway Maneuver => casser les silos !!
+
+Essor des µS dans l'IT zone.
+
+Jan Bosch 2017 Structure eats Strategy : une orga doit se concentrer sur la valeur utilisateur et ensuite construire l'archi et enfin l'orag (BAPO). Mais actuellement OBAP.
+Business, Archi, Process, Orga
+
+Pour le B et le A => DDD. Espace du pbm (B) vs espace de la solution (A).
+
+{tip-caption} le DDD permet de réduire l'effet de la loi de Conway !
+
+Pour le P et le O : team topologies. Limiter la taille des systèmes à la charge cognitive des équipes. En fonction de la taille du domaine. Exemple : entre 2 domaines, si besoin de collaboration, alors charge cognitive monte (entropie). Il faut que la période soit la plus petite possible => on monte une nouvelle équipe ! XaaS : fourniture d'un service humain pour documenter une API, process autour des interfaces etc.
+
+Attention : pas de baguette magique, si le code est rigide à la modification, ça marche pas. Attention aussi : les réorgs ça coûte cher en temps, en humain.
+

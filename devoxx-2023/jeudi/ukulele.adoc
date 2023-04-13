@@ -9,7 +9,7 @@
 |https://cfp.devoxx.fr/2023/talk/QAD-8702/Fun(ctional)_Domain_Driven_Design_(featuring_Ukulele)
 
 |Type/format de présentation
-|Conference, 45mn, jeudi et vendredi
+|Conference, 45mn
 
 |Track
 |Langages
@@ -23,6 +23,8 @@
 |===
 
 ====== Speaker
+
+Jérémie Chassaing, D-EDGE
 
 ====== Notes
  	

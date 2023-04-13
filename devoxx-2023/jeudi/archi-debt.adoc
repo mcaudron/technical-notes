@@ -9,7 +9,7 @@
 |https://cfp.devoxx.fr/2023/talk/XQI-3023/Gestion_de_la_dette_d'architecture_dans_un_contexte_d'hypercroissance
 
 |Type/format de présentation
-|Conference, 45mn, jeudi et vendredi
+|Conference, 45mn
 
 |Track
 |Architecture, Performance et Securité
@@ -24,5 +24,122 @@
 
 ====== Speaker
 
+Cyril Beslay, Architecte Entreprise, ManoMano (leader européen marketplace en ligne brico, jardin), start-up => licorne
+
 ====== Notes
- 	
+
+Grosse augmentation des effectifs, ouverture marchés, dans 6 pays en Europe
+=> dette technique + archi
+
+1-Dette tech & archi
+
+Introduit par Ward Cunningham.
+
+'// avec la Dette financière. ça accélère un projet (maison, voiture) mais il faut payer... Y'a-t-il un bon moment pour contracter de la dette ?
+
+--- Dette archi
+
+(s) type de dette :
+* Technique
+* Fonctionnelle (bugs)
+* Sécurité
+* Légale (RGPD)
+* Architecture...
+
+[quote]
+____
+Dans un composant ou tout process fonctionnel, écart entre le système actuel et les principes d'architecture/standards de l'entreprise.
+____
+
+Typologies
+* Choix facile d'une solution. Ex : 1µS accède à la DB du voisin
+* Mauvais choix de framework/outil
+* Produit qui stagne dans un contexte évolutif
+* Projet de migration non terminé
+* Création/changement de standards
+
+Analyse statique + outils (SONAR). Effort incrémental et faible.
+Dette d'archi pas d'analyse statique possible. Outils immatures et inutiles, difficile à quantifier => par où commencer
+
+--- Causes
+
+Externes
+* Business : pression, délais raccourcis, mal compris, domaine volatile, peu de vision long terme. C'est la cause première de la dette d'architecture.
+* Standards non/mal définis
+* Temps qui passe
+Internes
+* Manque de connaissance
+* Mauvaises décisions d'archi (pas forcément à un instant t)
+* Manque d'anticipation (manque de vision, pas évolutif)
+* Facteurs humains (pas de suivi de standard, pas de volonté de faire de l'archi)
+
+Tableau 4 cadrans (cf. photo)
+
+--- Symptomes
+
+Ressource critique, temps d'analyse, complexité excessive, coûts qui augmentent avec les bugs, risque de régression, compétences requises.
+
+2-Comment la manager
+
+--- Controle de la création de la dette
+Ne pas créer de dette = ne pas saisir les opportunités d'accélération/innovation
+
+Bonnes pratiques
+* Nous sommes tous architectes => penser l'archi/conception
+* Anticiper les besoins fonctionnels (approche DDD)
+* Noter les ADR
+* Créer des tickets de dette :\
+
+--- Réduire l'existant
+
+Stratégie active de management
+* boyscout power (rajouter un diagramme de séquence, diag de composants)
+* 20% temps par sprint
+
+Stratégie réactive
+* Correction opportuniste (nouveau gros projet)
+* Gel de fonctions
+* Réécrire en entier un composant
+
+Stratégie passive
+* Délaisser (ROI trop faible, rapport coûts/risques)
+
+Plus simple de tout jeter que d'améliorer continuellement mais les DEV n'apprennent pas
+
+3-Comment on fait chez manomano
+
+Framework pour identifier et mesurer la dette
+Monolithe -> 350 µS.
+
+--- Empêcher création de la dette
+
+Ecriture de guidelines. Développement d'un outil interne : Radiologist. Audite les instances de prod et en fonction des règles, cela ajoute des anomalies. Attention : standards propres à ManoMano.
+TechRadar : ensemble des technos utilisées. Du hold vers adopt. Niveau de qualité, doc associés différents.
+
+--- Réduire la dette
+Identifier et mesurer pour prendre les bonnes décisions puis controler.
+
+1ère approche : matrice valeur/effort. Centrée sur une équipe.
+2nde approche : récolte de données par méthode qualitative + entretien avec les techs (toutes les équipes)
+
+Questions entretien (cf. photo)
+
+Caractériser la dette (cf. photo) => score card par composant
+
+Cartographie entreprise (cf. photo)
+
+Le sentiment des gens ne suffit pas
+* Fréquence incident
+* Vélocité équipe
+* DT brute SONAR
+
+Il faut prioriser
+* Cartes + alertes au CTO
+* Sensbiliser le business
+* ...
+
+[quote, attribution, cite title]
+____
+La dette est trop importante dans cette partie du système, il faut nettoyer avant de développer de nouvelles fonctionnalités
+____
+
