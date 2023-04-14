@@ -23,6 +23,77 @@
 |===
 
 ====== Speaker
-
+cf. photo
 ====== Notes
- 	
+
+Biais cognitif
+* système 1 : pensée rapide (s'habiller le matin), ressenti
+* système 2 : lente, rationnelle
+=> auto-persuasion que tu as utilisé le sys 2 alors qu'on a utilisé le 1
+
+Biais cognitifs
+* Poinçons à 200€ au lieu de 350€. Biais d'ancrage : impression de faire une affaire mais arnaque quand même
+* Bouteille de Bordeaux : tout le monde enthousiasme mais pas osé dire qu'il n'est pas bon => biais d'effet de groupe
+* Pourquoi les femmes votent pour Trump ?!? Les femmes américaines ne lisent pas les mêmes journaux que les françaises => biais de confirmation
+
+--- Les biais dans les logiciels basés sur l'IA
+
+Exemples de logiciels biaisés
+* Logiciel expérimental de recrutement Amazon. Basé sur vocabulaire plus utilisé par les H
+* Logiciel COMPAS utilisé par les juges pour aider à la prise de décision. Biaisé car personnes de couleur plus condamnées. Métriques non pertinentes car pas les bonnes données
+
+Pourquoi ces données sont biaisées : cf. photo. La plupart des biais sont les données source.
+Input data -> machine learning : f(input_data)=target -> target
+Pourquoi la fonction f est biaisée car les données sont biaisées. Exemples :
+* Sample bias
+* Exclusion bias
+* Measurement bias (pas la même façon de mesurer)
+* Recall bias (données trop subjectives)
+
+Les modèles peuvent être biaisés car construits à partir de données biaisées. Exemples :
+* Sampling
+* Choix des métriques d'évaluation
+* Choix du modèle lui-même
+
+--- Comment contrer la présence de biais dans ces modèles
+* Réflexion sur la méthode de collecte de données
+* Analyse des données d'entrée
+* Précautions dans le choix des méthodes d'évaluation et d'optimisation du modèle
+
+
+Là j'ai laché...
+
+--- Les biais dans les équipes de DEV
+
+Agilité - innovation vs effet de groupe.
+Exemple : poker planning. Si on dit que telle US coûte tant, si ça coûte plus après, biais d'ancrage.
+Si on doit chiffrer en même temps, c'est pour éviter les biais (effet de groupe).
+Effet sur l'innovation : si un équipier a une idée innovante, souvent l'équipe- étouffe. => Innovation participative (Michelin par exemple) de façon anonyme.
+
+Tests fonction vs biais de confirmation et cadrage
+Une fonction compliquée, ça va durer des plombes.
+Biais d'auto complaisance : élément externe quand ça va mal ou on est au top quand ça va bien
+Biais de confirmation : si c'est untel qui dev, pas de problème, sinon on cherche les poux => relecture du cahier de tests pour éviter d'être subjectif.
+Biais de cadrage : devant pbm complexe, plein de solutions possibles. Si trop cadré, on va pas chercher les corner cases. Use case A ou B et C n'arrive presque jamais. Solution contre ça : use cases principaux et moins principaux => trouver un compromis.
+
+--- Comment éviter ces biais
+
+*La DIVERSITE*
+
+Genre, âge, origine géo, etc...
+
+Construire une équipe diversifiée : c'est compliqué. (cf. photo). 25% des ingénieurs sont des femmes, 75% de ces femmes sont dans la chimie ou dans l'agro.
+
+Offre d'emploi
+Biais de genre masculins en général. Utilisation d'adjectifs qui font penser à des H ou des F.
+Les H postulent s'ils pensent replir 60% des critères. Les femmes c'est 100%. Surtout s'ils se sentent pas légitimes => ne pas trop mettre de critères ! Que les principaux !
+
+Biais communs dans les équipes diversifiées (cf. photo)
+
+Au sein de l'équipe : entretenir la diversite
+* Valoriser les points de vue de chacun
+* Attention aux experts : souvent ils prennent de la place, pondération plus importante.
+* Faire ressortir le potentiel de chacun
+
+--- Conclusion
+cf. photo

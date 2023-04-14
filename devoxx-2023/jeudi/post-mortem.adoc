@@ -25,6 +25,80 @@
 ====== Speaker
 
 ====== Notes
- 	
- 	
 
+Plusieurs sources de post-mortem : projet, mise en prod
+
+Succès garanti
+* on n'en parle pas
+* On n'a pas toutes les infos
+* On blâme les autres
+* On change rien
+=> nouveau carnage
+
+Du coup on organise un post-mortem
+* Echange constructif suite à un event drama
+
+Objectif
+* Comprendre ce qu'il s'est passé
+* S'améliorer
+
+Rétro AGILE
+* itération
+* récurrent
+* équipe
+
+Postmortem
+* Event distinct
+* ponctuel
+* potentiellement tout le monde
+
+--- Comment le mettre en place ?
+
+Planifier : 2 semaines après, inviter les personnes pertinentes (impliquées), 8 personnes, entre 2 et 4h
+
+Définir les 3 rôles :
+* Animateur : prépare et anime. Extérieur au carnage
+* Time-keeper : surveille le temps.
+* Scribe : prend des notes. Extérieur au carnage ?
+=> on peut combiner mais pas conseillé.
+
+Poser un cadre, règles de l'échange :
+* Rappel de l'objectif : on cherche à s'améliorer
+* Critique des *processes* et non les personnes
+* Ecoute active : on s'écoute, on ne se coupe pas la parole, on lève la main. On participe à l'échange !
+=> sert à contruire un environnement sain pour chacun soit libre de s'exprimer
+
+Revenir sur les faits (datés, objectivés, chiffrés)
+* Rappel des évènements, peut se faire en amont ou en live. Il faut que du factuel, sans *jugement*. Rôle de l'animateur de cadrer
+
+Cibler les points de douleur
+* Les choses où tout est ok, pas besoin de s'attarder.
+* On utilise le dot-voting pour cibler les problèmes
+* Ou le vote par émotion
+
+Analyser : identifier les pbms, identifiés les causes
+* 5 pourquoi (causes racine).
+* Diagramme arête de poisson : identifie le problème principal + découpage en causes principales puis cause racine pour chaque arête. Ensuite on cible les causes racines via dot-voting ou autre.
+* Dérivé de l'expérience map (plutôt pour les points de douleur de l'UX).
+
+Solutionner les problèmes
+* Brainstorming : autour des causes racine, identifier des solutions potentielles. Choix via dot-voting ou autre...
+* Dérivé de l'exp map (cf. photo)
+
+Agir pour s'améliorer
+* Actions claires et précises
+* 1 responsable par action (pas forcément l'acteur), suivi de l'action
+* 1 date pour vérifier la mise en place
+
+Conclusion
+* Retenir les faits
+* Cibler
+* Analyser
+* Solutionner
+
+Attention
+* ça se prépare
+* chronophage
+* rôle animateur est primordial
+* Doux avec les gens, dur avec les processes
+* Suivi d'actions

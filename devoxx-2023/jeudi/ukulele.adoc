@@ -24,9 +24,9 @@
 
 ====== Speaker
 
-Jérémie Chassaing, D-EDGE
+Jérémie Chassaing, D-EDGE, architecte
 
 ====== Notes
- 	
- 	
+
+Langage F#, pas trop vu le rapport avec le DDD...
 

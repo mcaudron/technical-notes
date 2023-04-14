@@ -9,7 +9,7 @@
 |https://cfp.devoxx.fr/2023/talk/OBI-1145/Clean_as_You_Code_your_projects
 
 |Type/format de présentation
-|Conference, 45mn, jeudi et vendredi
+|Conference, 45mn
 
 |Track
 |Cloud, Containers et Infrastructure, DevOps
@@ -24,5 +24,57 @@
 
 ====== Speaker
 
+Cf. photo
+
 ====== Notes
- 	
+
+--- Clean code
+
+Le code source est au coeur de l'entreprise. Qualité du code puis sécurité et clean code:
+=> clean code taxonomy
+
+Type de code : principal (intéractions, BDD), support (TU, TI, scripts), tiers (libs, dep, framework), non conventionnel (matlab, jupiter notebook).
+Il doit être adopté à un but : clair (explicite, pas de code mort, pas imbriqué), cohérent (s'aligner sur les conventions, indentation), structuré (petits modules simples), testé (il fait bien ce qu'on lui demande)
+Adopté à la production : robuste (fiable), sécurisé (pas vulnérable, pas d'injection), portable (Hw et Sw, prédictible, pas de deprecated), conforme (RGPD, légilsation, normes, ...)
+
+Pouvoir clean code
+* Minimise l'effort de soutien (-40%)
+* Réduit la friction pour les DEV (-60%)
+* Augmente la longévité du log
+* Réduit les risques opérationnels (-90%)
+
+Pourquoi tout n'est pas clean code
+* Apprentissage continu
+* Niveaux des DEV différents
+* Standards évoluent
+* Dur de vérifier les standards
+
+Analyseur statique mais on n'a pas le temps de corriger !
+
+--- Clean as you code
+
+Quelles options
+* Repartir de 0. Recoder les mêmes fonctions avec du bon code. Rien ne garantit que dans la nouvelle, le code sera clean => pas conseillé
+* Faire un gros refactoring => pas conseillé non plus... Prend du temps. Pas facile avec des DEV jeunes sur le projet. Risqué si on ne connaît pas bien le code.
+* *On règle le problème avant de réparer les conséquences*
+
+Basé sur le concept de Nouveau Code : le nouveau code *doit* être du clean code
+
+--- Comment mettre en place sur le projet
+
+Aucun nouveau code non clean code déployé en prod. On vérifie ça avec le quality gate.
+
+Utilisation de SonarLint dans l'IDE. Analyse des PR et vérification des PR... Puis dernier check avant le déploiement.
+
+--- Combien ça coûte
+
+[quote, attribution, cite title]
+____
+En moyenne, 20% du code est réécrit chaque année !
+____
+
+Git of Theseus : Evolution du code année par année ! Année n, au bout de x années, combien il reste.
+
+Ecrire du code propre, ça coûte 0 car intégré dans le process de DEV.
+
+Ce qu'il faut retenir : cf. photo

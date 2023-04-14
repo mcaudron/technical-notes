@@ -1,0 +1,51 @@
+===== Todo
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|Todo
+
+|Type/format de présentation
+|Keynote, 20mn
+
+|Track
+|todo
+
+|Niveau de la présentation
+|débutant
+
+|Mots-clés 	
+|todo
+
+|===
+
+====== Speaker
+
+Benjamin Baya, Défenseur du libre, neutralité du net FranceDataNetwork, consultant chez OctoTechnologies
+
+====== Notes
+
+L'ordinateur est fatal (pas mortel), dans le sens fatalité, inéluctable, non négociable. Formulaire papier vs formulaire informatique. On peut rien changer dans les données saisies. Avant on pouvait s'arranger. Si ça n'existe pas dans un ordinateur, ça n'existe pas tout court ! Exemple du ¨Y.
+
+Tout fichier est maltraitance : réification. Moment où se met à considérer où les gens sont des choses (exemple shoah, radiation de chômeurs). On traite des fiches, des dossiers... => début d'une maltraitance potentielle.
+
+Les données sont la personne. Nous ne sommes rien d'autre qu'une masse de données sur nous-mêmes. Pas des atomes :S.
+
+En info, On s'apprête à maltaiter sans recours des personnes. Il faut vérifier qu'on le fait pour de bonnes raisons, justes et bien.
+
+=> RGPD
+
+Geopolitique : rapport de pouvoir et de puissance. Exemple : pêche britannique avec les navires de guerre. La Fr a dit vous arrêtez ou on coupe l'élec => rapport de pouvoir.
+
+Les données deviennent geopol. Il est illégal de transférer des données personnelles aux US. Maltraiter les données personnelles, c'est une agression de la personne ! Et aux US, les données ne sont pas assez protégées.
+
+[quote, attribution]
+____
+On a des dirigeants qui croient qu'on est mauvais par ce qu'ils sont nuls !
+____
+
+L'Europe a largement les compétences pour faire du numérique tout en protégeant les données des gens. Ce serait le rempart qui protège le business en Europe. On est capables d'être un élément clé pour ça.
+

@@ -141,7 +141,6 @@ include::jeudi/ukulele.adoc[]
 ==== 17:45 - 18:15
 
 include::jeudi/post-mortem.adoc[]
-include::jeudi/spark.adoc[]
 
 ==== 18:15 - 18:30
 
@@ -150,25 +149,14 @@ include::jeudi/spark.adoc[]
 ==== 18:30 - 19:00
 
 include::jeudi/microcks.adoc[]
-include::jeudi/scratch.adoc[]
-
-==== 19:00 - 20:00
-
------ MEET AND GREET -----
-
-==== 20:00 - 20:50
-
-include::jeudi/bof-jug.adoc[]
-
-==== 21:00 - 21:50
-
-include::jeudi/crafters.adoc[]
 
 === Vendredi
 
 ==== 9:00 - 9:20
 
 include::vendredi/be-optimistic.adoc[]
+
+include::vendredi/data-geopolotic.adoc[]
 
 ==== 9:50 - 10:10
 
@@ -177,17 +165,10 @@ include::vendredi/break-ice-ceiling.adoc[]
 ==== 10:45 - 11:30
 
 include::vendredi/clean-code.adoc[]
-include::vendredi/loom-jdk-19-20.adoc[]
-
-==== 10:45 - 14:15
-
-include::vendredi/tests-end-to-end.adoc[]
-include::vendredi/tddd.adoc[]
 
 ==== 11:45 - 12:30
 
 include::vendredi/archi-biaisee.adoc[]
-include::vendredi/foundationDB.adoc[]
 
 ==== 12:30 - 13:30
 
@@ -195,7 +176,6 @@ include::vendredi/foundationDB.adoc[]
 
 ==== 13:30 - 14:15
 
-include::vendredi/docker-devSecOps.adoc[]
 include::vendredi/charge-tests.adoc[]
 
 ==== 14:30 - 15:15

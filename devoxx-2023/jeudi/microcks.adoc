@@ -9,7 +9,7 @@
 |https://cfp.devoxx.fr/2023/talk/BYI-0526/Accelerer_vos_livraisons_d'API_avec_Microcks
 
 |Type/format de présentation
-|Tools in Action, 30mn, mercredi/jeudi
+|Tools in Action, 30mn
 
 |Track
 |Architecture, Performance et Securité
@@ -24,7 +24,34 @@
 
 ====== Speaker
 
+Laurent Broudoux, Microcks co-founder, cloud-native architect (cf. photo)
+
 ====== Notes
- 	
+
+Intro : compatibilité ascendante, changement de modèle
+
+Projet démarré y'a 6 ans. Comment mocker des API et les tester ? microcks.io
+
+Sponsorisé par Postman Open Technologies. 100% Open-source, métier à temps plein.
+
+Objectifs
+* Raccourcir la boucle de feedback
+* // les DEVs. Difficulté de créer les environnements de test. Gagner en vélocité
+* Sécuriser le delivery en validant les implémentations
+
+Importance des contrats et des exemples
+* -Examples générés- => vraie vie (scénarios) => mocks and tests
+
+Couvre tout type d'API
+* Traditionnal
+* Event driven
+* ...
+
+Démo
+* On peut stimuler rapidement les API via le portail microcks
+* Partie test : pareil, on peut rajouter des tests dans le portail pour se conformer => on peut inclure tout ça dans les pipelines.
+* Maintenant intéraction asynchrone : émettre un évènement où on réagira (envoi de mail, sms). Syncrone, OpenApi ; asynchrone : AsyncApi. Système de subscribe publish, binding (vers rabbitMq, qtt, nat, kafka ...). ensuite il simule une consommation. On peut ensuite se connecter au broker simulé. Microcks vient regarder le contrat dans le dépôt et zou !
+
+Microcks use cases : cf. photo
  	
 

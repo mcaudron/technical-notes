@@ -9,7 +9,7 @@
 |https://cfp.devoxx.fr/2023/talk/RZB-3250/Soyons_optimiste
 
 |Type/format de présentation
-|Keynote, 20mn, jeudi et vendredi matin - ⛔️ Uniquement sur invitation.
+|Keynote, 20mn
 
 |Track
 |People & Culture, Soft Skills, Future of work, Innovation, Side projects
@@ -17,12 +17,36 @@
 |Niveau de la présentation
 |débutant
 
-
 |===
 
 ====== Speaker
 
+Thomas C. Durand, tronche en biais
+
 ====== Notes
- 	
- 	
+
+Pas de malentendu : pas la positive attitude ! Très populaire chez les patrons :D. ça inhibe la comm, empêche de questionner le contexte, isole les victimes. Pour guérir, il faut garder le moral... Pas top car elle sait qu'il faut avoir le moral mais en fait non.....
+
+Optimisme : aller outre de ce qui pourrait nous rendre pessimiste. Autour de nous : croyances stupides, climat, fake news... On pense qu'il y a des gens bêtes partout. Y'a plein d'idée donc les gens sont bêtes : NON !
+
+Et si on n'était pas si bête : biais d'internalité. Les autres agissent en réponses à des stimulations externes. Autre point : la surconfiance (plus moraux, malins). On s'attend à ce que l'humain fasse les pires choses possibles. Mais ces biais ne sont pas sans avantage !
+
+Confiance
+* Esprit critique : à qui je fais confiance ?
+* Pense par toi-même (Kant). Mais pas tout seul car on doit chercher la bonne personne qui peut résoudre le pbm. Biais d'endogroupe.
+
+Nous pensons avec les autres
+* Tous dans un bain social. Biais d'endogroupe. (cf. photo)
+* Les croyances stupides omniprésentes. Pas dues au fait que les gens sont faites mais plutôt conséquence de champs de force culturaux et sociaux. Mais c'est rassurant car sinon on n'aurait pas de solution humaniste. (cf. photo). Culture du débat  , délibération, coopération.
+
+Les humains ne sont pas si mal mais jamais tous seuls. Les foules ne sont pas folles
+* Communautés
+* Jurés
+* Logiciels open
+* Démocratie
+=> on doit croire à l'intelligence collective.
+
+Soyons optimistes
+* Conditions pour plus de rationalité pour l'humain
+* Si on perd l'optimisme, qui cherchera des solutions ?
 
