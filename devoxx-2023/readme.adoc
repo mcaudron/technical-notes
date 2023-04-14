@@ -184,7 +184,7 @@ include::vendredi/quarkus.adoc[]
 
 ==== 15:30 - 16:15
 
-include::vendredi/batch-ddd.adoc[]
+include::vendredi/deep-into-tech-checking.adoc[]
 
 ==== 16:15 - 16:45
 
@@ -193,8 +193,4 @@ include::vendredi/batch-ddd.adoc[]
 ==== 16:45 - 17:30
 
 include::vendredi/cdi-4.0.adoc[]
-include::vendredi/retex-terraform.adoc[]
 
-==== 17:45 - 18:30
-
-include::vendredi/castcodeurs.adoc[]

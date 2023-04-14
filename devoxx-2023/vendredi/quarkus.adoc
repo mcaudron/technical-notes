@@ -9,7 +9,7 @@
 |https://cfp.devoxx.fr/2023/talk/TNW-6010/1,_2,_3_Quarkus!
 
 |Type/format de présentation
-|Conference
+|Conference (~Tools in action)
 
 |Track
 |Java, JVM
@@ -24,5 +24,53 @@
 
 ====== Speaker
 
+cf. photo
+
 ====== Notes
- 	
+
+Techno qui se démontre, allons faire le plot-service. code-quarkus.io
+
+Bootstrap dispo. Compatible avec springBoot, un driver pgsql, etc... Tout est dispo.
+
+Quarkus 3 compatible java 11
+
+quarkus dev
+
+dev-ui. Utilisation lib webauthn (permet d'utiliser FaceId, une empreinte, peu importe...)
+
+Utilisation d'un @RestClient
+
+Pour diminuer l'URL, utiliser stork de Quarkus
+
+Utilisation de @Funq pour faire du serverless
+
+@Channel pour envoyer des flux des données (Quarkus).
+
+Enable snapstart. Une propriété pour activer le natif ! Comment c'est compilé en natif derrière ? GraalVM (fork : mandrel)
+
+Utilisation de Nano + Stockholm
+
+Scope de la démo : cf. photo
+
+
+--- 4 principes de base
+* FrictionLess. API, j'ai oublié de démarrer ma base, (cf. photo). Don't break the flow ! Mutiny : reactive programming
+* Build time principle : on fait plus de choses au build time
+* Reactive core: optimal, concurrence au top. Mais pas visible par le DEV. Possible de lancer par des virtuals thread à partir de Java 19.
+
+--- 4 ans : Prod ready ?
+Cf. photo
+
+Tout est non bloquant niveau I/O
+Graceful remediation : auto-réparation
+RedHat a la connaissance du noyau Linux jusqu'à OpenShift
+Alertes dispo, possibilités de dashboard. Il y a une management itf pour exposer qu'en interne
+
+Surface plus réduite => coût final moindre
+
+--- Pourquoi Quarkus 3 ?
+
+cf. photo
+792+ extensions
+
+Pourquoi Quarkus ?

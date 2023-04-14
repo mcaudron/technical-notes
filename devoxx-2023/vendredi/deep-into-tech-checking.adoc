@@ -1,0 +1,132 @@
+===== todo
+
+====== Fiche signalétique
+
+[cols="1,2"]
+|===
+
+|Lien
+|todo
+
+|Type/format de présentation
+|Conference
+
+|Track
+|todo
+
+|Niveau de la présentation
+|todo
+
+|Mots-clés 	
+|todo
+
+|===
+
+====== Speaker
+
+cf. photo
+
+====== Notes
+
+--- C'est quoi la veille ?
+
+* Veille stratégique : temps dédié, informations stratégiques (nouvelles releases, failles, lois, concurrents) => fait par des personnels compétents présentés aux décideurs
+* Veille personnelle  : fait à son rythme, infos de notre choix, nos décisions => objectif conf
+
+Apologie du bucheron : entretien sa hâche, se repose entre 2 arbres au lieu d'enchaîner
+Outils du quotidien : compétences
+
+[quote, attribution, cite title]
+____
+Cf. photo
+____
+
+
+Sourcer traiter valoriser : étapes de la veille
+
+1- Sourcer
+
+Choisir des ressources : blogs, podcasts, DZOne, Medium, InfoQ. Sur Twitter, LinkedIn suivre des gens, youtube.
+Mastodon, quickTech
+
+Stocker ces infos : one note, etc.
+{warning-caption} Risque d'accumulation et/ou ne pas utiliser sa veille
+
+1 ressource = tâche
+
+{tip-caption} Liste blanche : qualité pas la quantité !
+
+Prendre des notes pour aider notre mémoire de travail :
+
+[quote, attribution, cite title]
+____
+quote
+____
+Tout ce qui occupe votre mémoire fonctionnelle réduit votre capacité de penser
+
+Alimente la réflexion
+
+Sinon on perd son temps.
+
+Comment prendre des notes ? Paraphraser pour s'expliquer à soi-même.
+
+Garder le rythme de prise de notes, choisir un format.
+
+Sur numérique, attention au copy/paste
+
+2- Traiter ses notes : second cerveau
+* Centraliser ses notes. Il faut pouvoir connecter les notes entre elles => Zettlekasten
+* Retravailler ses notes dans des notes permanentes. Il faut jeter ses notes de lecture. On élabore ses notes, maturer => pour avoir des notes *atomiques*. Facilite les connexions des notes entre elles ! On peut faire du refacto :D. Les catégories se créent naturellement. Logiciel opsydian ?
+* Rajouter des tags, notes de structure
+
+Zettlekasten light (cf. photo)
+
+Outils (cf. photo)
+
+Exemple : Andy Matuschak
+
+Commencer simple ! Ce qui est difficile c'est de penser, ce ne sont pas les outils
+
+3- Valoriser sa veille
+
+Apporte de la connaissance, diminue le risque, ça rapporte des sous
+* Apprendre c'est faire quelque chose pour son moi du futur
+* Innovation : connecter des idées entre elles.
+* Expérimenter : apporte du concret. On met en exercice un savoir pour réaliser quelque chose et en retour, on acquiert un savoir-faire
+
+Partager : discuter avec des gens (café, communautés, instances de partage) au-delà du besoin opérationnel. Discuter apporte des connexions donc discuter de la veille = connexions²
+
+[quote, attribution, cite title]
+____
+La connaissance est la seule chose qui grandit quand on la partage.
+____
+
+Produire : articles, podcast, vidéos, images. Partager les projets en public => feedback. Puis on présente. Le meilleur moyen d'apprendre c'est d'enseigner. Si on veut le présenter, on l'apprendra mieux.
+
+Good moring learning : (photo) 30 mins tous les jours = 20mins pour s'approprier un sujet + 10min restit + partage.
+XTREM reading : 1h en groupe, 2x20mins, 2x1 livre, 15 min de restit
+MOB Programming
+
+--- Energie et temps !
+
+Attention à la veille passive si on est fatigué vs veille active (chronophage) => curseur à trouver
+
+--- Habitudes pour éviter de s'épuiser (cf. photo).
+
+--- Quel temps prendre pour sa veille ?
+* Temps professionel : argent
+* Temps perso : vie
+=> curseur à trouver
+
+Grille de lecture : faire de la veille pour quel objectif ?
+* Formation : devenir opérationnel => pro
+* Efficacité : productivité => + pro / - perso
+* Diversité : prendre de la hauteur => - pro / + perso
+* Employabilité : être à jour pour le marché => perso
+
+--- Risque de ne pas faire de veille ? Pour les boîtes, ne pas faire de veille, c'est risqué
+* AGILE #9 : excellence technique + #12 : devenir + efficace sur les processus
+* DEVOPS : résoudre les pbm + vite. Livre "Accelerate" (+photo)
+* Organisation apprenante : livre "5ème discipline" (+photo)
+
+--- Commencer la veille => photo

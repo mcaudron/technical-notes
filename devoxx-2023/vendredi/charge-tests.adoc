@@ -24,5 +24,98 @@
 
 ====== Speaker
 
+Cf. photo, CTO Gatling
+
 ====== Notes
- 	
+
+Tests de charge pas compris par les managers, on cherche à tenir la deadline, on vire des choses dont ce qu'on comprend pas trop.
+
+Dans le monde, on fait plein de trucs qui crashent pas sauf dans l'IT.
+
+QA conditions != prod conditions
+
+Pourquoi s'en occuper ?
+* J'ai pas de grosse charge mais on peut avoir dead locks, lack of proper pagination, fuites de données, race conditions
+* J'utilise un cloud autoscaling mais c'est long à réagir. On n'a qu'à rajouter des machines, des clusters, des pods...
+* Archi µS peut aussi tomber...
+
+--- Tests de charge
+
+Ce n'est pas du webperf ! Problématique côté serveur, pas côté client. Ni du headless browser.
+
+Outils qui vont travailler niveau réseaux. Simulation des conditions de traffic avec utilisateurs virtuels. Valider les spec de perfs (on peut itérer).
+
+Concepts
+* Utilisateur virtuel, simulé qui sera isolé, qui aura ses propres données et connexions
+* Scenarios : workflow, séquence d'actions
+* Profiles d'injection : combien d'utilisateurs démarrent à chaque seconde
+
+--- Tests de charge réalistes
+Se recentrer sur le use case pour être réaliste.
+
+2 modes
+* Stateless => requêtes read-only
+* Statefull => requêtes R/W, logical flows avec des scenarios
+
+Scenarios : comment les utilisateurs exploitent l'appli. Il faut itérer et améliorer.
+
+--- Test data
+
+Souvent on teste les caches... Eviter les valeurs en dur. Injecter les data dans les utilisateurs virtuels.
+
+Develop bias : est-ce qu'on mon code fonctionne avec ma stack (spring, pgsql, hibernate)
+Mais on teste l'infra + le code
+
+Exemples de Bottleneck
+* Résolution DNS qui peut prendre du temps
+* TCP : encore de la latence et des ressources
+* TLS : latence entre client et serveur, stockage de clés, ouvrir des connexions
+
+Conséquence : quel type de traffic on va chercher à simuler. Il faut rester réaliste par rapport aux use cases
+
+Open system model
+Les utilisateurs arrivent continuellement, à un moment, ça tombe. La plupart des applis... Test de profile d'injection
+
+Closed system model
+Si le système est à pleine capa, on attend. On empêche les nouveaux utilisateurs d'entrer. Rare : monde ticketing, serveur de jeu vidéo... Utilisateurs concurrents
+
+--- Profil d'injection
+
+Test de capacité : augmentation progressive de la charge
+
+Stress test : rush de traffic
+
+Tests d'endurance pour détecter des fuites mémoire, connexion, évènements périodiques, full gc
+
+Smoke test : juste un seul utilisateur, vérifie que les tests fonctionnent => le plus fréquent
+
+Globalement, les faire tourner par semaine, par mois.
+
+--- Mesure de la perf
+
+Metriques
+* Taux d'échec
+* Temps de réponse. Historiquement, moyenne des temps de réponse => pas bon. Distribution des valeurs sur une courbe. Utilisation de centiles (seuils). Utiles dans les critères d'acceptance. Attention car gourmand en traffics et stockage. On peut faire de l'échantillonnage mais manque d'events significatifs. Une bonne pratique : utilisation d'histogrammes, regroupement par bucket => hdrhistogram. Attention à ne pas aggréger les centiles. 
+
+--- Methodo
+
+* Historiquement : équipe dédiée, avec un outil, juste avant de partir en prod, lancés 2 fois par an.
+* Moderne : avoir du feedback rapidement
+
+Diffuser l'usage dans les équipes projet, approche collaborative. Laisser les devs les réaliser. Faire appel à un expert perfs pour résoudre dans les applis.
+
+Tester les composants en isolation puis end-to-end. Attention aux dépendances
+
+--- Gatling
+
+C'est du code. API JAVA. Intégrable avec gradle, facile dans CI.
+
+Version entreprise (cf. photo)
+
+Gatling references (cf. photo)
+
+Gatling.io
+
+--- Questions
+Fréquence : dépend la fréquence de livraison
+Overkill chez les DEV : au même niveau que les TU/TI

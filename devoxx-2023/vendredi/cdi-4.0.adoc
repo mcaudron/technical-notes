@@ -24,5 +24,43 @@
 
 ====== Speaker
 
+cf. photo
+
 ====== Notes
- 	
+
+Besoin de glue entre les interfaces web et les composants EJB
+
+Context and Dependency Injection
+
+Version 4.0
+* Suppression d'API dépréciées.
+* changement du mode de découverte des Beans => mode par défaut, annotated, on scanne pas tout le classpath par défaut.
+* JPMS support. Maintenant, de vrais modules
+
+CDI Lite
+* Besoin de répondre à des frameworks qui refont leur surcouche
+* Objectif : avoir une empreinte mémoire légère. Sous-ensemble le plus grand possible avec les API fondamentales et activables au build time. 
+* Micronaut et Quarkus étaient là pour spécifier donc pas trop mal :). D'autres implém de MicroProfile en tireront partie.
+
+Y'a quoi dans la spéc ?
+* Core => découpage en CDI Lite et CDI Full moins Lite.
+* For JAVA SE
+* For JAVA EE
+
+Qu'est-ce qu'il n'y a pas dans CDI Lite?
+* Decorators
+* @Session et @Conversation
+* Specialization with reflection
+* Passivation, sérialisation
+* Extension portable. Soit extension build time soit extension portable
+
+Une extension permet d'étendre les fonctionnalités de DEV en gardant le même programme de programmation CDI.
+
+Photo annotations x2
+
+@Synthesis : influencer sur comment le bean est créé, détruit => nouvelle recette. En fonction d'un fichier de conf, on pourrait créer un mock différent.
+
+CDI 4.0
+* Fait partie de Jakarta EE 10 et µProfile et core profile.
+
+On peut faire des extensions Quarkus avec ces extensions (système portable). Micronaut, c'est presque terminé.
